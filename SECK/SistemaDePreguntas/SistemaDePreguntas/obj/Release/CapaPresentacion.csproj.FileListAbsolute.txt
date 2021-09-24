@@ -1,0 +1,15 @@
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.csprojAssemblyReference.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Base.F_Base.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.Principal.FPreguntas.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.CRUD.FPreguntaVFCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.CRUD.FPreguntaSelMulCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.Principal.FPrincipal.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Forms.Reportes.FReporteEvaluaciones.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.Properties.Resources.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.csproj.GenerateResource.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Release\CapaPresentacion.csproj.CoreCompileInputs.cache

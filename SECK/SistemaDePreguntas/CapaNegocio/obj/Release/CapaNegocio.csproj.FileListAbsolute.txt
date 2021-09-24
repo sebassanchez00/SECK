@@ -1,0 +1,14 @@
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\CapaNegocio.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\CapaNegocio.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\CapaDatos.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\Microsoft.ReportViewer.Common.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\Microsoft.ReportViewer.WinForms.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\Microsoft.SqlServer.Types.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\CapaDatos.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Release\CapaDatos.dll.config
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Release\CapaNegocio.csprojAssemblyReference.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Release\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Release\CapaNegocio.csproj.CopyComplete
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Release\CapaNegocio.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Release\CapaNegocio.pdb

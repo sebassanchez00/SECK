@@ -1,0 +1,18 @@
+C:\OKTAL\SCANeRDT_2.1\APIs\bin\win32\vs2005\BdSimuladorconduccion.mdf
+C:\OKTAL\SCANeRDT_2.1\APIs\bin\win32\vs2005\BdSimuladorconduccion_log.ldf
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.Form1.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemadeReportes\SistemadeReportes\obj\Debug\SistemadeReportes.Properties.Resources.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemadeReportes\SistemadeReportes\obj\Debug\SistemaDeReportes.exe
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemadeReportes\SistemadeReportes\obj\Debug\SistemaDeReportes.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.Form1.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemadeReportes\SistemadeReportes\obj\Debug\SistemadeReportes.Properties.Resources.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemadeReportes\SistemadeReportes\obj\Debug\CapaPresentacion.csproj.CopyComplete
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemadeReportes\SistemadeReportes\obj\Debug\SistemaDeReportes.exe
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemadeReportes\SistemadeReportes\obj\Debug\SistemaDeReportes.pdb

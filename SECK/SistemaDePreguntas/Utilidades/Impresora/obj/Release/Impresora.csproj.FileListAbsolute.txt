@@ -1,0 +1,16 @@
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Release\Impresora.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Release\Impresora.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Release\Impresora.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Release\Impresora.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Release\Impresora.csprojResolveAssemblyReference.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Release\Impresora.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Release\Impresora.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Release\Microsoft.ReportViewer.Common.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Release\Microsoft.ReportViewer.WinForms.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Release\Microsoft.SqlServer.Types.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Release\Impresora.csprojAssemblyReference.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Release\Impresora.csproj.CoreCompileInputs.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Release\Impresora.csproj.CopyComplete
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Release\Impresora.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Release\Impresora.pdb

@@ -1,0 +1,53 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CapaPresentacion.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="MinEval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="SegEval" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="NumPreguntas" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="DescripcionEval" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Cuestionario que evalúa el nivel de conocimiento de la normativa vial Colombiana</Value>
+    </Setting>
+    <Setting Name="Ciudad" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Bogotá D.C.</Value>
+    </Setting>
+    <Setting Name="Patrocinador" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Patrocinador</Value>
+    </Setting>
+    <Setting Name="Empresa" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Empresa</Value>
+    </Setting>
+    <Setting Name="FechaInicioCampaña" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2018-01-01</Value>
+    </Setting>
+    <Setting Name="FechaFinCampaña" Type="System.String" Scope="User">
+      <Value Profile="(Default)">2018-01-01</Value>
+    </Setting>
+    <Setting Name="Direccion" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Direccion</Value>
+    </Setting>
+    <Setting Name="NombreCampaña" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Nombre Campaña</Value>
+    </Setting>
+    <Setting Name="RutaLogo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Ruta</Value>
+    </Setting>
+    <Setting Name="BD_EntrenadorConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=SERVIDOR-CEAK\SQLEXPRESS;Initial Catalog=BD_Entrenador;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=SERVIDOR-CEAK\SQLEXPRESS;Initial Catalog=BD_Entrenador;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="Impresora" Type="System.String" Scope="User">
+      <Value Profile="(Default)">BIXOLON SRP-330II</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -1,0 +1,84 @@
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Impresora\bin\Debug\Impresora.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Impresora\bin\Debug\Impresora.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Impresora\obj\Debug\Impresora.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Impresora\obj\Debug\Impresora.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Impresora\obj\Debug\Impresora.csprojResolveAssemblyReference.cache
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csprojAssemblyReference.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CoreCompileInputs.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csprojAssemblyReference.cache
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CoreCompileInputs.cache
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CoreCompileInputs.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CopyComplete
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csprojAssemblyReference.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csprojAssemblyReference.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CoreCompileInputs.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CopyComplete
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CoreCompileInputs.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CopyComplete
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CopyComplete
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.Common.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.SqlServer.Types.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CopyComplete
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.Common.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.SqlServer.Types.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csprojAssemblyReference.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CopyComplete
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb

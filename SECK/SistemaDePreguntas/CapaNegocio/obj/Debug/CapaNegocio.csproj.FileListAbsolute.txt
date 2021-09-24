@@ -1,0 +1,93 @@
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll.config
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll.config
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll.config
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll.config
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll.config
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.Common.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.SqlServer.Types.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll.config
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.Common.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.SqlServer.Types.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll.config
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb

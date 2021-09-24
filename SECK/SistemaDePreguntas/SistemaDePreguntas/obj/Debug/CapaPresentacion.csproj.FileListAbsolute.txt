@@ -1,0 +1,415 @@
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Base.F_Base.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPreguntas.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaVFCRUD.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulCRUD.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPrincipal.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReporteEvaluaciones.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\delete.png
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\update.png
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Resources\LogoKirvitMapaBits.bmp
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.config
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.manifest
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.application
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.Speech.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.DirectShow.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll.config
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.TrustInfo.xml
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe.manifest
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.application
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Base.F_Base.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPreguntas.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaVFCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulCRUD.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPrincipal.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReporteEvaluaciones.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.TrustInfo.xml
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\delete.png
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\update.png
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Resources\LogoKirvitMapaBits.bmp
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.config
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.manifest
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.application
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.DirectShow.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll.config
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe.manifest
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.application
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\RdlCompile.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\RdlCompile.compiled
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\delete.png
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\update.png
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Resources\LogoKirvitMapaBits.bmp
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.config
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.manifest
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.application
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.DirectShow.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll.config
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Base.F_Base.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPreguntas.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaVFCRUD.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulCRUD.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPrincipal.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReporteEvaluaciones.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\RdlCompile.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\RdlCompile.compiled
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.TrustInfo.xml
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe.manifest
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.application
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.Shared.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\FlashControlV71.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\ShockwaveFlashObjects.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\stdole.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.informacion.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\delete.png
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\update.png
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Resources\LogoKirvitMapaBits.bmp
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.config
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.manifest
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.application
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportSource.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.Shared.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.Windows.Forms.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\FlashControlV71.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.DirectShow.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\ShockwaveFlashObjects.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\stdole.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll.config
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Base.F_Base.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.informacion.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPreguntas.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaVFCRUD.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulCRUD.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPrincipal.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReporteEvaluaciones.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\RdlCompile.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\RdlCompile.compiled
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.TrustInfo.xml
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe.manifest
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.application
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReportes.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\delete.png
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\update.png
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Resources\LogoKirvitMapaBits.bmp
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.config
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.manifest
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.application
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.Speech.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll.config
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Base.F_Base.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReportes.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.informacion.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPreguntas.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaVFCRUD.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulCRUD.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPrincipal.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReporteEvaluaciones.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.TrustInfo.xml
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe.manifest
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.application
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CopyComplete
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportSource.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.Shared.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\FlashControlV71.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\ShockwaveFlashObjects.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\stdole.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\delete.png
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\update.png
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Resources\LogoKirvitMapaBits.bmp
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.config
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.manifest
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.application
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportSource.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.Shared.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.Windows.Forms.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\FlashControlV71.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.Common.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.Speech.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.SqlServer.Types.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.DirectShow.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\ShockwaveFlashObjects.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\stdole.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll.config
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Base.F_Base.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReportes.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.informacion.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPreguntas.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaVFCRUD.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulCRUD.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPrincipal.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReporteEvaluaciones.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Properties.Resources.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.TrustInfo.xml
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe.manifest
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.application
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CopyComplete
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\delete.png
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Imagenes\update.png
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Resources\LogoKirvitMapaBits.bmp
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.config
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe.manifest
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.application
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.exe
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\SECK.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.Common.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Microsoft.SqlServer.Types.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.DirectShow.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\AForge.Video.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\ShockwaveFlashObjects.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\stdole.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaNegocio.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\CapaDatos.dll.config
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Impresora.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\bin\Debug\Fotografia.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Base.F_Base.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReportes.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.informacion.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPreguntas.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaVFCRUD.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulCRUD.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPrincipal.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReporteEvaluaciones.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Properties.Resources.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\RdlCompile.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\RdlCompile.compiled
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.TrustInfo.xml
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe.manifest
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.application
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CopyComplete
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb

@@ -1,0 +1,120 @@
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\P69\Fotografia\Fotografia\obj\x86\Debug\Fotografia.csprojResolveAssemblyReference.cache
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\P69\Fotografia\Fotografia\obj\x86\Debug\Fotografia.Foto.resources
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\P69\Fotografia\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\P69\Fotografia\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.Cache
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\simulador\Fotografia.exe
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\simulador\Fotografia.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\P69\Fotografia\Fotografia\obj\x86\Debug\Fotografia.exe
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\P69\Fotografia\Fotografia\obj\x86\Debug\Fotografia.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\simulador\Fotografia.exe
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.Cache
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+C:\Users\INFORMATICA1\Documents\Sebastian Sanchez\TFS\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojResolveAssemblyReference.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CopyComplete
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+D:\1.MANUEL_MORA\KV_IS2\TeamFoundationServices\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CopyComplete
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+D:\KV_IS3\PreguntasYRespuestas\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CopyComplete
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+D:\KV_IS3\workspace.visualstudio\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CopyComplete
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+D:\visual\SistemaDePreguntas\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CopyComplete
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+D:\visual\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CopyComplete
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+C:\Users\Usuario\Desktop\copias\SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.Common.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.SqlServer.Types.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CopyComplete
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+B:\kirvit\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
