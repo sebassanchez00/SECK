@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaDatos.Vo;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -672,6 +673,38 @@ namespace CapaDatos
                 ali = null;
             }
             return ali;
+        }
+
+        /// <summary>
+        ///  Selecciona todas las preguntas desde tabla TME_PREGUNTAS y devuelve lista de Vo
+        /// </summary>
+        /// <returns></returns>
+        public List<VoPregunta> LlevarPreguntasEvaluacionVo()
+        {
+            List<VoPregunta> Lista = new List<VoPregunta>();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "SP_MOSTRAR_PREGUNTAS_EVALUACION";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlDataReader sdr = SqlCmd.ExecuteReader();
+                while (sdr.Read())
+                {
+                    object[] values = new object[sdr.FieldCount];
+                    sdr.GetValues(values);
+                    Lista.Add(new VoPregunta((int)values[0],(int)values[1], (int)values[2], (string)values[3], (byte[])values[4]));
+                }
+            }
+            catch (Exception)
+            {
+                Lista = null;
+            }
+            return Lista;
         }
     }
 }

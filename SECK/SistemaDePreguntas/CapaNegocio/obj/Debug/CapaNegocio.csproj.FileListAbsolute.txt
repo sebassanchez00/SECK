@@ -91,3 +91,17 @@ Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaNegocio.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.Common.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\Microsoft.SqlServer.Types.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\bin\Debug\CapaDatos.dll.config
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\CapaNegocio\obj\Debug\CapaNegocio.pdb

@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Logica\NModeloCuestionario.cs" />
     <Compile Include="NCompetenciaPregunta.cs" />
     <Compile Include="NCompetencias.cs" />
     <Compile Include="NConexion.cs" />

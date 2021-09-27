@@ -118,3 +118,18 @@ Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Fotografia.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.DirectShow.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\AForge.Video.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.Common.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\bin\Debug\Microsoft.SqlServer.Types.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csprojAssemblyReference.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.Properties.Resources.resources
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.GenerateResource.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.csproj.CopyComplete
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Fotografia\obj\x86\Debug\Fotografia.pdb

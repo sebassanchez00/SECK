@@ -255,7 +255,6 @@ namespace CapaPresentacion.Forms.Principal
         bool flag_Empezar = false;
         public int iPregunta = 0;
         ArrayList ALPreguntas_Seleccionadas = new ArrayList();
-        //ArrayList ALRespuestas_Usuario = new ArrayList();
         private void Btn_EmpezarEncuesta_Click(object sender, EventArgs e)
         {
             if (flag_Empezar == false)

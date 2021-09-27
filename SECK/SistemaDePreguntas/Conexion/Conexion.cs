@@ -1,4 +1,5 @@
-﻿using System;
+﻿#define TEST
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Diagnostics;
@@ -9,7 +10,11 @@ namespace CapaDatos
 {
     public class Conexion
     {
-        public static string Cn = Properties.Settings.Default.cn;
+#if TEST
+        public static string Cn = @"Data Source=DESKTOP-RSK4ANF\DESARROLLO;Initial Catalog = BD_Entrenador; Integrated Security = True";
+#else
+        public static string Cn = Properties.Settings.Default.cn;   
+#endif
 
         /// <summary>
         /// Evalua si existe conexoón con la base de datos. Valida el string de conexión.
@@ -19,11 +24,11 @@ namespace CapaDatos
         {
             try
             {
-                using (SqlConnection con_obj = new SqlConnection(Properties.Settings.Default.cn))
+                using (SqlConnection con_obj = new SqlConnection(Conexion.Cn))
                 {
                     con_obj.Open();
                     return true;
-                }
+                }            
             }
             catch (Exception e)
             {
