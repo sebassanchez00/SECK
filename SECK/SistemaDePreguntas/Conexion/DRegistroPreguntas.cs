@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaDatos.Vo;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -85,7 +86,7 @@ namespace CapaDatos
                 ParIDEval.Value = CuestionarioPar.ID_Evaluacion;
                 SqlCmd.Parameters.Add(ParIDEval);
 
-                SqlParameter ParIDPreg= new SqlParameter();
+                SqlParameter ParIDPreg = new SqlParameter();
                 ParIDPreg.ParameterName = "@PREGUNTA";
                 ParIDPreg.SqlDbType = SqlDbType.VarChar;
                 ParIDPreg.Size = -1;
@@ -99,7 +100,7 @@ namespace CapaDatos
                 ParResUsuario.Value = CuestionarioPar.Respuesta_Del_Usuario;
                 SqlCmd.Parameters.Add(ParResUsuario);
 
-                SqlParameter ParResCorr= new SqlParameter();
+                SqlParameter ParResCorr = new SqlParameter();
                 ParResCorr.ParameterName = "@RESPONDIO_CORRECTAMENTE";
                 ParResCorr.SqlDbType = SqlDbType.Bit;
                 ParResCorr.Value = CuestionarioPar.Respondio_Correctamente;
@@ -115,6 +116,72 @@ namespace CapaDatos
                 ID_AutoIncrementado = (int)SqlCmd.ExecuteScalar();
             }
             catch (Exception)
+            {
+
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return ID_AutoIncrementado;
+        }
+
+        /// <summary>
+        /// Inserta registro en tabla TME_CUESTIONARIO y devuelve ID de la fila insertada
+        /// </summary>
+        /// <param name="obj"></param>
+        /// <returns></returns>
+        public int Insertar(VoRegistroPreguntas obj)
+        {
+            int ID_AutoIncrementado = 0;
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "SP_INSERTAR_REGISTRO_PREGUNTAS";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParIDEval = new SqlParameter();
+                ParIDEval.ParameterName = "@ID_EVALUACION";
+                ParIDEval.SqlDbType = SqlDbType.VarChar;
+                ParIDEval.Size = 50;
+                ParIDEval.Value = obj.id_Evaluacion;
+                SqlCmd.Parameters.Add(ParIDEval);
+
+                SqlParameter ParIDPreg = new SqlParameter();
+                ParIDPreg.ParameterName = "@PREGUNTA";
+                ParIDPreg.SqlDbType = SqlDbType.VarChar;
+                ParIDPreg.Size = -1;
+                ParIDPreg.Value = obj.pregunta;
+                SqlCmd.Parameters.Add(ParIDPreg);
+
+                SqlParameter ParResUsuario = new SqlParameter();
+                ParResUsuario.ParameterName = "@RESPUESTA_DEL_USUARIO";
+                ParResUsuario.SqlDbType = SqlDbType.VarChar;
+                ParResUsuario.Size = -1;
+                ParResUsuario.Value = obj.respuestaDelUsuario;
+                SqlCmd.Parameters.Add(ParResUsuario);
+
+                SqlParameter ParResCorr = new SqlParameter();
+                ParResCorr.ParameterName = "@RESPONDIO_CORRECTAMENTE";
+                ParResCorr.SqlDbType = SqlDbType.Bit;
+                ParResCorr.Value = obj.respondioCorrectamente;
+                SqlCmd.Parameters.Add(ParResCorr);
+
+                SqlParameter ParImg = new SqlParameter();
+                ParImg.ParameterName = "@IMAGEN";
+                ParImg.SqlDbType = SqlDbType.VarBinary;
+                ParImg.Size = -1;
+                ParImg.Value = obj.imagen;
+                SqlCmd.Parameters.Add(ParImg);
+
+                ID_AutoIncrementado = (int)SqlCmd.ExecuteScalar();
+            }
+            catch (Exception ex)
             {
 
             }

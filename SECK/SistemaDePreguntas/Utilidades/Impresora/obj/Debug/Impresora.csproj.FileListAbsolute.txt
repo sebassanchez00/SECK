@@ -82,3 +82,14 @@ Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CopyComplete
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Impresora.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.Common.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.ReportViewer.WinForms.DLL
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\bin\Debug\Microsoft.SqlServer.Types.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csprojAssemblyReference.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CoreCompileInputs.cache
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.csproj.CopyComplete
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.dll
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\Utilidades\Impresora\obj\Debug\Impresora.pdb

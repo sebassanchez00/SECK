@@ -11,7 +11,7 @@ namespace CapaNegocio
     public class NORegistroOpcionesPreguntas
     {
         /// <summary>
-        /// Inserta una opcion respuesta de la evaluacion que se creó y retonra el id de la fila insertada
+        /// Inserta una opcion respuesta de la evaluacion que se creó y retorna el id de la fila insertada
         /// </summary>
         /// <param name="ID_Pregunta"></param>
         /// <returns></returns>

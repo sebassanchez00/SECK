@@ -7,17 +7,19 @@ namespace CapaDatos.Vo
 {
     public class VoPregunta
     {
-        public int ID { get; set; }
-        public int ID_Tema { get; set; }
-        public int ID_TipoPregunta { get; set; }
+        public short Id { get; set; }
+        public short Id_Tema { get; set; }
+        public short Id_TipoPregunta  { get; set; }
         public string Enunciado { get; set; }
-        public Byte[] Imagen { get; set; }
+        public byte[] Imagen { get; set; }
 
-        public VoPregunta(int iD, int iD_Tema, int iD_TipoPregunta, string enunciado, byte[] imagen)
+        public VoPregunta() { }
+
+        public VoPregunta(short id, short id_Tema, short id_TipoPregunta, string enunciado, byte[] imagen)
         {
-            ID = iD;
-            ID_Tema = iD_Tema;
-            ID_TipoPregunta = iD_TipoPregunta;
+            Id = id;
+            Id_Tema = id_Tema;
+            Id_TipoPregunta = id_TipoPregunta;
             Enunciado = enunciado;
             Imagen = imagen;
         }

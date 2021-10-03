@@ -82,9 +82,9 @@ namespace CapaDatos
         }
     
         /// <summary>
-        /// Consulta la respuesta de la pregunta que se consulta
+        /// Consulta la respuesta como string, de la pregunta que se consulta
         /// </summary>
-        /// <param name="ID_Pregunta"></param>
+        /// <param name="ID_Pregunta">ID de la pregunta a consultar</param>
         /// <returns></returns>
         public string MostrarOpcionCorrecta(short ID_Pregunta)
         {

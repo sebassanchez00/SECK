@@ -1,5 +1,7 @@
-﻿using CapaPresentacion.Forms.CRUD;
+﻿#define TEST
+using CapaPresentacion.Forms.CRUD;
 using CapaNegocio;
+using CapaNegocio.Logica;
 using Fotografia;
 using Impresora;
 using Microsoft.Speech.Synthesis;
@@ -94,6 +96,9 @@ namespace CapaPresentacion.Forms.Principal
             this.tabc_Contenedor.TabPages.Remove(tp_Presentacion);
             this.tabc_Contenedor.TabPages.Add(tp_Usuario);
             this.tb_CCConductor.Focus();
+#if TEST
+            this.tb_CCConductor.Text = "1093214430";
+#endif
         }
         #endregion
 
@@ -208,6 +213,10 @@ namespace CapaPresentacion.Forms.Principal
         Timer TCamara;
         private void btn_SigUsuario_Click(object sender, EventArgs e)
         {
+#if TEST
+            this.tabc_Contenedor.TabPages.Remove(tp_Usuario);
+            this.tabc_Contenedor.TabPages.Add(tp_Cuestionario);
+#else
             this.tabc_Contenedor.TabPages.Remove(tp_Usuario);
             this.tabc_Contenedor.TabPages.Add(tp_Biometria);
             btn_Sig_Usuario.Visible = false;
@@ -221,6 +230,7 @@ namespace CapaPresentacion.Forms.Principal
                 TCamara.Start();
                 btn_Capturar.Visible = true;
             }
+#endif
         }
         #endregion
 
@@ -254,7 +264,10 @@ namespace CapaPresentacion.Forms.Principal
         #region Tab Preguntas
         bool flag_Empezar = false;
         public int iPregunta = 0;
-        ArrayList ALPreguntas_Seleccionadas = new ArrayList();
+        //ArrayList ALPreguntas_Seleccionadas = new ArrayList();
+        NModeloCuestionario Cuestionario_obj;
+        NModeloCalificador Calificador_obj;
+
         private void Btn_EmpezarEncuesta_Click(object sender, EventArgs e)
         {
             if (flag_Empezar == false)
@@ -294,29 +307,20 @@ namespace CapaPresentacion.Forms.Principal
         }
 
         /// <summary>
-        /// Construye un cuestionario aleatorio en ALPreguntas_Seleccionadas
+        /// Construye un cuestionario aleatorio en Cuestionario_obj
         /// </summary>
         private int ArmarCuestionarioAleatorio()
         {
-            Random rnd = new Random();
-            ArrayList LTodasLasPreguntas = NPregunta.LLevarPreguntasEvaluacion();
-            if (NumPreguntasConfiguradas > LTodasLasPreguntas.Count)
-                return -1;
-
-            for (int i = 1; i <= NumPreguntasConfiguradas; i++)
+            try
             {
-                int RandomIndex = rnd.Next(0, LTodasLasPreguntas.Count);
-                object[] n = (object[])LTodasLasPreguntas[RandomIndex];
-                short idpregunta = (short)n[0];
-
-                if (ALPreguntas_Seleccionadas.Contains(idpregunta))
-                {
-                    i--;
-                }
-                else
-                {
-                    ALPreguntas_Seleccionadas.Add(idpregunta);
-                }
+                Cuestionario_obj = new NModeloCuestionario();
+                Calificador_obj = new NModeloCalificador();
+                //Al tiempo de crear el cuestionario, crea el calificador con la misma lista
+                Calificador_obj.alimentarDesdeListaVoPregunta(Cuestionario_obj.L_TodasLasPreguntasAleatorias);
+            }
+            catch(Exception ex)
+            {
+                return -1;
             }
             return 0;
         }
@@ -347,21 +351,19 @@ namespace CapaPresentacion.Forms.Principal
         /// <summary>
         /// Dibuja las preguntas deacuerdo a su posicion en lista
         /// </summary>
-        /// <param name="indice">La posicion de la pregunra dentro de AL_ListaAleat</param>
+        /// <param name="indice">La posicion de la pregunta </param>
         void PintarPregunta(int indice)
         {
             LimpiarTLP();
-            short auxID = (short)ALPreguntas_Seleccionadas[indice];                 //ID de la lista aleatoria
-            ArrayList Pregunta = NPregunta.LLevarIdPreguntas(auxID);                //Lee pregunta con el ID desde BD
-            object[] ObjPreguntaRecuperada = (object[])Pregunta[0];                 //Extrae la pregunta del arrayList
-            string auxTipoPregunta = (string)ObjPreguntaRecuperada[1];              //Lee el tipo de pregunta
-            string auxTextoPregunta = (string)ObjPreguntaRecuperada[3];             //Recupera el tipo de preguna
+            short auxID = Cuestionario_obj.IdPreguntaDesdeIndice(indice);                           //ID de la pregunta
+            string auxTipoPregunta = Cuestionario_obj.EnunciadoTipoPreguntaDesdeIndice(indice);     //Recupera el enunciado del tipo de pregunta                      
+            string auxEnunciado = Cuestionario_obj.EnunciadoPreguntaDesdeIndice(indice);            //Recupera el enunciado de pregunta
 
             //Título de la pregunta
-            tlp.Controls.Add(CrearLabel(auxTextoPregunta), 0, 0);
-
+            tlp.Controls.Add(CrearLabel(auxEnunciado), 0, 0);
+            
             //Botón audio del título
-            tlp.Controls.Add(CrearBotonAudio(auxTextoPregunta), 1, 0);
+            tlp.Controls.Add(CrearBotonAudio(auxEnunciado), 1, 0);
 
             //Dependiendo del tipo de pregunta asigna las opciones y contruye los controles
             switch (auxTipoPregunta)
@@ -380,7 +382,7 @@ namespace CapaPresentacion.Forms.Principal
                     }
 
                     Byte[] data = new Byte[0];                  //
-                    data = (Byte[])(ObjPreguntaRecuperada[4]);  // Carga imagen desde BD al PictureBox
+                    data = Cuestionario_obj.ImagenPreguntaDesdeIndice(auxID);  // Carga imagen desde BD al PictureBox
                     MemoryStream mem = new MemoryStream(data);  //
                     pb_Imagen.Image = Image.FromStream(mem);    //
                     pb_Imagen.Visible = true;                   //
@@ -424,12 +426,11 @@ namespace CapaPresentacion.Forms.Principal
 
                     break;
             }
-
             lbl_ProgresoTest.Text = string.Format("{0:00}/{1:00}", indice + 1, NumPreguntasConfiguradas);
         }
 
         /// <summary>
-        /// Alimenta ALRespuestas_Usuario con respuestas de usuario
+        /// Alimenta Calificador_obj con respuestas de usuario
         /// </summary>
         void CapturarResultado()
         {
@@ -440,13 +441,13 @@ namespace CapaPresentacion.Forms.Principal
                     //Captura texto del radio seleccionado
                     RadioButton auxRB = (RadioButton)ctrl;
                     if (auxRB.Checked == true)
-                        AL_Respuestas_Usuario.Add(auxRB.Text);
+                        Calificador_obj.agregarRespuesta((short)iPregunta,auxRB.Text);
                 }
                 if (ctrl is TextBox)
                 {
                     //Captura texto del textbox
                     TextBox auxtb = (TextBox)ctrl;
-                    AL_Respuestas_Usuario.Add(auxtb.Text);
+                    Calificador_obj.agregarRespuesta((short)iPregunta, auxtb.Text);
                 }
             }
         }
@@ -553,38 +554,15 @@ namespace CapaPresentacion.Forms.Principal
         {
             timer.Stop();
 
-            int NumContestadas = AL_Respuestas_Usuario.Count;
-            int respuestacorrecta = 0;
-            int respuestaincorrecta = 0;
-            int Puntaje = 0;
-
-            for (int m = 0; m < NumContestadas; m++)
-            {
-                short auxIDPregunta = (short)ALPreguntas_Seleccionadas[m];
-                string auxRtaCorrecta = NOpcionesRespuesta.MostrarOpcionCorrecta(auxIDPregunta);
-                string auxRtaUsuario = AL_Respuestas_Usuario[m].ToString();
-
-                if (auxRtaCorrecta == auxRtaUsuario)
-                {
-                    respuestacorrecta++;
-                }
-                else
-                {
-                    respuestaincorrecta++;
-                }
-            }
-            Puntaje = (respuestacorrecta * 10) / NumPreguntasConfiguradas;
-
             Btn_EmpezarEncuesta.Enabled = false;
             Btn_EmpezarEncuesta.Text = "Finalizado";
             btn_Sig_Cuestionario.Visible = true;
 
-            //Muestra el resultado en form
-            lbl_cantidadPreg.Text = NumPreguntasConfiguradas.ToString();
-            lbl_PreguntasRespondidas.Text = NumContestadas.ToString();
-            lbl_RespuestasCorrectas.Text = respuestacorrecta.ToString();
-            lbl_RespuestasIncorrectas.Text = respuestaincorrecta.ToString();
-            lbl_Calificacion.Text = string.Format("{0:00}/10 ", Puntaje);
+            lbl_cantidadPreg.Text = Calificador_obj.numTotalPreguntas.ToString();
+            lbl_PreguntasRespondidas.Text = Calificador_obj.numContestadas.ToString();
+            lbl_RespuestasCorrectas.Text = Calificador_obj.numCorrectas.ToString();
+            lbl_RespuestasIncorrectas.Text = Calificador_obj.numIncorrectas.ToString();
+            lbl_Calificacion.Text = string.Format("{0:00}/10 ", Calificador_obj.Puntaje.ToString());
             lbl_campana.Text = Properties.Settings.Default.NombreCampaña;
             lbl_nombres.Text = ccEvaluado.Nombres;
             lbl_apellidos.Text = ccEvaluado.Apellidos;
@@ -593,8 +571,12 @@ namespace CapaPresentacion.Forms.Principal
             byte[] Aux_Imagen;
             using (MemoryStream ms = new MemoryStream())
             {
+#if TEST
+                Aux_Imagen = null;
+#else
                 pb_Captura.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
                 Aux_Imagen = ms.ToArray();
+#endif
             }
 
             //Guarda la evaluación
@@ -604,36 +586,14 @@ namespace CapaPresentacion.Forms.Principal
                 Aux_Imagen, 
                 Properties.Settings.Default.DescripcionEval, 
                 Properties.Settings.Default.Ciudad, 
-                NumPreguntasConfiguradas, 
-                respuestacorrecta, 
-                NumContestadas, 
-                Puntaje, 
+                NumPreguntasConfiguradas,
+                Calificador_obj.numCorrectas,
+                Calificador_obj.numContestadas,
+                Calificador_obj.Puntaje, 
                 new TimeSpan(0, Properties.Settings.Default.MinEval, Properties.Settings.Default.SegEval));
 
             //Guarda las respuestas del usuario
-            for (int m = 0; m < NumContestadas; m++)
-            {
-                short auxID = (short)ALPreguntas_Seleccionadas[m];                          //ID de la lista aleatoria                 
-                ArrayList Pregunta = NPregunta.LLevarIdPreguntas(auxID);                    //Lee pregunta con el ID desde BD
-                object[] ObjPreguntaRecuperada = (object[])Pregunta[0];                     //Extrae la pregunta del arrayList
-                string Enunciado = (string)ObjPreguntaRecuperada[3];                        //Recupera enunciado pregunta
-                byte[] ImgPregunta = ObjPreguntaRecuperada[4] is System.DBNull ? 
-                    null : (byte[])ObjPreguntaRecuperada[4];                                //Recupera la imagen de la pregunta
-                string auxRtaUsuario = AL_Respuestas_Usuario[m].ToString();                 //Recupera respuesta pregunta
-                string auxRtaCorrecta = NOpcionesRespuesta.MostrarOpcionCorrecta(auxID);    //Recupera la opcion correcta de la pregunta
-                bool RespondioCorrectamente = (auxRtaUsuario == auxRtaCorrecta);
-
-                int id_Cuestionario = NRegistroPreguntas.Insertar(Lbl_IDReportes.Text, Enunciado, auxRtaUsuario, RespondioCorrectamente, ImgPregunta);
-
-                //Guarda las opciones que tuvo el usuario
-                DataTable auxdt = NOpcionesRespuesta.MostrarporId(auxID);
-                foreach (DataRow dr in auxdt.Rows)
-                {
-                    string Aux_Enunc_Opcion = dr["Enunciado"].ToString();
-                    bool Aux_Es_Correcta = (bool)dr["Es_Correcta"];
-                    NORegistroOpcionesPreguntas.Insertar(id_Cuestionario, Aux_Enunc_Opcion, Aux_Es_Correcta);
-                }
-            }
+            Calificador_obj.almacenarRespuestasUsuario(Lbl_IDReportes.Text);
         }
 
         private void btn_SigCuestionario_Click(object sender, EventArgs e)
@@ -641,7 +601,7 @@ namespace CapaPresentacion.Forms.Principal
             this.tabc_Contenedor.TabPages.Remove(tp_Cuestionario);
             this.tabc_Contenedor.TabPages.Add(tp_Resultado);
         }
-        #endregion
+#endregion
 
         #region Tab Resultados
         private void btn_Imprimir_Click(object sender, EventArgs e)
@@ -726,7 +686,7 @@ namespace CapaPresentacion.Forms.Principal
         {
             this.Close();
         }
-        #endregion
+#endregion
 
         private void FPreguntas_FormClosing(object sender, FormClosingEventArgs e)
         {

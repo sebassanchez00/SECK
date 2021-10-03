@@ -9,7 +9,6 @@ namespace CapaDatos
 {
   public   class DRespuestasEvaluacion
     {
-
         private string _IdRespuestaeval;
         private string _IdReporte;
         private string _IdevalConstruida;

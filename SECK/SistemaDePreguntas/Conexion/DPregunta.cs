@@ -644,6 +644,49 @@ namespace CapaDatos
         }
 
         /// <summary>
+        /// Selecciona pregunta por ID desde tabla TME_PREGUNTAS. Tienen sus FK formateadas
+        /// </summary>
+        /// <param name="IdPreguntas"></param>
+        /// <returns></returns>
+        public object[] LlevarIdPregunta(short IdPreguntas)
+        {
+            object[] rta = null;
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "SP_MOSTRAR_PREGUNTAS_POR_ID";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParId = new SqlParameter();
+                ParId.ParameterName = "@ID_PREGUNTA";
+                ParId.SqlDbType = SqlDbType.SmallInt;
+                ParId.Value = IdPreguntas;
+                SqlCmd.Parameters.Add(ParId);
+
+                SqlDataReader sdr = SqlCmd.ExecuteReader();
+                while (sdr.Read())
+                {
+                    rta = new object[sdr.FieldCount];
+                    rta[0] = sdr.GetInt16(0);
+                    rta[1] = sdr.GetString(1);
+                    rta[2] = sdr.GetString(2);
+                    rta[3] = sdr.GetString(3);
+                    byte[] auxByte;
+                    auxByte = sdr.GetValue(4) is DBNull ? null : (byte[])sdr.GetValue(4);
+                }
+            }
+            catch (Exception ex)
+            {
+                rta = null;
+            }
+            return rta;
+        }
+
+        /// <summary>
         ///  Selecciona todas las preguntas desde tabla
         /// </summary>
         /// <returns></returns>
@@ -695,12 +738,23 @@ namespace CapaDatos
                 SqlDataReader sdr = SqlCmd.ExecuteReader();
                 while (sdr.Read())
                 {
-                    object[] values = new object[sdr.FieldCount];
-                    sdr.GetValues(values);
-                    Lista.Add(new VoPregunta((int)values[0],(int)values[1], (int)values[2], (string)values[3], (byte[])values[4]));
+                    //object[] values = new object[sdr.FieldCount];
+                    //sdr.GetValues(values);
+                    //Valida si tiene DBnull, en caso de que sí asigna null normal al campo.
+                    byte[] auxByte;
+                    auxByte = sdr.GetValue(4) is DBNull ? null : (byte[])sdr.GetValue(4);
+
+                    Lista.Add(
+                        new VoPregunta(
+                            sdr.GetInt16(0),
+                            sdr.GetInt16(1),
+                            sdr.GetInt16(2),
+                            sdr.GetString(3),
+                            auxByte)
+                        );
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
                 Lista = null;
             }
