@@ -185,6 +185,8 @@ namespace CapaNegocio.Logica
         /// <returns></returns>
         public byte[] ImagenPreguntaDesdeIndice(int i)
         {
+            //VoPregunta vo = L_TodasLasPreguntas.FirstOrDefault(v => v.Id == (short)i);
+            //return vo.Imagen;
             return L_TodasLasPreguntasAleatorias[i].Imagen;
         }
     }

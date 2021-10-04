@@ -34,7 +34,11 @@ namespace CapaNegocio.Logica
         }
         public int numIncorrectas
         {
-            get { return this.numContestadas_ - this.numCorrectas; }
+            get
+            {
+                numIncorrectas_ = this.numContestadas_ - this.numCorrectas;
+                return numIncorrectas_;
+            }
         }
         public int numTotalPreguntas
         {
@@ -53,7 +57,7 @@ namespace CapaNegocio.Logica
         DOpcionesRespuesta DOpcionesRespuesta_obj;
         DPregunta DPregunta_obj;
         DRegistroPreguntas DRegistroPreguntas_obj;
-        DORegistroOpcionesPreguntas ORegistroOpcionesPreguntas_obj; 
+        DORegistroOpcionesPreguntas ORegistroOpcionesPreguntas_obj;
 
         public NModeloCalificador()
         {
@@ -183,8 +187,6 @@ namespace CapaNegocio.Logica
                 }
             }
         }
-
-
 
         public class ModeloRespuesta
         {
