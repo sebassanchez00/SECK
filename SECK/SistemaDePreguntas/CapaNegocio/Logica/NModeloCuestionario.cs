@@ -36,17 +36,16 @@ namespace CapaNegocio.Logica
         DPregunta DPregunta_obj;
         DTipoPregunta DTipoPregunta_obj;
 
-        public NModeloCuestionario()
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="config">Clase configuraciones de la prueba</param>
+        public NModeloCuestionario(NModeloConfiguracionPrueba config)
         {
             DPregunta_obj = new DPregunta();
             DTipoPregunta_obj = new DTipoPregunta();
 
-            NumPreguntasNecesarias = 10;
-            NumPreguntasTemaAspectosGenerales = (NumPreguntasNecesarias * 20) / 100;
-            NumPreguntasTemaComportamientoPeaton = (NumPreguntasNecesarias * 30) / 100;
-            NumPreguntasTemaSeñalesTransito = (NumPreguntasNecesarias * 20) / 100;
-            NumPreguntasTemaRegimenSancionatorio = (NumPreguntasNecesarias * 30) / 100;
-            //Validar que los porcentajes sumen el total de preguntas.
+            CalcularNumeroPreguntas(config);
 
             L_ResultadoAspectosGenerales = new List<VoPregunta>();
             L_ResultadoComportamientoPeaton = new List<VoPregunta>();
@@ -70,6 +69,46 @@ namespace CapaNegocio.Logica
             L_TodasLasPreguntasAleatorias.AddRange(L_ResultadoComportamientoPeaton);
             L_TodasLasPreguntasAleatorias.AddRange(L_ResultadoSeñalesTransito);
             L_TodasLasPreguntasAleatorias.AddRange(L_ResultadoRegimenSancionatorio);
+        }
+
+        void CalcularNumeroPreguntas(NModeloConfiguracionPrueba config)
+        {
+            NumPreguntasNecesarias = config.numeroPreguntas;
+
+            int NumResiduo = NumPreguntasNecesarias % 10;
+            int NumeroEnMultiplos10 = NumPreguntasNecesarias - NumResiduo;
+
+            NumPreguntasTemaAspectosGenerales = (NumeroEnMultiplos10 * 20) / 100;
+            NumPreguntasTemaSeñalesTransito = (NumeroEnMultiplos10 * 20) / 100;
+            NumPreguntasTemaComportamientoPeaton = (NumeroEnMultiplos10 * 30) / 100;
+            NumPreguntasTemaRegimenSancionatorio = (NumeroEnMultiplos10 * 30) / 100;
+
+            //Añade cuncho
+            if (NumResiduo == 9)
+                NumPreguntasTemaRegimenSancionatorio++;
+            if (NumResiduo >= 8)
+                NumPreguntasTemaAspectosGenerales++;
+            if (NumResiduo >= 7)
+                NumPreguntasTemaSeñalesTransito++;
+            if (NumResiduo >= 6)
+                NumPreguntasTemaComportamientoPeaton++;
+            if (NumResiduo >= 5)
+                NumPreguntasTemaRegimenSancionatorio++;
+            if (NumResiduo >= 4)
+                NumPreguntasTemaAspectosGenerales++;
+            if (NumResiduo >= 3)
+                NumPreguntasTemaSeñalesTransito++;
+            if (NumResiduo >= 2)
+                NumPreguntasTemaComportamientoPeaton++;
+            if (NumResiduo >= 1)
+                NumPreguntasTemaRegimenSancionatorio++; 
+        }
+
+        int calcularCantidad(int numTotal, int porcentaje)
+        {
+            //double auxTotal = numTotal;
+            //double auxPorc = porcentaje;
+            return (numTotal * porcentaje) / 100;
         }
 
         /// <summary>

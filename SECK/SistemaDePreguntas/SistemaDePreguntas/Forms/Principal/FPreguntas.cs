@@ -35,8 +35,9 @@ namespace CapaPresentacion.Forms.Principal
         {
             InitializeComponent();
             ccEvaluado = new Cedula();
-            Configuracion_obj = new NModeloConfiguracionPrueba();
-            Configuracion_obj.numeroPreguntas = Properties.Settings.Default.NumPreguntas;
+            Configuracion_obj = new NModeloConfiguracionPrueba(Properties.Settings.Default.NumPreguntas);
+            //Configuracion_obj.numeroPreguntas = Properties.Settings.Default.NumPreguntas;
+            Configuracion_obj.setLicenciaPorDefectoDeseInt(Properties.Settings.Default.LicenciaPorDefecto);
         }
 
         private void FPreguntas_Load(object sender, EventArgs e)
@@ -310,7 +311,7 @@ namespace CapaPresentacion.Forms.Principal
         {
             try
             {
-                Cuestionario_obj = new NModeloCuestionario();
+                Cuestionario_obj = new NModeloCuestionario(Configuracion_obj);
                 Calificador_obj = new NModeloCalificador();
                 //Al tiempo de crear el cuestionario, crea el calificador con la misma lista
                 Calificador_obj.alimentarDesdeListaVoPregunta(Cuestionario_obj.L_TodasLasPreguntasAleatorias);
