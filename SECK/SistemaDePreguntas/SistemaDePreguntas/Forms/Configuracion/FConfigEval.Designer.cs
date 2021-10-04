@@ -38,6 +38,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.cb_LicenciaPorDefecto = new System.Windows.Forms.ComboBox();
+            this.lbl_LicenciaPorDefecto = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.clb = new System.Windows.Forms.CheckedListBox();
             this.tb_rutaLogo = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -59,7 +62,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.tb_DescripcionEval = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.SuspendLayout();
@@ -72,7 +74,7 @@
             this.lbl_NPreguntas.ForeColor = System.Drawing.Color.MidnightBlue;
             this.lbl_NPreguntas.Location = new System.Drawing.Point(32, 91);
             this.lbl_NPreguntas.Name = "lbl_NPreguntas";
-            this.lbl_NPreguntas.Size = new System.Drawing.Size(239, 26);
+            this.lbl_NPreguntas.Size = new System.Drawing.Size(239, 28);
             this.lbl_NPreguntas.TabIndex = 0;
             this.lbl_NPreguntas.Text = "Número de preguntas:";
             // 
@@ -84,7 +86,7 @@
             this.label2.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label2.Location = new System.Drawing.Point(32, 135);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(208, 26);
+            this.label2.Size = new System.Drawing.Size(208, 28);
             this.label2.TabIndex = 1;
             this.label2.Text = "Tiempo evaluación:";
             // 
@@ -126,7 +128,7 @@
             "30"});
             this.cb_NPreguntas.Location = new System.Drawing.Point(323, 87);
             this.cb_NPreguntas.Name = "cb_NPreguntas";
-            this.cb_NPreguntas.Size = new System.Drawing.Size(67, 34);
+            this.cb_NPreguntas.Size = new System.Drawing.Size(67, 36);
             this.cb_NPreguntas.TabIndex = 3;
             // 
             // cb_MinEval
@@ -200,7 +202,7 @@
             "59"});
             this.cb_MinEval.Location = new System.Drawing.Point(401, 131);
             this.cb_MinEval.Name = "cb_MinEval";
-            this.cb_MinEval.Size = new System.Drawing.Size(70, 34);
+            this.cb_MinEval.Size = new System.Drawing.Size(70, 36);
             this.cb_MinEval.TabIndex = 6;
             // 
             // cb_SegEval
@@ -274,7 +276,7 @@
             "59"});
             this.cb_SegEval.Location = new System.Drawing.Point(590, 131);
             this.cb_SegEval.Name = "cb_SegEval";
-            this.cb_SegEval.Size = new System.Drawing.Size(70, 34);
+            this.cb_SegEval.Size = new System.Drawing.Size(70, 36);
             this.cb_SegEval.TabIndex = 7;
             // 
             // label1
@@ -285,7 +287,7 @@
             this.label1.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label1.Location = new System.Drawing.Point(323, 135);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 26);
+            this.label1.Size = new System.Drawing.Size(52, 28);
             this.label1.TabIndex = 8;
             this.label1.Text = "Min";
             // 
@@ -297,7 +299,7 @@
             this.label3.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label3.Location = new System.Drawing.Point(512, 135);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 26);
+            this.label3.Size = new System.Drawing.Size(49, 28);
             this.label3.TabIndex = 9;
             this.label3.Text = "Seg";
             // 
@@ -310,9 +312,9 @@
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Guardar.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Guardar.ForeColor = System.Drawing.Color.White;
-            this.btn_Guardar.Location = new System.Drawing.Point(865, 81);
+            this.btn_Guardar.Location = new System.Drawing.Point(1105, 81);
             this.btn_Guardar.Name = "btn_Guardar";
-            this.btn_Guardar.Size = new System.Drawing.Size(104, 36);
+            this.btn_Guardar.Size = new System.Drawing.Size(104, 38);
             this.btn_Guardar.TabIndex = 10;
             this.btn_Guardar.Text = "Guardar";
             this.btn_Guardar.UseVisualStyleBackColor = false;
@@ -322,6 +324,8 @@
             // 
             this.panel1.BackgroundImage = global::CapaPresentacion.Properties.Resources.EspacioBlanco;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Controls.Add(this.cb_LicenciaPorDefecto);
+            this.panel1.Controls.Add(this.lbl_LicenciaPorDefecto);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.clb);
             this.panel1.Controls.Add(this.tb_rutaLogo);
@@ -355,8 +359,107 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1008, 730);
+            this.panel1.Size = new System.Drawing.Size(1248, 778);
             this.panel1.TabIndex = 11;
+            this.panel1.TabStop = true;
+            // 
+            // cb_LicenciaPorDefecto
+            // 
+            this.cb_LicenciaPorDefecto.BackColor = System.Drawing.Color.White;
+            this.cb_LicenciaPorDefecto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_LicenciaPorDefecto.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.cb_LicenciaPorDefecto.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_LicenciaPorDefecto.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.cb_LicenciaPorDefecto.FormattingEnabled = true;
+            this.cb_LicenciaPorDefecto.Items.AddRange(new object[] {
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59"});
+            this.cb_LicenciaPorDefecto.Location = new System.Drawing.Point(323, 696);
+            this.cb_LicenciaPorDefecto.Name = "cb_LicenciaPorDefecto";
+            this.cb_LicenciaPorDefecto.Size = new System.Drawing.Size(215, 36);
+            this.cb_LicenciaPorDefecto.TabIndex = 35;
+            // 
+            // lbl_LicenciaPorDefecto
+            // 
+            this.lbl_LicenciaPorDefecto.AutoSize = true;
+            this.lbl_LicenciaPorDefecto.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_LicenciaPorDefecto.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_LicenciaPorDefecto.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lbl_LicenciaPorDefecto.Location = new System.Drawing.Point(32, 699);
+            this.lbl_LicenciaPorDefecto.Name = "lbl_LicenciaPorDefecto";
+            this.lbl_LicenciaPorDefecto.Size = new System.Drawing.Size(216, 28);
+            this.lbl_LicenciaPorDefecto.TabIndex = 34;
+            this.lbl_LicenciaPorDefecto.Text = "Licencia por defecto";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label13.Location = new System.Drawing.Point(32, 569);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(83, 28);
+            this.label13.TabIndex = 33;
+            this.label13.Text = "Temas:";
             // 
             // clb
             // 
@@ -389,7 +492,7 @@
             this.label12.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label12.Location = new System.Drawing.Point(32, 531);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(120, 26);
+            this.label12.Size = new System.Drawing.Size(120, 28);
             this.label12.TabIndex = 29;
             this.label12.Text = "Ruta Logo:";
             // 
@@ -411,7 +514,7 @@
             this.btn_cargarLogo.ForeColor = System.Drawing.Color.White;
             this.btn_cargarLogo.Location = new System.Drawing.Point(824, 521);
             this.btn_cargarLogo.Name = "btn_cargarLogo";
-            this.btn_cargarLogo.Size = new System.Drawing.Size(145, 36);
+            this.btn_cargarLogo.Size = new System.Drawing.Size(145, 38);
             this.btn_cargarLogo.TabIndex = 27;
             this.btn_cargarLogo.Text = "Cargar Logo";
             this.btn_cargarLogo.UseVisualStyleBackColor = false;
@@ -435,7 +538,7 @@
             this.label11.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label11.Location = new System.Drawing.Point(32, 267);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(202, 26);
+            this.label11.Size = new System.Drawing.Size(202, 28);
             this.label11.TabIndex = 25;
             this.label11.Text = "Nombre Campaña:";
             // 
@@ -457,7 +560,7 @@
             this.label10.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label10.Location = new System.Drawing.Point(32, 487);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(119, 26);
+            this.label10.Size = new System.Drawing.Size(119, 28);
             this.label10.TabIndex = 23;
             this.label10.Text = "Direccion: ";
             // 
@@ -482,7 +585,7 @@
             this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label9.Location = new System.Drawing.Point(32, 443);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(220, 26);
+            this.label9.Size = new System.Drawing.Size(220, 28);
             this.label9.TabIndex = 21;
             this.label9.Text = "Fecha Fin Campaña: ";
             // 
@@ -506,7 +609,7 @@
             this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label8.Location = new System.Drawing.Point(32, 399);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(245, 26);
+            this.label8.Size = new System.Drawing.Size(245, 28);
             this.label8.TabIndex = 19;
             this.label8.Text = "Fecha Inicio Campaña: ";
             // 
@@ -528,7 +631,7 @@
             this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label7.Location = new System.Drawing.Point(32, 355);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(110, 26);
+            this.label7.Size = new System.Drawing.Size(110, 28);
             this.label7.TabIndex = 17;
             this.label7.Text = "Empresa: ";
             // 
@@ -550,7 +653,7 @@
             this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label6.Location = new System.Drawing.Point(32, 311);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(147, 26);
+            this.label6.Size = new System.Drawing.Size(147, 28);
             this.label6.TabIndex = 15;
             this.label6.Text = "Patrocinador:";
             // 
@@ -572,7 +675,7 @@
             this.label5.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label5.Location = new System.Drawing.Point(32, 223);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(94, 26);
+            this.label5.Size = new System.Drawing.Size(94, 28);
             this.label5.TabIndex = 13;
             this.label5.Text = "Ciudad: ";
             // 
@@ -594,27 +697,15 @@
             this.label4.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label4.Location = new System.Drawing.Point(32, 179);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(251, 26);
+            this.label4.Size = new System.Drawing.Size(251, 28);
             this.label4.TabIndex = 11;
             this.label4.Text = "Descripción evaluación:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label13.Location = new System.Drawing.Point(32, 569);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(83, 26);
-            this.label13.TabIndex = 33;
-            this.label13.Text = "Temas:";
             // 
             // FConfigEval
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1248, 778);
             this.Controls.Add(this.panel1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -661,5 +752,7 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.CheckedListBox clb;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_LicenciaPorDefecto;
+        private System.Windows.Forms.ComboBox cb_LicenciaPorDefecto;
     }
 }

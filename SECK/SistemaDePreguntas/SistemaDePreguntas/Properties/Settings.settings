@@ -49,5 +49,8 @@
     <Setting Name="Impresora" Type="System.String" Scope="User">
       <Value Profile="(Default)">BIXOLON SRP-330II</Value>
     </Setting>
+    <Setting Name="LicenciaPorDefecto" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

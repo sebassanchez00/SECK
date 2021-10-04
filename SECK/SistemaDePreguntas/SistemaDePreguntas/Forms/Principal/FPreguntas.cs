@@ -17,15 +17,13 @@ using System.Reflection;
 using System.Text;
 using System.Windows.Forms;
 
-
 namespace CapaPresentacion.Forms.Principal
 {
     public partial class FPreguntas : Form
     {
-        ArrayList AL_Respuestas_Usuario;
-        ArrayList AL_Respuesta_Correcta;
         Cedula ccEvaluado;
-        int NumPreguntasConfiguradas;
+        NModeloConfiguracionPrueba Configuracion_obj;
+        //int NumPreguntasConfiguradas;
 
         TimeSpan TSpanTime;
         Timer timer = new Timer();
@@ -36,14 +34,14 @@ namespace CapaPresentacion.Forms.Principal
         public FPreguntas()
         {
             InitializeComponent();
-            AL_Respuestas_Usuario = new ArrayList();
-            AL_Respuesta_Correcta = new ArrayList();
             ccEvaluado = new Cedula();
+            Configuracion_obj = new NModeloConfiguracionPrueba();
+            Configuracion_obj.numeroPreguntas = Properties.Settings.Default.NumPreguntas;
         }
 
         private void FPreguntas_Load(object sender, EventArgs e)
         {
-            NumPreguntasConfiguradas = Properties.Settings.Default.NumPreguntas;
+            //NumPreguntasConfiguradas = Properties.Settings.Default.NumPreguntas;
             //Configuracion inicial de controles
             if (File.Exists(Properties.Settings.Default.RutaLogo))
             {
@@ -61,7 +59,6 @@ namespace CapaPresentacion.Forms.Principal
             lbl_Tiempo.Text = string.Format("00:{0:00}:{1:00}", Properties.Settings.Default.MinEval, Properties.Settings.Default.SegEval);
 
             this.lbl_Presentacion.Text =
-
             string.Format("Usted está a punto de iniciar la prueba de conocimientos sobre \n"
             + "conducción y seguridad víal. \n"
             + "Elija la respuesta correcta o llene el espacio según la pregunta. \n"
@@ -71,7 +68,7 @@ namespace CapaPresentacion.Forms.Principal
             + "PATROCINADO POR:\n{3}\n\n"
             + "EMPRESA:\n{4}\n\n"
             + "CAMPAÑA:\n{5}\n",
-            NumPreguntasConfiguradas.ToString(),
+            Configuracion_obj.numeroPreguntas.ToString(),
             Properties.Settings.Default.MinEval.ToString(),
             Properties.Settings.Default.SegEval,
             Properties.Settings.Default.Patrocinador,
@@ -116,7 +113,7 @@ namespace CapaPresentacion.Forms.Principal
         {
             //Aquí se lee desde la pistola y se construye la clase cédula con los resultados
             if (e.KeyChar == 45) //
-                
+
                 lbl_leyendo.Visible = true;
 
             if (lbl_leyendo.Visible == true)
@@ -124,8 +121,8 @@ namespace CapaPresentacion.Forms.Principal
                 buffer_char_list.Add(e.KeyChar);
                 //tb_CCConductor.Text = "";
             }
-         
-          
+
+
             if (e.KeyChar == 13)
             {
                 string resultado = new string(buffer_char_list.ToArray());
@@ -137,7 +134,7 @@ namespace CapaPresentacion.Forms.Principal
                     tb_CCConductor.Text = "";
                     LblNombres.Text = string.Empty;
                     LblApellidos.Text = string.Empty;
-                    Lbl_IDReportes.Text = string.Empty; 
+                    Lbl_IDReportes.Text = string.Empty;
                 }
                 else
                 {
@@ -159,7 +156,7 @@ namespace CapaPresentacion.Forms.Principal
 
             int auxCC;
             if (!int.TryParse(tb_CCConductor.Text, out auxCC))
-           {
+            {
                 MessageBox.Show("El formato de cédula no es válido", "Error");
                 return;
             }
@@ -294,7 +291,7 @@ namespace CapaPresentacion.Forms.Principal
 
                 CapturarResultado();
 
-                if (iPregunta + 1 == NumPreguntasConfiguradas)
+                if (iPregunta + 1 == Configuracion_obj.numeroPreguntas)
                 {
                     FinPrueba();
                 }
@@ -318,7 +315,7 @@ namespace CapaPresentacion.Forms.Principal
                 //Al tiempo de crear el cuestionario, crea el calificador con la misma lista
                 Calificador_obj.alimentarDesdeListaVoPregunta(Cuestionario_obj.L_TodasLasPreguntasAleatorias);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 return -1;
             }
@@ -361,7 +358,7 @@ namespace CapaPresentacion.Forms.Principal
 
             //Título de la pregunta
             tlp.Controls.Add(CrearLabel(auxEnunciado), 0, 0);
-            
+
             //Botón audio del título
             tlp.Controls.Add(CrearBotonAudio(auxEnunciado), 1, 0);
 
@@ -426,7 +423,7 @@ namespace CapaPresentacion.Forms.Principal
 
                     break;
             }
-            lbl_ProgresoTest.Text = string.Format("{0:00}/{1:00}", indice + 1, NumPreguntasConfiguradas);
+            lbl_ProgresoTest.Text = string.Format("{0:00}/{1:00}", indice + 1, Configuracion_obj.numeroPreguntas);
         }
 
         /// <summary>
@@ -441,7 +438,7 @@ namespace CapaPresentacion.Forms.Principal
                     //Captura texto del radio seleccionado
                     RadioButton auxRB = (RadioButton)ctrl;
                     if (auxRB.Checked == true)
-                        Calificador_obj.agregarRespuesta((short)iPregunta,auxRB.Text);
+                        Calificador_obj.agregarRespuesta((short)iPregunta, auxRB.Text);
                 }
                 if (ctrl is TextBox)
                 {
@@ -580,16 +577,16 @@ namespace CapaPresentacion.Forms.Principal
             }
 
             //Guarda la evaluación
-            NEvaluacion.Insertar(Lbl_IDReportes.Text, 
-                ccEvaluado.NumeroCedula.ToString(), 
-                DateTime.Now, 
-                Aux_Imagen, 
-                Properties.Settings.Default.DescripcionEval, 
-                Properties.Settings.Default.Ciudad, 
-                NumPreguntasConfiguradas,
+            NEvaluacion.Insertar(Lbl_IDReportes.Text,
+                ccEvaluado.NumeroCedula.ToString(),
+                DateTime.Now,
+                Aux_Imagen,
+                Properties.Settings.Default.DescripcionEval,
+                Properties.Settings.Default.Ciudad,
+                Configuracion_obj.numeroPreguntas,
                 Calificador_obj.numCorrectas,
                 Calificador_obj.numContestadas,
-                Calificador_obj.Puntaje, 
+                Calificador_obj.Puntaje,
                 new TimeSpan(0, Properties.Settings.Default.MinEval, Properties.Settings.Default.SegEval));
 
             //Guarda las respuestas del usuario
@@ -601,7 +598,7 @@ namespace CapaPresentacion.Forms.Principal
             this.tabc_Contenedor.TabPages.Remove(tp_Cuestionario);
             this.tabc_Contenedor.TabPages.Add(tp_Resultado);
         }
-#endregion
+        #endregion
 
         #region Tab Resultados
         private void btn_Imprimir_Click(object sender, EventArgs e)
@@ -679,14 +676,14 @@ namespace CapaPresentacion.Forms.Principal
         }
         private void btn_nuevaPrueba_Click(object sender, EventArgs e)
         {
-            this.Close();              
+            this.Close();
             F.AbrirFormPreguntasConDelay();
         }
         private void btn_cerrar_Click(object sender, EventArgs e)
         {
             this.Close();
         }
-#endregion
+        #endregion
 
         private void FPreguntas_FormClosing(object sender, FormClosingEventArgs e)
         {

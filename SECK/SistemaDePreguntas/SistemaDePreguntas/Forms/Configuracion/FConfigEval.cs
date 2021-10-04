@@ -21,6 +21,7 @@ namespace CapaPresentacion.Forms.Configuracion
         public FConfigEval()
         {
             InitializeComponent();
+            CargarLicencias();
             try
             {
                 cb_MinEval.SelectedItem = Properties.Settings.Default.MinEval.ToString();
@@ -35,6 +36,7 @@ namespace CapaPresentacion.Forms.Configuracion
                 tb_direccion.Text = Properties.Settings.Default.Direccion;
                 tb_nombreCampaña.Text = Properties.Settings.Default.NombreCampaña;
                 tb_rutaLogo.Text = Properties.Settings.Default.RutaLogo;
+                cb_LicenciaPorDefecto.SelectedValue = Properties.Settings.Default.LicenciaPorDefecto;
                 if (File.Exists(Properties.Settings.Default.RutaLogo))
                     pb_logo.Image = Image.FromFile(Properties.Settings.Default.RutaLogo);
             }
@@ -55,6 +57,7 @@ namespace CapaPresentacion.Forms.Configuracion
             tb_direccion.TextChanged += cb_SelectedValueChanged;
             tb_nombreCampaña.TextChanged += cb_SelectedValueChanged;
             tb_rutaLogo.TextChanged += cb_SelectedValueChanged;
+            cb_LicenciaPorDefecto.SelectedValueChanged += cb_SelectedValueChanged;
 
             clb.ItemCheck += clb_ItemCheck;
 
@@ -95,6 +98,15 @@ namespace CapaPresentacion.Forms.Configuracion
             }
         }
 
+        void CargarLicencias()
+        {
+            DataTable rta = NTipoLicencia.Mostrar();
+
+            this.cb_LicenciaPorDefecto.DataSource = rta;
+            this.cb_LicenciaPorDefecto.DisplayMember = "TIPO_LICENCIA";
+            this.cb_LicenciaPorDefecto.ValueMember = "ID";
+        }
+
         private void cb_SelectedValueChanged(object sender, EventArgs e)
         {
             btn_Guardar.Enabled = true;
@@ -122,6 +134,7 @@ namespace CapaPresentacion.Forms.Configuracion
             Properties.Settings.Default.Direccion = tb_direccion.Text;
             Properties.Settings.Default.NombreCampaña = tb_nombreCampaña.Text;
             Properties.Settings.Default.RutaLogo = tb_rutaLogo.Text;
+            Properties.Settings.Default.LicenciaPorDefecto = int.Parse(cb_LicenciaPorDefecto.SelectedValue.ToString());
             if (File.Exists(Properties.Settings.Default.RutaLogo))
                 pb_logo.Image = Image.FromFile(Properties.Settings.Default.RutaLogo);
 
@@ -158,5 +171,6 @@ namespace CapaPresentacion.Forms.Configuracion
                 else { return; }
             }
         }
+
     }
 }
