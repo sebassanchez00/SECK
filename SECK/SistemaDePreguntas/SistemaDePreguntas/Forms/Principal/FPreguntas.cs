@@ -1,4 +1,4 @@
-﻿#define TEST
+﻿//#define TEST
 using CapaPresentacion.Forms.CRUD;
 using CapaNegocio;
 using CapaNegocio.Logica;
@@ -560,7 +560,7 @@ namespace CapaPresentacion.Forms.Principal
             lbl_PreguntasRespondidas.Text = Calificador_obj.numContestadas.ToString();
             lbl_RespuestasCorrectas.Text = Calificador_obj.numCorrectas.ToString();
             lbl_RespuestasIncorrectas.Text = Calificador_obj.numIncorrectas.ToString();
-            lbl_Calificacion.Text = string.Format("{0:00}/10 ", Calificador_obj.Puntaje.ToString());
+            lbl_Calificacion.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeGlobal.ToString());
             lbl_campana.Text = Properties.Settings.Default.NombreCampaña;
             lbl_nombres.Text = ccEvaluado.Nombres;
             lbl_apellidos.Text = ccEvaluado.Apellidos;
@@ -592,7 +592,7 @@ namespace CapaPresentacion.Forms.Principal
                 Configuracion_obj.numeroPreguntas,
                 Calificador_obj.numCorrectas,
                 Calificador_obj.numContestadas,
-                Calificador_obj.Puntaje,
+                Calificador_obj.PuntajeGlobal,
                 new TimeSpan(0, Properties.Settings.Default.MinEval, Properties.Settings.Default.SegEval));
 
             //Guarda las respuestas del usuario
@@ -610,8 +610,7 @@ namespace CapaPresentacion.Forms.Principal
         private void btn_Imprimir_Click(object sender, EventArgs e)
         {
             //Conectar impresora
-            //if (!BXLAPI.ConnectPrinter("BIXOLON SRP-330II"))
-            if (!BXLAPI.ConnectPrinter("Microsoft Print to PDF"))
+            if (!BXLAPI.ConnectPrinter("BIXOLON SRP-330II"))
             {
                 MessageBox.Show("No se pudo conectar con la impresora");
                 return;
@@ -658,12 +657,6 @@ namespace CapaPresentacion.Forms.Principal
                 nPositionY += nTextHeight + nTextHeight / 2;
                 nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "Código Evaluación: " + Lbl_IDReportes.Text, false, 0, true, false);
 
-                //nPositionY += nTextHeight + nTextHeight;
-                //nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 15, "****************************************", false, 0, true, false);
-
-                nPositionY += nTextHeight;
-                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, string.Format("El puntaje de su prueba es: {0:00}", lbl_Calificacion.Text.Trim()), false, 0, true, false);
-
                 nPositionX = 30;
                 nPositionY += nTextHeight + nTextHeight / 2;
                 nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, string.Format("Ciudad: {0}", Properties.Settings.Default.Ciudad), false, 0, true, false);
@@ -674,8 +667,20 @@ namespace CapaPresentacion.Forms.Principal
                 nPositionY += nTextHeight;
                 nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, string.Format("Patrocinado por: {0}", Properties.Settings.Default.Patrocinador), false, 0, true, false);
 
-                //nPositionY += nTextHeight;
-                //nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 15, "****************************************", false, 0, true, false);
+                nPositionY += nTextHeight;
+                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, string.Format("Aspectos Generales: {0:00}", Calificador_obj.PuntajeAspectosGenerales), false, 0, true, false);
+
+                nPositionY += nTextHeight;
+                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, string.Format("Normas de comportamiento: {0:00}", Calificador_obj.PuntajeComportamientoPeaton), false, 0, true, false);
+
+                nPositionY += nTextHeight;
+                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, string.Format("Señales de tránsito: {0:00}", Calificador_obj.PuntajeSenalesTransito), false, 0, true, false);
+
+                nPositionY += nTextHeight;
+                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, string.Format("Régimen sancionatorio: {0:00}", Calificador_obj.PuntajeRegimenSancionatorio), false, 0, true, false);
+
+                nPositionY += nTextHeight;
+                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, string.Format("Calificación final: {0:00}", lbl_Calificacion.Text.Trim()), false, 0, true, false);
 
                 BXLAPI.End_Page();	// End Page
                 BXLAPI.End_Doc();	// End Document      

@@ -18,7 +18,16 @@ namespace CapaNegocio.Logica
         int numCorrectas_;
         int numIncorrectas_;
         int numTotalPreguntas_;
-        float puntaje_;
+        float puntajeGlobal_;
+        float puntajeAspectosGenerales_;
+        float puntajeComportamientoPeaton_;
+        float puntajeSenalesTransito_;
+        float puntajeRegimenSancionatorio_;
+
+        List<VoPregunta> L_PreguntasAspectosGenerales;
+        List<VoPregunta> L_PreguntasComportamientoPeaton;
+        List<VoPregunta> L_PreguntasSeñalesTransito;
+        List<VoPregunta> L_PreguntasTemaRegimenSancionatorio;
 
         public int numContestadas
         {
@@ -44,12 +53,44 @@ namespace CapaNegocio.Logica
         {
             get { return numTotalPreguntas_; }
         }
-        public float Puntaje
+        public float PuntajeGlobal
         {
             get
             {
-                calcularPuntaje();
-                return puntaje_;
+                calcularPuntajeGlobal();
+                return puntajeGlobal_;
+            }
+        }
+        public float PuntajeAspectosGenerales
+        {
+            get
+            {
+                calcularPuntajeAspectosGenerales();
+                return puntajeAspectosGenerales_;
+            }
+        }
+        public float PuntajeComportamientoPeaton
+        {
+            get
+            {
+                calcularPuntajeComportamientoPeaton();
+                return puntajeComportamientoPeaton_;
+            }
+        }
+        public float PuntajeSenalesTransito
+        {
+            get
+            {
+                calcularPuntajeSenalesTransito();
+                return puntajeSenalesTransito_;
+            }
+        }
+        public float PuntajeRegimenSancionatorio
+        {
+            get
+            {
+                calcularPuntajeRegimenSancionatorio();
+                return puntajeRegimenSancionatorio_;
             }
         }
 
@@ -69,7 +110,7 @@ namespace CapaNegocio.Logica
             this.numContestadas_ = 0;
             this.numCorrectas_ = 0;
             this.numTotalPreguntas_ = 0;
-            this.puntaje_ = 0.0F;
+            this.puntajeGlobal_ = 0.0F;
         }
 
         /// <summary>
@@ -148,15 +189,35 @@ namespace CapaNegocio.Logica
         /// Calula el puntaje según respuestas dadas.
         /// </summary>
         /// <returns></returns>
-        public double calcularPuntaje()
+        public double calcularPuntajeGlobal()
         {
             calcularRespuestasCorrectas();
-            this.puntaje_ = (this.numCorrectas_ * 10) / (this.numTotalPreguntas_);
-            return puntaje_;
+            this.puntajeGlobal_ = (this.numCorrectas_ * 10) / (this.numTotalPreguntas_);
+            return puntajeGlobal_;
+        }
+
+        public double calcularPuntajeAspectosGenerales()
+        {
+            return 5.0;
+        }
+
+        public double calcularPuntajeComportamientoPeaton()
+        {
+            return 9.5;
+        }
+
+        public double calcularPuntajeSenalesTransito()
+        {
+            return 8.0;
+        }
+
+        public double calcularPuntajeRegimenSancionatorio()
+        {
+            return 10.0;
         }
 
         /// <summary>
-        /// Almacena las respuestas de usuairo incluyendo los encunciados y el puntaje
+        /// Almacena las respuestas de usuario en BD incluyendo los encunciados y el puntaje
         /// </summary>
         /// <param name="IdEvaluacion">El ID que debe tener el registro de respuestas</param>
         public void almacenarRespuestasUsuario(string IdEvaluacion)
