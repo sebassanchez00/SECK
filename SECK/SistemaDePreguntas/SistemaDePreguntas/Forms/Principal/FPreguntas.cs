@@ -610,7 +610,8 @@ namespace CapaPresentacion.Forms.Principal
         private void btn_Imprimir_Click(object sender, EventArgs e)
         {
             //Conectar impresora
-            if (!BXLAPI.ConnectPrinter("BIXOLON SRP-330II"))
+            //if (!BXLAPI.ConnectPrinter("BIXOLON SRP-330II"))
+            if (!BXLAPI.ConnectPrinter("Microsoft Print to PDF"))
             {
                 MessageBox.Show("No se pudo conectar con la impresora");
                 return;

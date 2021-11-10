@@ -71,6 +71,10 @@ namespace CapaNegocio.Logica
             L_TodasLasPreguntasAleatorias.AddRange(L_ResultadoRegimenSancionatorio);
         }
 
+        /// <summary>
+        /// Calcula la cantidad de preguntas por cada tema para cumplir la distribución 20%, 20%, 30%, 30%
+        /// </summary>
+        /// <param name="config">Clase configuracion prueba que tiene la cantidad de preguntas.</param>
         void CalcularNumeroPreguntas(NModeloConfiguracionPrueba config)
         {
             NumPreguntasNecesarias = config.numeroPreguntas;
@@ -104,12 +108,12 @@ namespace CapaNegocio.Logica
                 NumPreguntasTemaRegimenSancionatorio++; 
         }
 
-        int calcularCantidad(int numTotal, int porcentaje)
-        {
-            //double auxTotal = numTotal;
-            //double auxPorc = porcentaje;
-            return (numTotal * porcentaje) / 100;
-        }
+        //int calcularCantidad(int numTotal, int porcentaje)
+        //{
+        //    //double auxTotal = numTotal;
+        //    //double auxPorc = porcentaje;
+        //    return (numTotal * porcentaje) / 100;
+        //}
 
         /// <summary>
         /// Construye una lista aleatoria a partir de la lista suministrada
