@@ -1,4 +1,4 @@
-﻿//#define TEST
+﻿#define TEST
 using CapaPresentacion.Forms.CRUD;
 using CapaNegocio;
 using CapaNegocio.Logica;
@@ -597,6 +597,13 @@ namespace CapaPresentacion.Forms.Principal
 
             //Guarda las respuestas del usuario
             Calificador_obj.almacenarRespuestasUsuario(Lbl_IDReportes.Text);
+#if TEST
+            float aux;
+            aux = Calificador_obj.PuntajeAspectosGenerales;
+            aux = Calificador_obj.PuntajeComportamientoPeaton;
+            aux = Calificador_obj.PuntajeRegimenSancionatorio;
+            aux = Calificador_obj.PuntajeSenalesTransito;
+#endif
         }
 
         private void btn_SigCuestionario_Click(object sender, EventArgs e)

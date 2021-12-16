@@ -57,39 +57,39 @@ namespace CapaNegocio.Logica
         {
             get
             {
-                calcularPuntajeGlobal();
-                return puntajeGlobal_;
+                this.puntajeGlobal_ = calcularPuntajeGlobal();
+                return this.puntajeGlobal_;
             }
         }
         public float PuntajeAspectosGenerales
         {
             get
             {
-                calcularPuntajeAspectosGenerales();
-                return puntajeAspectosGenerales_;
+                this.puntajeAspectosGenerales_ = calcularPuntajePorTema(Tema.Aspectos_Generales);
+                return this.puntajeAspectosGenerales_;
             }
         }
         public float PuntajeComportamientoPeaton
         {
             get
             {
-                calcularPuntajeComportamientoPeaton();
-                return puntajeComportamientoPeaton_;
+                this.puntajeComportamientoPeaton_ = calcularPuntajePorTema(Tema.Comportamiento_Peaton);
+                return this.puntajeComportamientoPeaton_;
             }
         }
         public float PuntajeSenalesTransito
         {
             get
             {
-                calcularPuntajeSenalesTransito();
-                return puntajeSenalesTransito_;
+                this.puntajeSenalesTransito_ = calcularPuntajePorTema(Tema.Senales_Transito);
+                return this.puntajeSenalesTransito_;
             }
         }
         public float PuntajeRegimenSancionatorio
         {
             get
             {
-                calcularPuntajeRegimenSancionatorio();
+                this.puntajeRegimenSancionatorio_ = calcularPuntajePorTema(Tema.Regimen_Sancionatorio);
                 return puntajeRegimenSancionatorio_;
             }
         }
@@ -140,6 +140,7 @@ namespace CapaNegocio.Logica
                     new ModeloRespuesta()
                     {
                         IdDePregunta = p.Id,
+                        IDTema = p.Id_Tema,
                         respuestaCorrecta = auxRtaCorrecta,
                         respuestaEscogida = string.Empty,
                         EsCorrecta = false
@@ -189,35 +190,34 @@ namespace CapaNegocio.Logica
         /// Calula el puntaje según respuestas dadas.
         /// </summary>
         /// <returns></returns>
-        public double calcularPuntajeGlobal()
+        public float calcularPuntajeGlobal()
         {
             calcularRespuestasCorrectas();
-            this.puntajeGlobal_ = (this.numCorrectas_ * 10) / (this.numTotalPreguntas_);
-            return puntajeGlobal_;
+            float res = (this.numCorrectas_ * 10) / (this.numTotalPreguntas_);
+            return res;
         }
 
-        public double calcularPuntajeAspectosGenerales()
+        public float calcularPuntajePorTema(Tema ID_Tema)
         {
-            return 5.0;
-        }
+            //List<VoPregunta> L_Preguntas = DPregunta_obj.LlevarPreguntasEvaluacionVo();
+            var L_AG = L_Respuestas.Where(x => x.IDTema == (short)ID_Tema).ToList();
+            int i = 0;
+            int puntos = 0;
 
-        public double calcularPuntajeComportamientoPeaton()
-        {
-            return 9.5;
-        }
+            foreach (ModeloRespuesta MR in L_AG)
+            {
+                i++;
+                if (MR.EsCorrecta)
+                { puntos++; }
+            }
 
-        public double calcularPuntajeSenalesTransito()
-        {
-            return 8.0;
-        }
-
-        public double calcularPuntajeRegimenSancionatorio()
-        {
-            return 10.0;
+            i = i == 0 ? 1 : i;
+            float res = (puntos / i) * 10;
+            return res;
         }
 
         /// <summary>
-        /// Almacena las respuestas de usuario en BD incluyendo los encunciados y el puntaje
+        /// Almacena las respuestas de usuario en BD incluyendo los enunciados y el puntaje
         /// </summary>
         /// <param name="IdEvaluacion">El ID que debe tener el registro de respuestas</param>
         public void almacenarRespuestasUsuario(string IdEvaluacion)
@@ -249,12 +249,24 @@ namespace CapaNegocio.Logica
             }
         }
 
+        /// <summary>
+        /// Clase auxiliar con informacion de la respuesta
+        /// </summary>
         public class ModeloRespuesta
         {
             public short IdDePregunta { get; set; }
+            public short IDTema { get; set; }
             public string respuestaCorrecta { get; set; }
             public string respuestaEscogida { get; set; }
             public bool EsCorrecta { get; set; }
+        }
+
+        public enum Tema
+        {
+            Aspectos_Generales = 1,
+            Regimen_Sancionatorio = 2,
+            Comportamiento_Peaton=3,
+            Senales_Transito = 4
         }
     }
 }
