@@ -52,7 +52,7 @@
             reportDataSource1.Name = "DataSet_DEvaluacion";
             reportDataSource1.Value = this.DEvaluacionBindingSource;
             this.rv.LocalReport.DataSources.Add(reportDataSource1);
-            this.rv.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.RepEvaluacion.rdlc";
+            this.rv.LocalReport.ReportEmbeddedResource = "CapaPresentacion.Reportes.RepEvaluacionConTema.rdlc";
             this.rv.Location = new System.Drawing.Point(51, 61);
             this.rv.Margin = new System.Windows.Forms.Padding(0);
             this.rv.Name = "rv";
@@ -125,7 +125,7 @@
             this.btn_Generar.UseVisualStyleBackColor = false;
             this.btn_Generar.Click += new System.EventHandler(this.btn_Generar_Click);
             // 
-            // FReporteEvaluaciones
+            // FReporteEvaluacionesTema
             // 
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.btn_Generar);
@@ -134,7 +134,7 @@
             this.Controls.Add(this.cb_cedula);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.rv);
-            this.Name = "FReporteEvaluaciones";
+            this.Name = "FReporteEvaluacionesTema";
             this.Load += new System.EventHandler(this.FReporteEvaluaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DEvaluacionBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DReportesBindingSource)).EndInit();
