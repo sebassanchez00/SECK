@@ -67,14 +67,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CapaDatos.dll" size="71680">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CapaDatos.dll" size="72192">
       <assemblyIdentity name="CapaDatos" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>m6w7ow0ZKE9H/UXsjf9mcaYXc+s=</dsig:DigestValue>
+        <dsig:DigestValue>ymzbdD41Y3SLSerZFJHOwQtcSv4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -86,7 +86,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>zhCBeDY97z52lhY1cD8RFT3++Bc=</dsig:DigestValue>
+        <dsig:DigestValue>l3r2rrFg+stIunTDy4qNFr73s1c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -223,14 +223,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SECK.exe" size="4965888">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SECK.exe" size="4967424">
       <assemblyIdentity name="SECK" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>NKQBrPnnJiPrfcPQVwMsesyqXOA=</dsig:DigestValue>
+        <dsig:DigestValue>cGVF+QEyGIpvTk+sJwGlt+ilV8c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

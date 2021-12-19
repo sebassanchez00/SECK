@@ -1,5 +1,4 @@
-﻿//using Microsoft.Win32.Reporting
-using Microsoft.Reporting.WinForms;
+﻿using Microsoft.Reporting.WinForms;
 using CapaNegocio;
 using CapaPresentacion;
 using System;
@@ -130,11 +129,6 @@ namespace CapaPresentacion.Forms.Reportes
         private void btn_Generar_Click(object sender, EventArgs e)
         {
             Actualiza_Datos_Reporte();
-        }
-
-        private void cb_cedula_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }           
