@@ -1,4 +1,4 @@
-﻿#define TEST
+﻿//#define TEST
 using CapaPresentacion.Forms.CRUD;
 using CapaNegocio;
 using CapaNegocio.Logica;
@@ -565,6 +565,11 @@ namespace CapaPresentacion.Forms.Principal
             lbl_nombres.Text = ccEvaluado.Nombres;
             lbl_apellidos.Text = ccEvaluado.Apellidos;
             lbl_codEval.Text = Lbl_IDReportes.Text;
+
+            lbl_AspectosGenerales.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeAspectosGenerales);
+            lbl_RegimenSancionatorio.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeRegimenSancionatorio);
+            lbl_NormasComportamiento.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeComportamientoPeaton);
+            lbl_SenalesTransito.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeSenalesTransito);
 
             byte[] Aux_Imagen;
             using (MemoryStream ms = new MemoryStream())

@@ -199,7 +199,6 @@ namespace CapaNegocio.Logica
 
         public float calcularPuntajePorTema(Tema ID_Tema)
         {
-            //List<VoPregunta> L_Preguntas = DPregunta_obj.LlevarPreguntasEvaluacionVo();
             var L_AG = L_Respuestas.Where(x => x.IDTema == (short)ID_Tema).ToList();
             int i = 0;
             int puntos = 0;
