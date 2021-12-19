@@ -223,14 +223,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SECK.exe" size="4962816">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SECK.exe" size="4965888">
       <assemblyIdentity name="SECK" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>ZxQ7IvNkN65R2QJX9TT57bJi4eo=</dsig:DigestValue>
+        <dsig:DigestValue>luODAZzeiX4djLH5z1q5bCU76t0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

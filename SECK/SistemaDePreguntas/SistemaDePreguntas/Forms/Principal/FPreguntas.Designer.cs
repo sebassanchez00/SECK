@@ -33,18 +33,31 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_VerReporte = new System.Windows.Forms.Button();
             this.btn_cerrar = new System.Windows.Forms.Button();
-            this.lbl_codEval = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lbl_apellidos = new System.Windows.Forms.Label();
-            this.lbl_nombres = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.lbl_campana = new System.Windows.Forms.Label();
             this.pb_logoResultado = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.btn_Imprimir = new System.Windows.Forms.Button();
-            this.panel8 = new System.Windows.Forms.Panel();
+            this.btn_nuevaPrueba = new System.Windows.Forms.Button();
+            this.pnl_Principal = new System.Windows.Forms.Panel();
+            this.pnl_PuntajeTemas = new System.Windows.Forms.Panel();
+            this.label18 = new System.Windows.Forms.Label();
+            this.lbl_SenalesTransito = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.lbl_NormasComportamiento = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.lbl_RegimenSancionatorio = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.lbl_AspectosGenerales = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pnl_Informacion = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbl_campana = new System.Windows.Forms.Label();
+            this.lbl_codEval = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lbl_nombres = new System.Windows.Forms.Label();
+            this.lbl_apellidos = new System.Windows.Forms.Label();
+            this.pnl_Consolidados = new System.Windows.Forms.Panel();
             this.LblCantidadPreguntas = new System.Windows.Forms.Label();
             this.lbl_cantidadPreg = new System.Windows.Forms.Label();
             this.LblPreguntasRespondidas = new System.Windows.Forms.Label();
@@ -53,8 +66,7 @@
             this.lbl_RespuestasCorrectas = new System.Windows.Forms.Label();
             this.LblRespuestasIncorrectas = new System.Windows.Forms.Label();
             this.lbl_RespuestasIncorrectas = new System.Windows.Forms.Label();
-            this.btn_nuevaPrueba = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
+            this.pnl_PuntajeGlobal = new System.Windows.Forms.Panel();
             this.lbl_Calificacion = new System.Windows.Forms.Label();
             this.LblCalificacion = new System.Windows.Forms.Label();
             this.tp_Cuestionario = new System.Windows.Forms.TabPage();
@@ -99,12 +111,14 @@
             this.pb_Streaming = new System.Windows.Forms.PictureBox();
             this.pb_Captura = new System.Windows.Forms.PictureBox();
             this.btn_Sig_Biometria = new System.Windows.Forms.Button();
-            this.pnl_Informacion = new System.Windows.Forms.Panel();
             this.tp_Resultado.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logoResultado)).BeginInit();
-            this.panel8.SuspendLayout();
-            this.panel4.SuspendLayout();
+            this.pnl_Principal.SuspendLayout();
+            this.pnl_PuntajeTemas.SuspendLayout();
+            this.pnl_Informacion.SuspendLayout();
+            this.pnl_Consolidados.SuspendLayout();
+            this.pnl_PuntajeGlobal.SuspendLayout();
             this.tp_Cuestionario.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logoCuestionario)).BeginInit();
@@ -123,7 +137,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_logoBionetria)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Streaming)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Captura)).BeginInit();
-            this.pnl_Informacion.SuspendLayout();
             this.SuspendLayout();
             // 
             // tp_Resultado
@@ -142,15 +155,8 @@
             this.panel3.BackColor = System.Drawing.Color.White;
             this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel3.Controls.Add(this.pnl_Informacion);
-            this.panel3.Controls.Add(this.btn_VerReporte);
-            this.panel3.Controls.Add(this.btn_cerrar);
-            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.pb_logoResultado);
-            this.panel3.Controls.Add(this.btn_Imprimir);
-            this.panel3.Controls.Add(this.panel8);
-            this.panel3.Controls.Add(this.btn_nuevaPrueba);
-            this.panel3.Controls.Add(this.panel4);
+            this.panel3.Controls.Add(this.pnl_Principal);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.ForeColor = System.Drawing.Color.DarkBlue;
@@ -166,7 +172,7 @@
             this.btn_VerReporte.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_VerReporte.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_VerReporte.ForeColor = System.Drawing.Color.White;
-            this.btn_VerReporte.Location = new System.Drawing.Point(423, 524);
+            this.btn_VerReporte.Location = new System.Drawing.Point(392, 446);
             this.btn_VerReporte.Name = "btn_VerReporte";
             this.btn_VerReporte.Size = new System.Drawing.Size(130, 36);
             this.btn_VerReporte.TabIndex = 58;
@@ -176,12 +182,12 @@
             // 
             // btn_cerrar
             // 
-            this.btn_cerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_cerrar.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.btn_cerrar.BackColor = System.Drawing.Color.Red;
             this.btn_cerrar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_cerrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_cerrar.ForeColor = System.Drawing.Color.White;
-            this.btn_cerrar.Location = new System.Drawing.Point(888, 632);
+            this.btn_cerrar.Location = new System.Drawing.Point(822, 446);
             this.btn_cerrar.Name = "btn_cerrar";
             this.btn_cerrar.Size = new System.Drawing.Size(72, 36);
             this.btn_cerrar.TabIndex = 57;
@@ -189,53 +195,234 @@
             this.btn_cerrar.UseVisualStyleBackColor = false;
             this.btn_cerrar.Click += new System.EventHandler(this.btn_cerrar_Click);
             // 
-            // lbl_codEval
+            // pb_logoResultado
             // 
-            this.lbl_codEval.AutoSize = true;
-            this.lbl_codEval.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_codEval.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_codEval.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lbl_codEval.Location = new System.Drawing.Point(180, 112);
-            this.lbl_codEval.Name = "lbl_codEval";
-            this.lbl_codEval.Size = new System.Drawing.Size(18, 20);
-            this.lbl_codEval.TabIndex = 56;
-            this.lbl_codEval.Text = "0";
+            this.pb_logoResultado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pb_logoResultado.BackColor = System.Drawing.Color.Transparent;
+            this.pb_logoResultado.Location = new System.Drawing.Point(907, 2);
+            this.pb_logoResultado.Name = "pb_logoResultado";
+            this.pb_logoResultado.Size = new System.Drawing.Size(80, 57);
+            this.pb_logoResultado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pb_logoResultado.TabIndex = 52;
+            this.pb_logoResultado.TabStop = false;
             // 
-            // label8
+            // btn_Imprimir
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label8.Location = new System.Drawing.Point(22, 112);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(140, 20);
-            this.label8.TabIndex = 55;
-            this.label8.Text = "Código Evaluación:";
+            this.btn_Imprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_Imprimir.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_Imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Imprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Imprimir.ForeColor = System.Drawing.Color.White;
+            this.btn_Imprimir.Location = new System.Drawing.Point(231, 446);
+            this.btn_Imprimir.Name = "btn_Imprimir";
+            this.btn_Imprimir.Size = new System.Drawing.Size(130, 36);
+            this.btn_Imprimir.TabIndex = 51;
+            this.btn_Imprimir.Text = "Imprimir";
+            this.btn_Imprimir.UseVisualStyleBackColor = false;
+            this.btn_Imprimir.Click += new System.EventHandler(this.btn_Imprimir_Click);
             // 
-            // lbl_apellidos
+            // btn_nuevaPrueba
             // 
-            this.lbl_apellidos.AutoSize = true;
-            this.lbl_apellidos.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_apellidos.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_apellidos.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lbl_apellidos.Location = new System.Drawing.Point(180, 81);
-            this.lbl_apellidos.Name = "lbl_apellidos";
-            this.lbl_apellidos.Size = new System.Drawing.Size(18, 20);
-            this.lbl_apellidos.TabIndex = 54;
-            this.lbl_apellidos.Text = "0";
+            this.btn_nuevaPrueba.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.btn_nuevaPrueba.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btn_nuevaPrueba.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_nuevaPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_nuevaPrueba.ForeColor = System.Drawing.Color.White;
+            this.btn_nuevaPrueba.Location = new System.Drawing.Point(551, 446);
+            this.btn_nuevaPrueba.Name = "btn_nuevaPrueba";
+            this.btn_nuevaPrueba.Size = new System.Drawing.Size(130, 36);
+            this.btn_nuevaPrueba.TabIndex = 49;
+            this.btn_nuevaPrueba.Text = "Nueva Prueba";
+            this.btn_nuevaPrueba.UseVisualStyleBackColor = false;
+            this.btn_nuevaPrueba.Click += new System.EventHandler(this.btn_nuevaPrueba_Click);
             // 
-            // lbl_nombres
+            // pnl_Principal
             // 
-            this.lbl_nombres.AutoSize = true;
-            this.lbl_nombres.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_nombres.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_nombres.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lbl_nombres.Location = new System.Drawing.Point(180, 50);
-            this.lbl_nombres.Name = "lbl_nombres";
-            this.lbl_nombres.Size = new System.Drawing.Size(18, 20);
-            this.lbl_nombres.TabIndex = 11;
-            this.lbl_nombres.Text = "0";
+            this.pnl_Principal.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pnl_Principal.Controls.Add(this.btn_cerrar);
+            this.pnl_Principal.Controls.Add(this.btn_VerReporte);
+            this.pnl_Principal.Controls.Add(this.pnl_PuntajeTemas);
+            this.pnl_Principal.Controls.Add(this.label6);
+            this.pnl_Principal.Controls.Add(this.pnl_Informacion);
+            this.pnl_Principal.Controls.Add(this.btn_Imprimir);
+            this.pnl_Principal.Controls.Add(this.btn_nuevaPrueba);
+            this.pnl_Principal.Controls.Add(this.pnl_Consolidados);
+            this.pnl_Principal.Controls.Add(this.pnl_PuntajeGlobal);
+            this.pnl_Principal.Location = new System.Drawing.Point(39, 76);
+            this.pnl_Principal.Name = "pnl_Principal";
+            this.pnl_Principal.Size = new System.Drawing.Size(921, 528);
+            this.pnl_Principal.TabIndex = 60;
+            // 
+            // pnl_PuntajeTemas
+            // 
+            this.pnl_PuntajeTemas.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnl_PuntajeTemas.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_PuntajeTemas.Controls.Add(this.label18);
+            this.pnl_PuntajeTemas.Controls.Add(this.lbl_SenalesTransito);
+            this.pnl_PuntajeTemas.Controls.Add(this.label16);
+            this.pnl_PuntajeTemas.Controls.Add(this.lbl_NormasComportamiento);
+            this.pnl_PuntajeTemas.Controls.Add(this.label14);
+            this.pnl_PuntajeTemas.Controls.Add(this.lbl_RegimenSancionatorio);
+            this.pnl_PuntajeTemas.Controls.Add(this.label13);
+            this.pnl_PuntajeTemas.Controls.Add(this.lbl_AspectosGenerales);
+            this.pnl_PuntajeTemas.Controls.Add(this.label12);
+            this.pnl_PuntajeTemas.Location = new System.Drawing.Point(21, 250);
+            this.pnl_PuntajeTemas.Name = "pnl_PuntajeTemas";
+            this.pnl_PuntajeTemas.Size = new System.Drawing.Size(420, 158);
+            this.pnl_PuntajeTemas.TabIndex = 15;
+            // 
+            // label18
+            // 
+            this.label18.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label18.AutoSize = true;
+            this.label18.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label18.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.Color.Maroon;
+            this.label18.Location = new System.Drawing.Point(22, 122);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(130, 20);
+            this.label18.TabIndex = 16;
+            this.label18.Text = "Señales Tránsito: ";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_SenalesTransito
+            // 
+            this.lbl_SenalesTransito.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_SenalesTransito.AutoSize = true;
+            this.lbl_SenalesTransito.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_SenalesTransito.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_SenalesTransito.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_SenalesTransito.Location = new System.Drawing.Point(328, 122);
+            this.lbl_SenalesTransito.Name = "lbl_SenalesTransito";
+            this.lbl_SenalesTransito.Size = new System.Drawing.Size(52, 20);
+            this.lbl_SenalesTransito.TabIndex = 15;
+            this.lbl_SenalesTransito.Text = "00/00";
+            this.lbl_SenalesTransito.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label16
+            // 
+            this.label16.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label16.AutoSize = true;
+            this.label16.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label16.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label16.ForeColor = System.Drawing.Color.Maroon;
+            this.label16.Location = new System.Drawing.Point(22, 97);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(214, 20);
+            this.label16.TabIndex = 14;
+            this.label16.Text = "Normas de Comportamiento:";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_NormasComportamiento
+            // 
+            this.lbl_NormasComportamiento.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_NormasComportamiento.AutoSize = true;
+            this.lbl_NormasComportamiento.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_NormasComportamiento.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_NormasComportamiento.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_NormasComportamiento.Location = new System.Drawing.Point(328, 97);
+            this.lbl_NormasComportamiento.Name = "lbl_NormasComportamiento";
+            this.lbl_NormasComportamiento.Size = new System.Drawing.Size(52, 20);
+            this.lbl_NormasComportamiento.TabIndex = 13;
+            this.lbl_NormasComportamiento.Text = "00/00";
+            this.lbl_NormasComportamiento.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label14
+            // 
+            this.label14.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label14.AutoSize = true;
+            this.label14.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label14.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label14.ForeColor = System.Drawing.Color.Maroon;
+            this.label14.Location = new System.Drawing.Point(22, 72);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(175, 20);
+            this.label14.TabIndex = 12;
+            this.label14.Text = "Régimen Sancionatorio:";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_RegimenSancionatorio
+            // 
+            this.lbl_RegimenSancionatorio.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_RegimenSancionatorio.AutoSize = true;
+            this.lbl_RegimenSancionatorio.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_RegimenSancionatorio.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_RegimenSancionatorio.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_RegimenSancionatorio.Location = new System.Drawing.Point(328, 72);
+            this.lbl_RegimenSancionatorio.Name = "lbl_RegimenSancionatorio";
+            this.lbl_RegimenSancionatorio.Size = new System.Drawing.Size(52, 20);
+            this.lbl_RegimenSancionatorio.TabIndex = 11;
+            this.lbl_RegimenSancionatorio.Text = "00/00";
+            this.lbl_RegimenSancionatorio.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label13
+            // 
+            this.label13.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.label13.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.label13.ForeColor = System.Drawing.Color.Maroon;
+            this.label13.Location = new System.Drawing.Point(22, 47);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(150, 20);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "Aspectos Generales:";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // lbl_AspectosGenerales
+            // 
+            this.lbl_AspectosGenerales.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.lbl_AspectosGenerales.AutoSize = true;
+            this.lbl_AspectosGenerales.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lbl_AspectosGenerales.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold);
+            this.lbl_AspectosGenerales.ForeColor = System.Drawing.Color.Maroon;
+            this.lbl_AspectosGenerales.Location = new System.Drawing.Point(328, 47);
+            this.lbl_AspectosGenerales.Name = "lbl_AspectosGenerales";
+            this.lbl_AspectosGenerales.Size = new System.Drawing.Size(52, 20);
+            this.lbl_AspectosGenerales.TabIndex = 9;
+            this.lbl_AspectosGenerales.Text = "00/00";
+            this.lbl_AspectosGenerales.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label12
+            // 
+            this.label12.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Maroon;
+            this.label12.Location = new System.Drawing.Point(98, 14);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(224, 24);
+            this.label12.TabIndex = 8;
+            this.label12.Text = "Calificación Por Temas";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label6
+            // 
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold);
+            this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label6.Location = new System.Drawing.Point(291, 31);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(333, 35);
+            this.label6.TabIndex = 8;
+            this.label6.Text = "RESULTADO PRUEBA";
+            // 
+            // pnl_Informacion
+            // 
+            this.pnl_Informacion.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnl_Informacion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_Informacion.Controls.Add(this.label11);
+            this.pnl_Informacion.Controls.Add(this.label7);
+            this.pnl_Informacion.Controls.Add(this.lbl_campana);
+            this.pnl_Informacion.Controls.Add(this.lbl_codEval);
+            this.pnl_Informacion.Controls.Add(this.label9);
+            this.pnl_Informacion.Controls.Add(this.label8);
+            this.pnl_Informacion.Controls.Add(this.lbl_nombres);
+            this.pnl_Informacion.Controls.Add(this.lbl_apellidos);
+            this.pnl_Informacion.Location = new System.Drawing.Point(21, 86);
+            this.pnl_Informacion.Name = "pnl_Informacion";
+            this.pnl_Informacion.Size = new System.Drawing.Size(420, 155);
+            this.pnl_Informacion.TabIndex = 59;
             // 
             // label11
             // 
@@ -249,28 +436,17 @@
             this.label11.TabIndex = 53;
             this.label11.Text = "Campaña:";
             // 
-            // label9
+            // label7
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label9.Location = new System.Drawing.Point(22, 81);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(78, 20);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "Apellidos:";
-            // 
-            // label6
-            // 
-            this.label6.BackColor = System.Drawing.Color.White;
-            this.label6.Font = new System.Drawing.Font("Corbel", 24F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label6.Location = new System.Drawing.Point(343, 75);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(333, 28);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "RESULTADO PRUEBA";
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label7.Location = new System.Drawing.Point(22, 50);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(78, 20);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Nombres:";
             // 
             // lbl_campana
             // 
@@ -284,60 +460,82 @@
             this.lbl_campana.TabIndex = 9;
             this.lbl_campana.Text = "0";
             // 
-            // pb_logoResultado
+            // lbl_codEval
             // 
-            this.pb_logoResultado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pb_logoResultado.BackColor = System.Drawing.Color.Transparent;
-            this.pb_logoResultado.Location = new System.Drawing.Point(907, 2);
-            this.pb_logoResultado.Name = "pb_logoResultado";
-            this.pb_logoResultado.Size = new System.Drawing.Size(80, 57);
-            this.pb_logoResultado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pb_logoResultado.TabIndex = 52;
-            this.pb_logoResultado.TabStop = false;
+            this.lbl_codEval.AutoSize = true;
+            this.lbl_codEval.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_codEval.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_codEval.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lbl_codEval.Location = new System.Drawing.Point(180, 112);
+            this.lbl_codEval.Name = "lbl_codEval";
+            this.lbl_codEval.Size = new System.Drawing.Size(18, 20);
+            this.lbl_codEval.TabIndex = 56;
+            this.lbl_codEval.Text = "0";
             // 
-            // label7
+            // label9
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label7.Location = new System.Drawing.Point(22, 50);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 20);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Nombres:";
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label9.Location = new System.Drawing.Point(22, 81);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(78, 20);
+            this.label9.TabIndex = 10;
+            this.label9.Text = "Apellidos:";
             // 
-            // btn_Imprimir
+            // label8
             // 
-            this.btn_Imprimir.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_Imprimir.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_Imprimir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_Imprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Imprimir.ForeColor = System.Drawing.Color.White;
-            this.btn_Imprimir.Location = new System.Drawing.Point(262, 524);
-            this.btn_Imprimir.Name = "btn_Imprimir";
-            this.btn_Imprimir.Size = new System.Drawing.Size(130, 36);
-            this.btn_Imprimir.TabIndex = 51;
-            this.btn_Imprimir.Text = "Imprimir";
-            this.btn_Imprimir.UseVisualStyleBackColor = false;
-            this.btn_Imprimir.Click += new System.EventHandler(this.btn_Imprimir_Click);
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label8.Location = new System.Drawing.Point(22, 112);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(140, 20);
+            this.label8.TabIndex = 55;
+            this.label8.Text = "Código Evaluación:";
             // 
-            // panel8
+            // lbl_nombres
             // 
-            this.panel8.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel8.Controls.Add(this.LblCantidadPreguntas);
-            this.panel8.Controls.Add(this.lbl_cantidadPreg);
-            this.panel8.Controls.Add(this.LblPreguntasRespondidas);
-            this.panel8.Controls.Add(this.lbl_PreguntasRespondidas);
-            this.panel8.Controls.Add(this.LblRespuestasCorrectas);
-            this.panel8.Controls.Add(this.lbl_RespuestasCorrectas);
-            this.panel8.Controls.Add(this.LblRespuestasIncorrectas);
-            this.panel8.Controls.Add(this.lbl_RespuestasIncorrectas);
-            this.panel8.Location = new System.Drawing.Point(176, 323);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(304, 158);
-            this.panel8.TabIndex = 50;
+            this.lbl_nombres.AutoSize = true;
+            this.lbl_nombres.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nombres.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_nombres.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lbl_nombres.Location = new System.Drawing.Point(180, 50);
+            this.lbl_nombres.Name = "lbl_nombres";
+            this.lbl_nombres.Size = new System.Drawing.Size(18, 20);
+            this.lbl_nombres.TabIndex = 11;
+            this.lbl_nombres.Text = "0";
+            // 
+            // lbl_apellidos
+            // 
+            this.lbl_apellidos.AutoSize = true;
+            this.lbl_apellidos.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_apellidos.Font = new System.Drawing.Font("Nirmala UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_apellidos.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.lbl_apellidos.Location = new System.Drawing.Point(180, 81);
+            this.lbl_apellidos.Name = "lbl_apellidos";
+            this.lbl_apellidos.Size = new System.Drawing.Size(18, 20);
+            this.lbl_apellidos.TabIndex = 54;
+            this.lbl_apellidos.Text = "0";
+            // 
+            // pnl_Consolidados
+            // 
+            this.pnl_Consolidados.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnl_Consolidados.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_Consolidados.Controls.Add(this.LblCantidadPreguntas);
+            this.pnl_Consolidados.Controls.Add(this.lbl_cantidadPreg);
+            this.pnl_Consolidados.Controls.Add(this.LblPreguntasRespondidas);
+            this.pnl_Consolidados.Controls.Add(this.lbl_PreguntasRespondidas);
+            this.pnl_Consolidados.Controls.Add(this.LblRespuestasCorrectas);
+            this.pnl_Consolidados.Controls.Add(this.lbl_RespuestasCorrectas);
+            this.pnl_Consolidados.Controls.Add(this.LblRespuestasIncorrectas);
+            this.pnl_Consolidados.Controls.Add(this.lbl_RespuestasIncorrectas);
+            this.pnl_Consolidados.Location = new System.Drawing.Point(474, 86);
+            this.pnl_Consolidados.Name = "pnl_Consolidados";
+            this.pnl_Consolidados.Size = new System.Drawing.Size(420, 155);
+            this.pnl_Consolidados.TabIndex = 50;
             // 
             // LblCantidadPreguntas
             // 
@@ -435,31 +633,16 @@
             this.lbl_RespuestasIncorrectas.TabIndex = 7;
             this.lbl_RespuestasIncorrectas.Text = "0";
             // 
-            // btn_nuevaPrueba
+            // pnl_PuntajeGlobal
             // 
-            this.btn_nuevaPrueba.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.btn_nuevaPrueba.BackColor = System.Drawing.Color.DodgerBlue;
-            this.btn_nuevaPrueba.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btn_nuevaPrueba.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_nuevaPrueba.ForeColor = System.Drawing.Color.White;
-            this.btn_nuevaPrueba.Location = new System.Drawing.Point(582, 524);
-            this.btn_nuevaPrueba.Name = "btn_nuevaPrueba";
-            this.btn_nuevaPrueba.Size = new System.Drawing.Size(130, 36);
-            this.btn_nuevaPrueba.TabIndex = 49;
-            this.btn_nuevaPrueba.Text = "Nueva Prueba";
-            this.btn_nuevaPrueba.UseVisualStyleBackColor = false;
-            this.btn_nuevaPrueba.Click += new System.EventHandler(this.btn_nuevaPrueba_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panel4.Controls.Add(this.lbl_Calificacion);
-            this.panel4.Controls.Add(this.LblCalificacion);
-            this.panel4.Location = new System.Drawing.Point(510, 323);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(304, 158);
-            this.panel4.TabIndex = 14;
+            this.pnl_PuntajeGlobal.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnl_PuntajeGlobal.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnl_PuntajeGlobal.Controls.Add(this.lbl_Calificacion);
+            this.pnl_PuntajeGlobal.Controls.Add(this.LblCalificacion);
+            this.pnl_PuntajeGlobal.Location = new System.Drawing.Point(474, 250);
+            this.pnl_PuntajeGlobal.Name = "pnl_PuntajeGlobal";
+            this.pnl_PuntajeGlobal.Size = new System.Drawing.Size(420, 158);
+            this.pnl_PuntajeGlobal.TabIndex = 14;
             // 
             // lbl_Calificacion
             // 
@@ -468,7 +651,7 @@
             this.lbl_Calificacion.BackColor = System.Drawing.Color.WhiteSmoke;
             this.lbl_Calificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_Calificacion.ForeColor = System.Drawing.Color.Maroon;
-            this.lbl_Calificacion.Location = new System.Drawing.Point(6, 38);
+            this.lbl_Calificacion.Location = new System.Drawing.Point(64, 38);
             this.lbl_Calificacion.Name = "lbl_Calificacion";
             this.lbl_Calificacion.Size = new System.Drawing.Size(289, 108);
             this.lbl_Calificacion.TabIndex = 9;
@@ -476,15 +659,15 @@
             // 
             // LblCalificacion
             // 
-            this.LblCalificacion.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.LblCalificacion.AutoSize = true;
             this.LblCalificacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCalificacion.ForeColor = System.Drawing.Color.Maroon;
-            this.LblCalificacion.Location = new System.Drawing.Point(92, 14);
+            this.LblCalificacion.Location = new System.Drawing.Point(114, 14);
             this.LblCalificacion.Name = "LblCalificacion";
-            this.LblCalificacion.Size = new System.Drawing.Size(117, 24);
+            this.LblCalificacion.Size = new System.Drawing.Size(183, 24);
             this.LblCalificacion.TabIndex = 8;
-            this.LblCalificacion.Text = "Calificación";
+            this.LblCalificacion.Text = "Calificación Global";
+            this.LblCalificacion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tp_Cuestionario
             // 
@@ -1045,23 +1228,6 @@
             this.btn_Sig_Biometria.Visible = false;
             this.btn_Sig_Biometria.Click += new System.EventHandler(this.btn_Sig_Biometria_Click);
             // 
-            // pnl_Informacion
-            // 
-            this.pnl_Informacion.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.pnl_Informacion.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnl_Informacion.Controls.Add(this.label11);
-            this.pnl_Informacion.Controls.Add(this.label7);
-            this.pnl_Informacion.Controls.Add(this.lbl_campana);
-            this.pnl_Informacion.Controls.Add(this.lbl_codEval);
-            this.pnl_Informacion.Controls.Add(this.label9);
-            this.pnl_Informacion.Controls.Add(this.label8);
-            this.pnl_Informacion.Controls.Add(this.lbl_nombres);
-            this.pnl_Informacion.Controls.Add(this.lbl_apellidos);
-            this.pnl_Informacion.Location = new System.Drawing.Point(176, 138);
-            this.pnl_Informacion.Name = "pnl_Informacion";
-            this.pnl_Informacion.Size = new System.Drawing.Size(638, 158);
-            this.pnl_Informacion.TabIndex = 59;
-            // 
             // FPreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1077,10 +1243,15 @@
             this.tp_Resultado.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pb_logoResultado)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
+            this.pnl_Principal.ResumeLayout(false);
+            this.pnl_PuntajeTemas.ResumeLayout(false);
+            this.pnl_PuntajeTemas.PerformLayout();
+            this.pnl_Informacion.ResumeLayout(false);
+            this.pnl_Informacion.PerformLayout();
+            this.pnl_Consolidados.ResumeLayout(false);
+            this.pnl_Consolidados.PerformLayout();
+            this.pnl_PuntajeGlobal.ResumeLayout(false);
+            this.pnl_PuntajeGlobal.PerformLayout();
             this.tp_Cuestionario.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -1104,8 +1275,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_logoBionetria)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Streaming)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_Captura)).EndInit();
-            this.pnl_Informacion.ResumeLayout(false);
-            this.pnl_Informacion.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1113,7 +1282,7 @@
         #endregion
 
         private System.Windows.Forms.TabPage tp_Resultado;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel pnl_PuntajeGlobal;
         private System.Windows.Forms.Label LblCalificacion;
         private System.Windows.Forms.Label lbl_Calificacion;
         private System.Windows.Forms.Label lbl_RespuestasIncorrectas;
@@ -1148,7 +1317,7 @@
         private System.Windows.Forms.Button btn_nuevaPrueba;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel pnl_Consolidados;
         private System.Windows.Forms.Label lbl_ProgresoTest;
         private System.Windows.Forms.PictureBox pb_Imagen;
         private System.Windows.Forms.TabPage tp_Biometria;
@@ -1183,6 +1352,17 @@
         private System.Windows.Forms.Button btn_VerReporte;
         private System.Windows.Forms.Panel pnl_Informacion;
         protected System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnl_Principal;
+        private System.Windows.Forms.Panel pnl_PuntajeTemas;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lbl_AspectosGenerales;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label lbl_RegimenSancionatorio;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lbl_SenalesTransito;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lbl_NormasComportamiento;
     }
 }
 
