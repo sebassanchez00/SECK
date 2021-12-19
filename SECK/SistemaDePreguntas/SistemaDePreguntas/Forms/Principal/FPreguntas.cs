@@ -1,4 +1,4 @@
-﻿#define TEST
+﻿//#define TEST
 using CapaPresentacion.Forms.CRUD;
 using CapaNegocio;
 using CapaNegocio.Logica;
