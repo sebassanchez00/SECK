@@ -105,6 +105,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Vo\VoCompetencia.cs" />
+    <Compile Include="Vo\VoConductor.cs" />
     <Compile Include="Vo\VoPregunta.cs" />
     <Compile Include="Vo\VoRegistroPreguntas.cs" />
     <Compile Include="Vo\VoTema.cs" />

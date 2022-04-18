@@ -17,8 +17,8 @@ namespace CapaPresentacion
 
         public enum Genero
         {
-            M,
-            F
+            M = 1,
+            F = 2
         }
     }
 }

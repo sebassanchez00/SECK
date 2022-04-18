@@ -5,18 +5,18 @@ using System.Text;
 
 namespace CapaDatos.Vo
 {
-    class VoConductor
+    public class VoConductor
     {
         public string Cedula { get; set; }
         public string Nombre { get; set; }
         public string Apellido { get; set; }
-        public short TipoLicencia { get; set; }
+        public short? TipoLicencia { get; set; }
         public string CodigoLicencia { get; set; }
         public string Empresa { get; set; }
         public short Genero { get; set; }
         public byte[] Huella { get; set; }
         public byte[] Fotografia { get; set; }
-        public DateTime FechaNacimiento { get; set; }
+        public DateTime? FechaNacimiento { get; set; }
 
         public VoConductor()
         { }

@@ -33,11 +33,11 @@ namespace CapaPresentacion.Forms.CRUD
         /// <param name="CCObj"></param>
         public void AsignarCampos(Cedula CCObj)
         {
-            this.tb_Cedula.Text = CCObj.NumeroCedula.ToString();
-            this.tb_Nombre.Text = CCObj.Nombres;
-            this.tb_Apellido.Text = CCObj.Apellidos;
-            this.cb_Genero.SelectedIndex = (CCObj.Genero == Enums.Genero.M) ? cb_Genero.FindStringExact("Masculino") : cb_Genero.FindStringExact("Femenino"); // 
-            this.dtp_FNacimiento.Value = (CCObj.FechaNacimiento.HasValue == true) ? CCObj.FechaNacimiento.GetValueOrDefault() : DateTime.Now; //
+            this.tb_Cedula.Text = CCObj.VoConductor_obj.Cedula;
+            this.tb_Nombre.Text = CCObj.VoConductor_obj.Nombre;
+            this.tb_Apellido.Text = CCObj.VoConductor_obj.Apellido;
+            this.cb_Genero.SelectedIndex = (CCObj.VoConductor_obj.Genero == (short)Enums.Genero.M) ? cb_Genero.FindStringExact("Masculino") : cb_Genero.FindStringExact("Femenino"); // 
+            this.dtp_FNacimiento.Value = (CCObj.VoConductor_obj.FechaNacimiento.HasValue == true) ? CCObj.VoConductor_obj.FechaNacimiento.GetValueOrDefault() : DateTime.Now; //
             this.tb_Empresa.Text = Properties.Settings.Default.Empresa;
             GuardarYCerrar = true;
         }
