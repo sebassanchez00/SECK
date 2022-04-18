@@ -229,11 +229,11 @@ namespace CapaNegocio.Logica
 
                 int id_Cuestionario = DRegistroPreguntas_obj.Insertar(new VoRegistroPreguntas()
                 {
-                    id_Evaluacion = IdEvaluacion,
-                    pregunta = (string)Pregunta[3],
-                    respuestaDelUsuario = Respuesta.respuestaEscogida,
-                    respondioCorrectamente = Respuesta.EsCorrecta,
-                    imagen = (byte[])Pregunta[4]
+                    Id_Evaluacion = IdEvaluacion,
+                    Pregunta = (string)Pregunta[3],
+                    RespuestaDelUsuario = Respuesta.respuestaEscogida,
+                    RespondioCorrectamente = Respuesta.EsCorrecta,
+                    Imagen = (byte[])Pregunta[4]
                 }
                     );
 

@@ -290,6 +290,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\RepEvaluacionConTema.rdlc" />
     <EmbeddedResource Include="Reportes\RepEvaluacion.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes.rdlc">
       <SubType>Designer</SubType>

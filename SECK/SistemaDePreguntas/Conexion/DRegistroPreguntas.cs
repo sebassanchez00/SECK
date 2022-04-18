@@ -149,34 +149,34 @@ namespace CapaDatos
                 ParIDEval.ParameterName = "@ID_EVALUACION";
                 ParIDEval.SqlDbType = SqlDbType.VarChar;
                 ParIDEval.Size = 50;
-                ParIDEval.Value = obj.id_Evaluacion;
+                ParIDEval.Value = obj.Id_Evaluacion;
                 SqlCmd.Parameters.Add(ParIDEval);
 
                 SqlParameter ParIDPreg = new SqlParameter();
                 ParIDPreg.ParameterName = "@PREGUNTA";
                 ParIDPreg.SqlDbType = SqlDbType.VarChar;
                 ParIDPreg.Size = -1;
-                ParIDPreg.Value = obj.pregunta;
+                ParIDPreg.Value = obj.Pregunta;
                 SqlCmd.Parameters.Add(ParIDPreg);
 
                 SqlParameter ParResUsuario = new SqlParameter();
                 ParResUsuario.ParameterName = "@RESPUESTA_DEL_USUARIO";
                 ParResUsuario.SqlDbType = SqlDbType.VarChar;
                 ParResUsuario.Size = -1;
-                ParResUsuario.Value = obj.respuestaDelUsuario;
+                ParResUsuario.Value = obj.RespuestaDelUsuario;
                 SqlCmd.Parameters.Add(ParResUsuario);
 
                 SqlParameter ParResCorr = new SqlParameter();
                 ParResCorr.ParameterName = "@RESPONDIO_CORRECTAMENTE";
                 ParResCorr.SqlDbType = SqlDbType.Bit;
-                ParResCorr.Value = obj.respondioCorrectamente;
+                ParResCorr.Value = obj.RespondioCorrectamente;
                 SqlCmd.Parameters.Add(ParResCorr);
 
                 SqlParameter ParImg = new SqlParameter();
                 ParImg.ParameterName = "@IMAGEN";
                 ParImg.SqlDbType = SqlDbType.VarBinary;
                 ParImg.Size = -1;
-                ParImg.Value = obj.imagen;
+                ParImg.Value = obj.Imagen;
                 SqlCmd.Parameters.Add(ParImg);
 
                 ID_AutoIncrementado = (int)SqlCmd.ExecuteScalar();
