@@ -92,6 +92,7 @@
     <Compile Include="DResultadoFinal.cs" />
     <Compile Include="DGenero.cs" />
     <Compile Include="DConfiguracionBD.cs" />
+    <Compile Include="DResultadoPorTema.cs" />
     <Compile Include="DTipoLicencia.cs" />
     <Compile Include="DTemaPregunta.cs" />
     <Compile Include="DTipoPregunta.cs" />
@@ -110,6 +111,7 @@
     <Compile Include="Vo\VoLicenciaAplicablePreguntas.cs" />
     <Compile Include="Vo\VoPregunta.cs" />
     <Compile Include="Vo\VoRegistroPreguntas.cs" />
+    <Compile Include="Vo\VoResultadoPorTema.cs" />
     <Compile Include="Vo\VoTema.cs" />
     <Compile Include="Vo\VoTipoPregunta.cs" />
   </ItemGroup>
