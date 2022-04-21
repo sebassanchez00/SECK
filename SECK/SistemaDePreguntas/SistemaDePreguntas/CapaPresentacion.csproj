@@ -149,7 +149,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_EntrenadorDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Cedula.cs" />
+    <Compile Include="NConductor.cs" />
     <Compile Include="CrystalReporte.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

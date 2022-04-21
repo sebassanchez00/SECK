@@ -1,6 +1,6 @@
 ﻿using CapaDatos.Vo;
 using CapaDatos;
-
+using CapaNegocio;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,6 +19,7 @@ namespace CapaNegocio.Logica
         int NumPreguntasTemaComportamientoPeaton;
         int NumPreguntasTemaSeñalesTransito;
         int NumPreguntasTemaRegimenSancionatorio;
+        Enums.Enums.TipoLicencia tipoLicencia;
 
         List<VoPregunta> L_TodasLasPreguntas;
         List<VoPregunta> L_PreguntasAspectosGenerales;
@@ -35,15 +36,18 @@ namespace CapaNegocio.Logica
         //Acceso a datos
         DPregunta DPregunta_obj;
         DTipoPregunta DTipoPregunta_obj;
+        DLicenciaAplicablePreguntas DLicenciaAplicablePreguntas_obj;
 
         /// <summary>
         /// 
         /// </summary>
         /// <param name="config">Clase configuraciones de la prueba</param>
-        public NModeloCuestionario(NModeloConfiguracionPrueba config)
+        public NModeloCuestionario(NModeloConfiguracionPrueba config, Enums.Enums.TipoLicencia TipoLicenciaConductor)
         {
             DPregunta_obj = new DPregunta();
             DTipoPregunta_obj = new DTipoPregunta();
+            DLicenciaAplicablePreguntas_obj = new DLicenciaAplicablePreguntas();
+            this.tipoLicencia = TipoLicenciaConductor;
 
             CalcularNumeroPreguntas(config);
 
@@ -54,6 +58,7 @@ namespace CapaNegocio.Logica
             L_TodasLasPreguntasAleatorias = new List<VoPregunta>();
 
             L_TodasLasPreguntas = DPregunta_obj.LlevarPreguntasEvaluacionVo();
+            L_TodasLasPreguntas = filtrarPorLicencia(L_TodasLasPreguntas,TipoLicenciaConductor);
 
             L_PreguntasAspectosGenerales = L_TodasLasPreguntas.Where(n => n.Id_Tema == 1).ToList();
             L_PreguntasComportamientoPeaton = L_TodasLasPreguntas.Where(n => n.Id_Tema == 3).ToList();
@@ -69,6 +74,130 @@ namespace CapaNegocio.Logica
             L_TodasLasPreguntasAleatorias.AddRange(L_ResultadoComportamientoPeaton);
             L_TodasLasPreguntasAleatorias.AddRange(L_ResultadoSeñalesTransito);
             L_TodasLasPreguntasAleatorias.AddRange(L_ResultadoRegimenSancionatorio);
+        }
+
+        /// <summary>
+        /// Toma un listado de preguntas y devuelve las preguntas que aplican según tipo de licencia del conductor
+        /// </summary>
+        List<VoPregunta> filtrarPorLicencia(List<VoPregunta> ListaPreguntas, Enums.Enums.TipoLicencia LicenciaConductor)
+        {
+            List<VoPregunta> Resultado = new List<VoPregunta>();
+            //Todos los registros de LicenciaAplicablePreguntas. LicenciaAplicablePreguntas son relaciones Pregunta-TipoLicencia 
+            List<VoLicenciaAplicablePreguntas> L_IDPreguntaPorLicencia = DLicenciaAplicablePreguntas_obj.Mostrar_Todas();
+
+            foreach (VoPregunta i in ListaPreguntas)
+            {
+                short idPregunta = i.Id;
+                //Obtiene todos los tipos de licencia de la pregunta
+                List<VoLicenciaAplicablePreguntas> L_RelacionesPreguntaTipoLicencia = L_IDPreguntaPorLicencia.Where(n => n.ID_Pregunta == idPregunta).ToList();
+
+                bool exitLoop = false;
+                //Se evalúa si se escoge la pregunta para cada tipo de licencia de la pregunta 
+                foreach (VoLicenciaAplicablePreguntas x in L_RelacionesPreguntaTipoLicencia)
+                {
+                    Enums.Enums.TipoLicencia tipoLicenciaDeLaPregunta = (Enums.Enums.TipoLicencia)x.ID_Tipo_Licencia;
+                    switch (LicenciaConductor)
+                    {
+                        case (Enums.Enums.TipoLicencia.C3):
+                            Resultado.Add(i);
+                            exitLoop = true;
+                            break;
+                        case (Enums.Enums.TipoLicencia.C2):
+                            if (
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B3 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.C1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.C2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                            {
+                                Resultado.Add(i);
+                                exitLoop = true;
+                            }
+                            break;
+                        case (Enums.Enums.TipoLicencia.C1):
+                            if (
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B3 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.C1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                            {
+                                Resultado.Add(i);
+                                exitLoop = true;
+                            }
+                            break;
+                        case (Enums.Enums.TipoLicencia.B3):
+                            if (
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B3 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                            {
+                                Resultado.Add(i);
+                                exitLoop = true;
+                            }
+                            break;
+                        case (Enums.Enums.TipoLicencia.B2):
+                            if (
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                            {
+                                Resultado.Add(i);
+                                exitLoop = true;
+                            }
+                            break;
+                        case (Enums.Enums.TipoLicencia.B1):
+                            if (
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                            {
+                                Resultado.Add(i);
+                                exitLoop = true;
+                            }
+                            break;
+                        case (Enums.Enums.TipoLicencia.A2):
+                            if (
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                            {
+                                Resultado.Add(i);
+                                exitLoop = true;
+                            }
+                            break;
+                        case (Enums.Enums.TipoLicencia.A1):
+                            if (
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                            {
+                                Resultado.Add(i);
+                                exitLoop = true;
+                            }
+                            break;
+                        case (Enums.Enums.TipoLicencia.SinLicencia):
+                            if (tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                            {
+                                Resultado.Add(i);
+                                exitLoop = true;
+                            }
+                            break;
+                    }
+                    if (exitLoop) break;
+                }
+            }
+            return Resultado;
         }
 
         /// <summary>
@@ -105,15 +234,8 @@ namespace CapaNegocio.Logica
             if (NumResiduo >= 2)
                 NumPreguntasTemaComportamientoPeaton++;
             if (NumResiduo >= 1)
-                NumPreguntasTemaRegimenSancionatorio++; 
+                NumPreguntasTemaRegimenSancionatorio++;
         }
-
-        //int calcularCantidad(int numTotal, int porcentaje)
-        //{
-        //    //double auxTotal = numTotal;
-        //    //double auxPorc = porcentaje;
-        //    return (numTotal * porcentaje) / 100;
-        //}
 
         /// <summary>
         /// Construye una lista aleatoria a partir de la lista suministrada

@@ -81,6 +81,7 @@
     <Compile Include="DCompetenciaPregunta.cs" />
     <Compile Include="DCompetencias.cs" />
     <Compile Include="DConfigPractica.cs" />
+    <Compile Include="DLicenciaAplicablePreguntas.cs" />
     <Compile Include="DOpcionesCuestionario.cs" />
     <Compile Include="DRegistroPreguntas.cs" />
     <Compile Include="DEvaluacion.cs" />
@@ -106,6 +107,7 @@
     </Compile>
     <Compile Include="Vo\VoCompetencia.cs" />
     <Compile Include="Vo\VoConductor.cs" />
+    <Compile Include="Vo\VoLicenciaAplicablePreguntas.cs" />
     <Compile Include="Vo\VoPregunta.cs" />
     <Compile Include="Vo\VoRegistroPreguntas.cs" />
     <Compile Include="Vo\VoTema.cs" />

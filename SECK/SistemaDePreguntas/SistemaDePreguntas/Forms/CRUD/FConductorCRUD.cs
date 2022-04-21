@@ -31,7 +31,22 @@ namespace CapaPresentacion.Forms.CRUD
         /// Asigna valores a los textbox del formulario
         /// </summary>
         /// <param name="CCObj"></param>
-        public void AsignarCampos(Cedula CCObj)
+        //public void AsignarCampos(NConductor CCObj)
+        //{
+        //    this.tb_Cedula.Text = CCObj.VoConductor_obj.Cedula;
+        //    this.tb_Nombre.Text = CCObj.VoConductor_obj.Nombre;
+        //    this.tb_Apellido.Text = CCObj.VoConductor_obj.Apellido;
+        //    this.cb_Genero.SelectedIndex = (CCObj.VoConductor_obj.Genero == (short)Enums.Genero.M) ? cb_Genero.FindStringExact("Masculino") : cb_Genero.FindStringExact("Femenino"); // 
+        //    this.dtp_FNacimiento.Value = (CCObj.VoConductor_obj.FechaNacimiento.HasValue == true) ? CCObj.VoConductor_obj.FechaNacimiento.GetValueOrDefault() : DateTime.Now; //
+        //    this.tb_Empresa.Text = Properties.Settings.Default.Empresa;
+        //    GuardarYCerrar = true;
+        //}
+
+        /// <summary>
+        /// Asigna valores a los textbox del formulario
+        /// </summary>
+        /// <param name="CCObj"></param>
+        public void AsignarCampos(CapaNegocio.Logica.NModeloConductor CCObj)
         {
             this.tb_Cedula.Text = CCObj.VoConductor_obj.Cedula;
             this.tb_Nombre.Text = CCObj.VoConductor_obj.Nombre;
@@ -106,7 +121,7 @@ namespace CapaPresentacion.Forms.CRUD
                     Aux_Imagen = ms.ToArray();
                 }
 
-                NConductor.Insertar(this.tb_Cedula.Text, this.tb_Nombre.Text, this.tb_Apellido.Text, int.Parse(this.cb_TipoLicencia.SelectedValue.ToString()), this.tb_CodLicencia.Text, this.tb_Empresa.Text, int.Parse(this.cb_Genero.SelectedValue.ToString()), Aux_Imagen, Aux_Imagen, dtp_FNacimiento.Value);
+                CapaNegocio.NConductor.Insertar(this.tb_Cedula.Text, this.tb_Nombre.Text, this.tb_Apellido.Text, int.Parse(this.cb_TipoLicencia.SelectedValue.ToString()), this.tb_CodLicencia.Text, this.tb_Empresa.Text, int.Parse(this.cb_Genero.SelectedValue.ToString()), Aux_Imagen, Aux_Imagen, dtp_FNacimiento.Value);
                 MessageBox.Show("El conductor está ya registrado en el sistema", "Usuario registrado");
                 if (GuardarYCerrar == true)
                 this.Close();

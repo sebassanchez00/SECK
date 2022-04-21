@@ -21,7 +21,7 @@ namespace CapaDatos.Vo
         public VoConductor()
         { }
 
-        public VoConductor(string cedula, string nombre, string apellido, short tipoLicencia, string codigoLicencia, string empresa, short genero, byte[] huella, byte[] fotografia, DateTime fechaNacimiento)
+        public VoConductor(string cedula, string nombre, string apellido, short? tipoLicencia, string codigoLicencia, string empresa, short genero, byte[] huella, byte[] fotografia, DateTime fechaNacimiento)
         {
             Cedula = cedula;
             Nombre = nombre;
