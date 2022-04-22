@@ -96,17 +96,22 @@ namespace CapaNegocio.Logica
 
         //Acceso a datos
         DOpcionesRespuesta DOpcionesRespuesta_obj;
+        DORegistroOpcionesPreguntas ORegistroOpcionesPreguntas_obj;
         DPregunta DPregunta_obj;
         DRegistroPreguntas DRegistroPreguntas_obj;
-        DORegistroOpcionesPreguntas ORegistroOpcionesPreguntas_obj;
+        DResultadoPorTema DResultadoPorTema_obj;
+        DTema DTema_obj;
 
         public NModeloCalificador()
         {
             L_Respuestas = new List<ModeloRespuesta>();
             DOpcionesRespuesta_obj = new DOpcionesRespuesta();
+            ORegistroOpcionesPreguntas_obj = new DORegistroOpcionesPreguntas();
             DPregunta_obj = new DPregunta();
             DRegistroPreguntas_obj = new DRegistroPreguntas();
-            ORegistroOpcionesPreguntas_obj = new DORegistroOpcionesPreguntas();
+            DResultadoPorTema_obj = new DResultadoPorTema();
+            DTema_obj = new DTema();
+
             this.numContestadas_ = 0;
             this.numCorrectas_ = 0;
             this.numTotalPreguntas_ = 0;
@@ -229,11 +234,11 @@ namespace CapaNegocio.Logica
 
                 int id_Cuestionario = DRegistroPreguntas_obj.Insertar(new VoRegistroPreguntas()
                 {
-                    id_Evaluacion = IdEvaluacion,
-                    pregunta = (string)Pregunta[3],
-                    respuestaDelUsuario = Respuesta.respuestaEscogida,
-                    respondioCorrectamente = Respuesta.EsCorrecta,
-                    imagen = (byte[])Pregunta[4]
+                    Id_Evaluacion = IdEvaluacion,
+                    Pregunta = (string)Pregunta[3],
+                    RespuestaDelUsuario = Respuesta.respuestaEscogida,
+                    RespondioCorrectamente = Respuesta.EsCorrecta,
+                    Imagen = (byte[])Pregunta[4]
                 }
                     );
 
@@ -246,6 +251,55 @@ namespace CapaNegocio.Logica
                     NORegistroOpcionesPreguntas.Insertar(id_Cuestionario, Aux_Enunc_Opcion, Aux_Es_Correcta);
                 }
             }
+
+            alamcenaResultadosPorTema(IdEvaluacion);
+        }
+
+        /// <summary>
+        /// Almacena los puntajes que se tuvieron en la prueba por cada tema evaluado. Toma los resultados desde los campos de la clase.
+        /// </summary>
+        public void alamcenaResultadosPorTema(string IdEvaluacion)
+        {
+            VoTema Vo_Aspectos_Generales = DTema_obj.MostrarPorID((short)Tema.Aspectos_Generales);
+            VoTema Vo_Comportamiento_Peaton = DTema_obj.MostrarPorID((short)Tema.Comportamiento_Peaton);
+            VoTema Vo_Regimen_Sancionatorio = DTema_obj.MostrarPorID((short)Tema.Regimen_Sancionatorio);
+            VoTema Vo_Senales_Transito = DTema_obj.MostrarPorID((short)Tema.Senales_Transito);
+
+            DResultadoPorTema_obj.Insertar(
+                new VoResultadoPorTema
+                {
+                    ID_Evaluacion = IdEvaluacion,
+                    ID_Tema = Vo_Aspectos_Generales.Id,
+                    Enunciado_Tema = Vo_Aspectos_Generales.Enunciado,
+                    Puntaje = this.PuntajeAspectosGenerales
+                });
+
+            DResultadoPorTema_obj.Insertar(
+                new VoResultadoPorTema
+                {
+                    ID_Evaluacion = IdEvaluacion,
+                    ID_Tema = Vo_Comportamiento_Peaton.Id,
+                    Enunciado_Tema = Vo_Comportamiento_Peaton.Enunciado,
+                    Puntaje = this.PuntajeComportamientoPeaton
+                });
+
+            DResultadoPorTema_obj.Insertar(
+                new VoResultadoPorTema
+                {
+                    ID_Evaluacion = IdEvaluacion,
+                    ID_Tema = Vo_Regimen_Sancionatorio.Id,
+                    Enunciado_Tema = Vo_Regimen_Sancionatorio.Enunciado,
+                    Puntaje = this.PuntajeRegimenSancionatorio
+                });
+
+            DResultadoPorTema_obj.Insertar(
+                new VoResultadoPorTema
+                {
+                    ID_Evaluacion = IdEvaluacion,
+                    ID_Tema = Vo_Senales_Transito.Id,
+                    Enunciado_Tema = Vo_Senales_Transito.Enunciado,
+                    Puntaje = this.PuntajeSenalesTransito
+                });
         }
 
         /// <summary>
@@ -264,7 +318,7 @@ namespace CapaNegocio.Logica
         {
             Aspectos_Generales = 1,
             Regimen_Sancionatorio = 2,
-            Comportamiento_Peaton=3,
+            Comportamiento_Peaton = 3,
             Senales_Transito = 4
         }
     }

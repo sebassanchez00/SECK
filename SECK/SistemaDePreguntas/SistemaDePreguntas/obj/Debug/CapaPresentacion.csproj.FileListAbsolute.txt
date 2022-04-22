@@ -419,7 +419,6 @@ Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaD
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaAbiertaNumCRUD.resources
-Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReportes.resources
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.informacion.resources
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Principal.FPreguntas.resources
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FPreguntaSelMulImgCRUD.resources
@@ -461,3 +460,4 @@ Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaD
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csproj.CopyComplete
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb
+Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Reportes.FReporteEvaluacionesTema.resources

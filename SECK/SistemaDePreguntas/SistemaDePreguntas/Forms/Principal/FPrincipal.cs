@@ -28,7 +28,7 @@ namespace CapaPresentacion.Forms.Principal
         FPreguntaAbiertaNumCRUD FPreguntaAbiertaNumCRUDObj_;
         FConductorCRUD FConductorCRUDObj_;
         FReporteEvaluaciones FReporteEvaluacionesObj_;
-        FReportes FInformacionObj_;
+        FReporteEvaluacionesTema FReporteEvaluacionesTemaObj_;
 
         public FPreguntas FPreguntasObj
         {
@@ -69,12 +69,7 @@ namespace CapaPresentacion.Forms.Principal
         {
             get { return FReporteEvaluacionesObj_; }
             set { FReporteEvaluacionesObj_ = value; }
-        }
-        public FReportes FInformacionObj
-        {
-            get { return FInformacionObj_; }
-            set { FInformacionObj_ = value; }
-        }        
+        }     
 
         public FPrincipal()
         {
@@ -152,6 +147,11 @@ namespace CapaPresentacion.Forms.Principal
         {
             Mostrar_FReporteEvaluacionesObj();
         }
+        private void TSMI_EvaluacionesConTema_Click(object sender, EventArgs e)
+        {
+            Mostrar_FReporteEvaluacionesTemaObj();
+        }
+
         public void Mostrar_FPreguntasObj()
         {
             if (FPreguntasObj_ == null)
@@ -247,7 +247,7 @@ namespace CapaPresentacion.Forms.Principal
                 FPreguntaAbiertaNumCRUDObj_.Show();
                 FPreguntaAbiertaNumCRUDObj_.WindowState = FormWindowState.Maximized;
             }
-        }
+        }    
         public void Mostrar_FConductorCRUDObj()
         {
             if (FConductorCRUDObj_ == null)
@@ -264,24 +264,6 @@ namespace CapaPresentacion.Forms.Principal
                 FConductorCRUDObj_.WindowState = FormWindowState.Maximized;
             }
         }
-        public void Mostrar_FInformeObj()
-        {           
-            if (FReporteEvaluacionesObj_ == null)
-            {
-                FInformacionObj_ = new FReportes();
-                FInformacionObj_.MdiParent = this;
-                FInformacionObj_.Show();
-                FInformacionObj_.WindowState = FormWindowState.Maximized;
-                FInformacionObj_.FormClosed += (sender_, EventArgs_) => { FInformacionObj_ = null; };
-            }
-            else
-            {
-                FInformacionObj_.Show();
-                FInformacionObj_.WindowState = FormWindowState.Maximized;
-            }
-//            informacionobj.crystalReportLoad();
-        }
-
         public void Mostrar_FReporteEvaluacionesObj()
         {
             if (FReporteEvaluacionesObj_ == null)
@@ -296,6 +278,22 @@ namespace CapaPresentacion.Forms.Principal
             {
                 FReporteEvaluacionesObj_.Show();
                 FReporteEvaluacionesObj_.WindowState = FormWindowState.Maximized;
+            }
+        }
+        public void Mostrar_FReporteEvaluacionesTemaObj()
+        {
+            if (FReporteEvaluacionesTemaObj_ == null)
+            {
+                FReporteEvaluacionesTemaObj_ = new FReporteEvaluacionesTema();
+                FReporteEvaluacionesTemaObj_.MdiParent = this;
+                FReporteEvaluacionesTemaObj_.Show();
+                FReporteEvaluacionesTemaObj_.WindowState = FormWindowState.Maximized;
+                FReporteEvaluacionesTemaObj_.FormClosed += (sender_, EventArgs_) => { FReporteEvaluacionesObj_ = null; };
+            }
+            else
+            {
+                FReporteEvaluacionesTemaObj_.Show();
+                FReporteEvaluacionesTemaObj_.WindowState = FormWindowState.Maximized;
             }
         }
 
@@ -315,12 +313,6 @@ namespace CapaPresentacion.Forms.Principal
         public void VisibilidadMenuStrip(bool Visibilidad)
         {
             this.MenuStrip_Ppl.Visible = Visibilidad;
-        }
-
-        private void HOY_Click(object sender, EventArgs e)
-        {
-            Mostrar_FInformeObj();
-            //            Mostrar_FReporteEvaluacionesObj();
         }
     }
 }

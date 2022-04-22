@@ -1,5 +1,4 @@
-﻿//using Microsoft.Win32.Reporting
-using Microsoft.Reporting.WinForms;
+﻿using Microsoft.Reporting.WinForms;
 using CapaNegocio;
 using CapaPresentacion;
 using System;
@@ -29,7 +28,7 @@ namespace CapaPresentacion.Forms.Reportes
         {
             cb_cedula.DisplayMember = "CEDULAS";
             cb_cedula.ValueMember = "CEDULAS";
-            cb_cedula.DataSource = NConductor.Mostrar();
+            cb_cedula.DataSource = CapaNegocio.NConductor.Mostrar();
         }
         public void Actual_Report(string cedula)
         {
@@ -46,7 +45,7 @@ namespace CapaPresentacion.Forms.Reportes
             dsour_Evaluacion.Value = dt_Eval;
             rv.LocalReport.DataSources.Add(dsour_Evaluacion);
 
-            DataTable dt_Cond = NConductor.MostrarDatos_dt(cedula);
+            DataTable dt_Cond = CapaNegocio.NConductor.MostrarDatos_dt(cedula);
             ReportDataSource dsour_Conductor; 
             dsour_Conductor = new ReportDataSource();
             dsour_Conductor.Name = "DataSet_DConductor";
@@ -88,7 +87,7 @@ namespace CapaPresentacion.Forms.Reportes
             dsour_Evaluacion.Value = dt_Eval;
             rv.LocalReport.DataSources.Add(dsour_Evaluacion);
 
-            DataTable dt_Cond = NConductor.MostrarDatos_dt((string)cb_cedula.SelectedValue);
+            DataTable dt_Cond = CapaNegocio.NConductor.MostrarDatos_dt((string)cb_cedula.SelectedValue);
             ReportDataSource dsour_Conductor; 
             dsour_Conductor = new ReportDataSource();
             dsour_Conductor.Name = "DataSet_DConductor";
@@ -130,11 +129,6 @@ namespace CapaPresentacion.Forms.Reportes
         private void btn_Generar_Click(object sender, EventArgs e)
         {
             Actualiza_Datos_Reporte();
-        }
-
-        private void cb_cedula_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }           

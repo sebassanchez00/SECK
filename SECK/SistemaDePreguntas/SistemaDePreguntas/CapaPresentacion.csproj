@@ -149,7 +149,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_EntrenadorDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Cedula.cs" />
+    <Compile Include="NConductor.cs" />
     <Compile Include="CrystalReporte.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -181,11 +181,11 @@
     <Compile Include="Forms\CRUD\FPreguntaAbiertaNumCRUD.Designer.cs">
       <DependentUpon>FPreguntaAbiertaNumCRUD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Reportes\FReportes.cs">
+    <Compile Include="Forms\Reportes\FReporteEvaluacionesTema.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Reportes\FReportes.Designer.cs">
-      <DependentUpon>FReportes.cs</DependentUpon>
+    <Compile Include="Forms\Reportes\FReporteEvaluacionesTema.Designer.cs">
+      <DependentUpon>FReporteEvaluacionesTema.cs</DependentUpon>
     </Compile>
     <Compile Include="informacion.cs">
       <SubType>Form</SubType>
@@ -255,8 +255,8 @@
     <EmbeddedResource Include="Forms\CRUD\FPreguntaAbiertaNumCRUD.resx">
       <DependentUpon>FPreguntaAbiertaNumCRUD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Reportes\FReportes.resx">
-      <DependentUpon>FReportes.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Reportes\FReporteEvaluacionesTema.resx">
+      <DependentUpon>FReporteEvaluacionesTema.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="informacion.resx">
       <DependentUpon>informacion.cs</DependentUpon>
@@ -290,6 +290,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Reportes\RepEvaluacionConTema.rdlc" />
     <EmbeddedResource Include="Reportes\RepEvaluacion.rdlc" />
     <EmbeddedResource Include="Reportes\Reportes.rdlc">
       <SubType>Designer</SubType>
