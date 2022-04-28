@@ -6,11 +6,11 @@ using System.Linq;
 using System.Text;
 using System.Drawing;
 using System.IO;
-using System.Windows.Forms;
+//using System.Windows.Forms;
 
-namespace CapaPresentacion
+namespace CapaNegocio.Logica
 {
-    class Utilidades
+    public class NUtilidades
     {
         /// <summary>
         /// Lee las preguntas desde un archivo .csv y les asigna tema. Dependiendo del tipo de pregunta, contruye el obj DPregunta. Retorna null si hay un error
@@ -38,13 +38,13 @@ namespace CapaPresentacion
                             //Validar formato de archivo .CSV
                             if (valores.Length != 2)
                             {
-                                MessageBox.Show("Archivo no tiene la cantidad correcta de datos en la pregunta: " + valores[0], "Faltan o sobran datos");
+                                // (*) MessageBox.Show("Archivo no tiene la cantidad correcta de datos en la pregunta: " + valores[0], "Faltan o sobran datos");
                                 return null;
                             }
                             double auxDouble = 0;
                             if (!double.TryParse(valores[1], out  auxDouble))
                             {
-                                MessageBox.Show("Valor de columna 'RESPUESTA' debe ser un número entero, sin decimales en la pregunta: " + valores[0], "Archivo con formato incorrecto");
+                                // (*) MessageBox.Show("Valor de columna 'RESPUESTA' debe ser un número entero, sin decimales en la pregunta: " + valores[0], "Archivo con formato incorrecto");
                                 return null;
                             }
 
@@ -70,12 +70,12 @@ namespace CapaPresentacion
                             //Validar formato de archivo .CSV
                             if (valores.Length != 9)
                             {
-                                MessageBox.Show("Archivo no tiene la cantidad correcta de datos en la pregunta: " + valores[0], "Faltan o sobran datos");
+                                // (*) MessageBox.Show("Archivo no tiene la cantidad correcta de datos en la pregunta: " + valores[0], "Faltan o sobran datos");
                                 return null;
                             }
                             if (!((valores[2] == "1" || valores[2] == "0") && (valores[4] == "1" || valores[4] == "0") && (valores[6] == "1" || valores[6] == "0") && (valores[8] == "1" || valores[8] == "0")))
                             {
-                                MessageBox.Show("Columnas 'Es_Correcto' tienen valores diferentes a 0 y 1 en la pregunta: " + valores[0], "Formato de archivo incorrecto");
+                                // (*) MessageBox.Show("Columnas 'Es_Correcto' tienen valores diferentes a 0 y 1 en la pregunta: " + valores[0], "Formato de archivo incorrecto");
                                 return null;
                             }
 
@@ -90,7 +90,7 @@ namespace CapaPresentacion
                                 j++;
                             if (j != 1)
                             {
-                                MessageBox.Show("Debe existir una y solo una respuesta correcta en columnas 'Es_Correcto'. En la pregunta: " + valores[0], "Formato de archivo incorrecto");
+                                // (*) MessageBox.Show("Debe existir una y solo una respuesta correcta en columnas 'Es_Correcto'. En la pregunta: " + valores[0], "Formato de archivo incorrecto");
                                 return null;
                             }
 
@@ -125,12 +125,12 @@ namespace CapaPresentacion
                             //Validar formato de archivo .CSV
                             if (valores.Length != 10)
                             {
-                                MessageBox.Show("Archivo no tiene la cantidad correcta de datos en la pregunta: " + valores[0], "Faltan o sobran datos");
+                                // (*) MessageBox.Show("Archivo no tiene la cantidad correcta de datos en la pregunta: " + valores[0], "Faltan o sobran datos");
                                 return null;
                             }
                             if (!((valores[2] == "1" || valores[2] == "0") && (valores[4] == "1" || valores[4] == "0") && (valores[6] == "1" || valores[6] == "0") && (valores[8] == "1" || valores[8] == "0")))
                             {
-                                MessageBox.Show("Columnas 'Es_Correcto' tienen valores diferentes a 0 y 1 en la pregunta: " + valores[0], "Formato de archivo incorrecto");
+                                // (*) MessageBox.Show("Columnas 'Es_Correcto' tienen valores diferentes a 0 y 1 en la pregunta: " + valores[0], "Formato de archivo incorrecto");
                                 return null;
                             }
                             int j = 0;
@@ -144,7 +144,7 @@ namespace CapaPresentacion
                                 j++;
                             if (j != 1)
                             {
-                                MessageBox.Show("Debe existir una y solo una respuesta correcta en columnas 'Es_Correcto'. En la pregunta: " + valores[0], "Formato de archivo incorrecto");
+                                // (*) MessageBox.Show("Debe existir una y solo una respuesta correcta en columnas 'Es_Correcto'. En la pregunta: " + valores[0], "Formato de archivo incorrecto");
                                 return null;
                             }
 
@@ -159,7 +159,7 @@ namespace CapaPresentacion
                             }
                             else
                             {
-                                MessageBox.Show("No se encontró la imagen '" + valores[9] + "' asociada a la pregunta: '" + valores[0] + "'", "No existe la imagen");
+                                // (*) MessageBox.Show("No se encontró la imagen '" + valores[9] + "' asociada a la pregunta: '" + valores[0] + "'", "No existe la imagen");
                                 return null;
                             }
 
@@ -193,17 +193,17 @@ namespace CapaPresentacion
                             //Validar formato de archivo .CSV
                             if (valores.Length != 3)
                             {
-                                MessageBox.Show("Archivo no tiene la cantidad correcta de datos en la pregunta: " + valores[0], "Faltan o sobran datos");
+                                // (*) MessageBox.Show("Archivo no tiene la cantidad correcta de datos en la pregunta: " + valores[0], "Faltan o sobran datos");
                                 return null;
                             }
                             if (!((valores[1] == "1" || valores[1] == "0") && (valores[2] == "1" || valores[2] == "0")))
                             {
-                                MessageBox.Show("Columnas 'Es_Correcto' tienen valores diferentes a 0 y 1 en la pregunta: " + valores[0], "Formato de archivo incorrecto");
+                                // (*) MessageBox.Show("Columnas 'Es_Correcto' tienen valores diferentes a 0 y 1 en la pregunta: " + valores[0], "Formato de archivo incorrecto");
                                 return null;
                             }
                             if (valores[1] == valores[2])
                             {
-                                MessageBox.Show("Las respuesta no pueden ser ambas correctas o ambas incorrectas en la pregunta: " + valores[0], "Formato de archivo incorrecto");
+                                // (*) MessageBox.Show("Las respuesta no pueden ser ambas correctas o ambas incorrectas en la pregunta: " + valores[0], "Formato de archivo incorrecto");
                                 return null;
                             }
 
@@ -222,7 +222,8 @@ namespace CapaPresentacion
                     #endregion
 
                     default:
-                        MessageBox.Show("No existe ese tipo de pregunta");
+                        // (*) MessageBox.Show("No existe ese tipo de pregunta");
+                        throw new Exception(message: "No existe ese tipo de pregunta");
                         return null;
                 }
 

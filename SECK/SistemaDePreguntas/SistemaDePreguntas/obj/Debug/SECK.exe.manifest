@@ -79,14 +79,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CapaNegocio.dll" size="32768">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="CapaNegocio.dll" size="35840">
       <assemblyIdentity name="CapaNegocio" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>oOet0qufjABiMfEp4aa9jYwaSig=</dsig:DigestValue>
+        <dsig:DigestValue>uoZQ67m1B6RhL4TEO31pW5facEw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -223,14 +223,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SECK.exe" size="7660032">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SECK.exe" size="7653376">
       <assemblyIdentity name="SECK" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>sz+TNlPnClbB2LxowV5BbMW2i/U=</dsig:DigestValue>
+        <dsig:DigestValue>ePgYBEtJl9zl2/DmL7Oq0h5q574=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

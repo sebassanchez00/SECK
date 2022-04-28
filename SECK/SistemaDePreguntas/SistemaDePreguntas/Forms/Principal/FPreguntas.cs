@@ -200,7 +200,7 @@ namespace CapaPresentacion.Forms.Principal
             {
                 ConsecutivoReportes++;
                 string NumeroReporte = string.Format("{0}{1}", ConsecutivoReportes.ToString(), tb_CCConductor.Text);
-                long dVer = Utilidades.Digito_Verificación(long.Parse(NumeroReporte));
+                long dVer = NUtilidades.Digito_Verificación(long.Parse(NumeroReporte));
                 Lbl_IDReportes.Text = string.Format("{0}-{1}", NumeroReporte, dVer);
             }
         }

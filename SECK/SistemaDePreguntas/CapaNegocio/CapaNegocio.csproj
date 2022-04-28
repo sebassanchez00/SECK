@@ -70,6 +70,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -82,6 +83,7 @@
     <Compile Include="Logica\NModeloConfiguracionPrueba.cs" />
     <Compile Include="Logica\NModeloCuestionario.cs" />
     <Compile Include="Logica\NModeloCalificador.cs" />
+    <Compile Include="Logica\NUtilidades.cs" />
     <Compile Include="NCompetenciaPregunta.cs" />
     <Compile Include="NCompetencias.cs" />
     <Compile Include="NConexion.cs" />
