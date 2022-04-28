@@ -3,6 +3,7 @@ using CapaDatos;
 using CapaDatos.Vo;
 using CapaPresentacion.Forms.CRUD;
 using CapaNegocio;
+using CapaNegocio.Enums;
 using CapaNegocio.Logica;
 using Fotografia;
 using Impresora;
@@ -199,7 +200,7 @@ namespace CapaPresentacion.Forms.Principal
             {
                 ConsecutivoReportes++;
                 string NumeroReporte = string.Format("{0}{1}", ConsecutivoReportes.ToString(), tb_CCConductor.Text);
-                long dVer = Utilidades.Digito_Verificación(long.Parse(NumeroReporte));
+                long dVer = NUtilidades.Digito_Verificación(long.Parse(NumeroReporte));
                 Lbl_IDReportes.Text = string.Format("{0}-{1}", NumeroReporte, dVer);
             }
         }
@@ -308,7 +309,7 @@ namespace CapaPresentacion.Forms.Principal
         {
             try
             {
-                Cuestionario_obj = new NModeloCuestionario(Configuracion_obj,(CapaNegocio.Enums.Enums.TipoLicencia)conductorEvaluado.VoConductor_obj.TipoLicencia);
+                Cuestionario_obj = new NModeloCuestionario(Configuracion_obj,(TipoLicencia)conductorEvaluado.VoConductor_obj.TipoLicencia);
                 Calificador_obj = new NModeloCalificador();
                 //Al tiempo de crear el cuestionario, crea el calificador con la misma lista
                 Calificador_obj.alimentarDesdeListaVoPregunta(Cuestionario_obj.L_TodasLasPreguntasAleatorias);

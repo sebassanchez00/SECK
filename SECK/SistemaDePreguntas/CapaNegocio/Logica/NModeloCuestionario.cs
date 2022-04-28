@@ -1,6 +1,7 @@
 ﻿using CapaDatos.Vo;
 using CapaDatos;
 using CapaNegocio;
+using CapaNegocio.Enums;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -19,7 +20,7 @@ namespace CapaNegocio.Logica
         int NumPreguntasTemaComportamientoPeaton;
         int NumPreguntasTemaSeñalesTransito;
         int NumPreguntasTemaRegimenSancionatorio;
-        Enums.Enums.TipoLicencia tipoLicencia;
+        TipoLicencia tipoLicencia;
 
         List<VoPregunta> L_TodasLasPreguntas;
         List<VoPregunta> L_PreguntasAspectosGenerales;
@@ -42,7 +43,7 @@ namespace CapaNegocio.Logica
         /// 
         /// </summary>
         /// <param name="config">Clase configuraciones de la prueba</param>
-        public NModeloCuestionario(NModeloConfiguracionPrueba config, Enums.Enums.TipoLicencia TipoLicenciaConductor)
+        public NModeloCuestionario(NModeloConfiguracionPrueba config, TipoLicencia TipoLicenciaConductor)
         {
             DPregunta_obj = new DPregunta();
             DTipoPregunta_obj = new DTipoPregunta();
@@ -79,7 +80,7 @@ namespace CapaNegocio.Logica
         /// <summary>
         /// Toma un listado de preguntas y devuelve las preguntas que aplican según tipo de licencia del conductor
         /// </summary>
-        List<VoPregunta> filtrarPorLicencia(List<VoPregunta> ListaPreguntas, Enums.Enums.TipoLicencia LicenciaConductor)
+        List<VoPregunta> filtrarPorLicencia(List<VoPregunta> ListaPreguntas, TipoLicencia LicenciaConductor)
         {
             List<VoPregunta> Resultado = new List<VoPregunta>();
             //Todos los registros de LicenciaAplicablePreguntas. LicenciaAplicablePreguntas son relaciones Pregunta-TipoLicencia 
@@ -95,99 +96,99 @@ namespace CapaNegocio.Logica
                 //Se evalúa si se escoge la pregunta para cada tipo de licencia de la pregunta 
                 foreach (VoLicenciaAplicablePreguntas x in L_RelacionesPreguntaTipoLicencia)
                 {
-                    Enums.Enums.TipoLicencia tipoLicenciaDeLaPregunta = (Enums.Enums.TipoLicencia)x.ID_Tipo_Licencia;
+                    TipoLicencia tipoLicenciaDeLaPregunta = (TipoLicencia)x.ID_Tipo_Licencia;
                     switch (LicenciaConductor)
                     {
-                        case (Enums.Enums.TipoLicencia.C3):
+                        case (TipoLicencia.C3):
                             Resultado.Add(i);
                             exitLoop = true;
                             break;
-                        case (Enums.Enums.TipoLicencia.C2):
+                        case (TipoLicencia.C2):
                             if (
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B3 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.C1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.C2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B3 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.C1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.C2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.SinLicencia)
                             {
                                 Resultado.Add(i);
                                 exitLoop = true;
                             }
                             break;
-                        case (Enums.Enums.TipoLicencia.C1):
+                        case (TipoLicencia.C1):
                             if (
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B3 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.C1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B3 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.C1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.SinLicencia)
                             {
                                 Resultado.Add(i);
                                 exitLoop = true;
                             }
                             break;
-                        case (Enums.Enums.TipoLicencia.B3):
+                        case (TipoLicencia.B3):
                             if (
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B3 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B3 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.SinLicencia)
                             {
                                 Resultado.Add(i);
                                 exitLoop = true;
                             }
                             break;
-                        case (Enums.Enums.TipoLicencia.B2):
+                        case (TipoLicencia.B2):
                             if (
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.SinLicencia)
                             {
                                 Resultado.Add(i);
                                 exitLoop = true;
                             }
                             break;
-                        case (Enums.Enums.TipoLicencia.B1):
+                        case (TipoLicencia.B1):
                             if (
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.B1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.B1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.SinLicencia)
                             {
                                 Resultado.Add(i);
                                 exitLoop = true;
                             }
                             break;
-                        case (Enums.Enums.TipoLicencia.A2):
+                        case (TipoLicencia.A2):
                             if (
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A2 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A2 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.SinLicencia)
                             {
                                 Resultado.Add(i);
                                 exitLoop = true;
                             }
                             break;
-                        case (Enums.Enums.TipoLicencia.A1):
+                        case (TipoLicencia.A1):
                             if (
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.A1 ||
-                                tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                                tipoLicenciaDeLaPregunta == TipoLicencia.A1 ||
+                                tipoLicenciaDeLaPregunta == TipoLicencia.SinLicencia)
                             {
                                 Resultado.Add(i);
                                 exitLoop = true;
                             }
                             break;
-                        case (Enums.Enums.TipoLicencia.SinLicencia):
-                            if (tipoLicenciaDeLaPregunta == Enums.Enums.TipoLicencia.SinLicencia)
+                        case (TipoLicencia.SinLicencia):
+                            if (tipoLicenciaDeLaPregunta == TipoLicencia.SinLicencia)
                             {
                                 Resultado.Add(i);
                                 exitLoop = true;

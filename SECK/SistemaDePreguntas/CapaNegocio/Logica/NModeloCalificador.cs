@@ -1,5 +1,6 @@
 ﻿using CapaDatos.Vo;
 using CapaDatos;
+using CapaNegocio.Enums;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -314,12 +315,12 @@ namespace CapaNegocio.Logica
             public bool EsCorrecta { get; set; }
         }
 
-        public enum Tema
-        {
-            Aspectos_Generales = 1,
-            Regimen_Sancionatorio = 2,
-            Comportamiento_Peaton = 3,
-            Senales_Transito = 4
-        }
+        //public enum Tema
+        //{
+        //    Aspectos_Generales = 1,
+        //    Regimen_Sancionatorio = 2,
+        //    Comportamiento_Peaton = 3,
+        //    Senales_Transito = 4
+        //}
     }
 }
