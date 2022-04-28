@@ -138,24 +138,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Base\F_Base.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Base\F_Base.Designer.cs">
-      <DependentUpon>F_Base.cs</DependentUpon>
+    <Compile Include="BD_EntrenadorDataSet.cs">
+      <DependentUpon>BD_EntrenadorDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="BD_EntrenadorDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>BD_EntrenadorDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="CrystalReporte.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>CrystalReporte.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="Enums\Enums.cs" />
     <Compile Include="Forms\Configuracion\FConfigEval - Copy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -225,13 +215,6 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="Base\F_Base.resx">
-      <DependentUpon>F_Base.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CrystalReporte.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>CrystalReporte.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Configuracion\FConfigEval - Copy.resx">
       <DependentUpon>FConfigEval - Copy.cs</DependentUpon>
       <SubType>Designer</SubType>

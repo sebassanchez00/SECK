@@ -414,7 +414,6 @@ Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.exe
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\03 Backups\SECK Sistema De Preguntas\SECK SistemaDePreguntas_3\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\SECK.pdb
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
-Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Base.F_Base.resources
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval2.resources
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.Configuracion.FConfigEval.resources
 Z:\Documents\Sebastian\Kirvit\COT-21092021-FiltrosKiosko\06 Codigo\SECK\SistemaDePreguntas\SistemaDePreguntas\obj\Debug\CapaPresentacion.Forms.CRUD.FConductorCRUD.resources
