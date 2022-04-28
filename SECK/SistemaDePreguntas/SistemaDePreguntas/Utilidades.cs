@@ -1,8 +1,9 @@
-﻿using System;
+﻿using CapaDatos;
+using CapaNegocio.Enums;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CapaDatos;
 using System.Drawing;
 using System.IO;
 using System.Windows.Forms;
@@ -18,7 +19,7 @@ namespace CapaPresentacion
         /// <param name="Tema">Tema que se asociara a la pregunta</param>
         /// <param name="TipoPregunta">Tipo de pregunta, deacuerdo al tipo se construye el objeto DPregunta</param>
         /// <returns></returns>
-        public static List<DPregunta> LeerArchivo(string FileName, int Tema, Enums.TipoPreg TipoPregunta)
+        public static List<DPregunta> LeerArchivo(string FileName, int Tema, TipoPreg TipoPregunta)
         {
             List<DPregunta> LPreguntas = new List<DPregunta>();
             using (StreamReader SR = new StreamReader(FileName, System.Text.Encoding.Default))
@@ -27,7 +28,7 @@ namespace CapaPresentacion
                 switch (TipoPregunta)
                 {
                     #region Pregunta abierta numérica
-                    case Enums.TipoPreg.AbiertaNumerica:
+                    case TipoPreg.AbiertaNumerica:
 
                         while (!SR.EndOfStream)
                         {
@@ -48,7 +49,7 @@ namespace CapaPresentacion
                             }
 
                             AuxPregunta.Tema = Tema;
-                            AuxPregunta.Id_TipoPregunta = (int)Enums.TipoPreg.AbiertaNumerica;
+                            AuxPregunta.Id_TipoPregunta = (int)TipoPreg.AbiertaNumerica;
                             AuxPregunta.Enunciado = valores[0];
                             AuxPregunta.Opcion1 = valores[1];
 
@@ -59,7 +60,7 @@ namespace CapaPresentacion
                     #endregion
 
                     #region Pregunta Seleeción múltiple
-                    case Enums.TipoPreg.SelMul:
+                    case TipoPreg.SelMul:
 
                         while (!SR.EndOfStream)
                         {
@@ -94,7 +95,7 @@ namespace CapaPresentacion
                             }
 
                             AuxPregunta.Tema = Tema;
-                            AuxPregunta.Id_TipoPregunta = (int)Enums.TipoPreg.SelMul;
+                            AuxPregunta.Id_TipoPregunta = (int)TipoPreg.SelMul;
                             AuxPregunta.Enunciado = valores[0];
                             AuxPregunta.Opcion1 = valores[1];
                             AuxPregunta.EsCorrectaOp1 = valores[2] == "1" ? true : false;
@@ -112,7 +113,7 @@ namespace CapaPresentacion
                     #endregion
 
                     #region Pregunta Seleeción múltiple con imagen
-                    case Enums.TipoPreg.SelMulImg:
+                    case TipoPreg.SelMulImg:
 
                         while (!SR.EndOfStream)
                         {
@@ -163,7 +164,7 @@ namespace CapaPresentacion
                             }
 
                             AuxPregunta.Tema = Tema;
-                            AuxPregunta.Id_TipoPregunta = (int)Enums.TipoPreg.SelMulImg;
+                            AuxPregunta.Id_TipoPregunta = (int)TipoPreg.SelMulImg;
                             AuxPregunta.Enunciado = valores[0];
                             AuxPregunta.Opcion1 = valores[1];
                             AuxPregunta.EsCorrectaOp1 = valores[2] == "1" ? true : false;
@@ -181,7 +182,7 @@ namespace CapaPresentacion
                     #endregion
 
                     #region Pregunta verdadero falso
-                    case Enums.TipoPreg.VerdaderoFalso:
+                    case TipoPreg.VerdaderoFalso:
 
                         while (!SR.EndOfStream)
                         {
@@ -207,7 +208,7 @@ namespace CapaPresentacion
                             }
 
                             AuxPregunta.Tema = Tema;
-                            AuxPregunta.Id_TipoPregunta = (int)Enums.TipoPreg.VerdaderoFalso;
+                            AuxPregunta.Id_TipoPregunta = (int)TipoPreg.VerdaderoFalso;
                             AuxPregunta.Enunciado = valores[0];
                             AuxPregunta.Opcion1 = "Verdadero";
                             AuxPregunta.EsCorrectaOp1 = valores[1] == "1" ? true : false;

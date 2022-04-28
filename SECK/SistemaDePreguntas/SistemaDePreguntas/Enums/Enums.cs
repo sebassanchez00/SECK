@@ -5,7 +5,7 @@ using System.Text;
 
 namespace CapaPresentacion
 {
-    public class Enums
+    public class EnumsEliminar
     {
         public enum TipoPreg
         {

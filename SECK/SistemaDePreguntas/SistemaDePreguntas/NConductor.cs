@@ -1,5 +1,6 @@
 ﻿
 using CapaDatos.Vo;
+using CapaNegocio.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -87,7 +88,7 @@ namespace CapaPresentacion
             this.VoConductor_obj.Cedula = aux_num;
             this.VoConductor_obj.Apellido = aux_ap1.Trim() + " " + aux_ap2.Trim();
             this.VoConductor_obj.Nombre = aux_nom1.Trim() + " " + aux_nom2.Trim();
-            this.VoConductor_obj.Genero = aux_genero == "M" ? (short)Enums.Genero.M : (short)Enums.Genero.F;
+            this.VoConductor_obj.Genero = aux_genero == "M" ? (short)Genero.M : (short)Genero.F;
 
             //this._num = int.Parse(aux_num);
             //this._ap1 = aux_ap1;

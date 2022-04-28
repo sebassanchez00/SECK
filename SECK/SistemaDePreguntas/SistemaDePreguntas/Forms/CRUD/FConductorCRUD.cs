@@ -1,4 +1,5 @@
 ﻿using CapaNegocio;
+using CapaNegocio.Enums;
 using Fotografia;
 using System;
 using System.Collections.Generic;
@@ -51,7 +52,7 @@ namespace CapaPresentacion.Forms.CRUD
             this.tb_Cedula.Text = CCObj.VoConductor_obj.Cedula;
             this.tb_Nombre.Text = CCObj.VoConductor_obj.Nombre;
             this.tb_Apellido.Text = CCObj.VoConductor_obj.Apellido;
-            this.cb_Genero.SelectedIndex = (CCObj.VoConductor_obj.Genero == (short)Enums.Genero.M) ? cb_Genero.FindStringExact("Masculino") : cb_Genero.FindStringExact("Femenino"); // 
+            this.cb_Genero.SelectedIndex = (CCObj.VoConductor_obj.Genero == (short)Genero.M) ? cb_Genero.FindStringExact("Masculino") : cb_Genero.FindStringExact("Femenino"); // 
             this.dtp_FNacimiento.Value = (CCObj.VoConductor_obj.FechaNacimiento.HasValue == true) ? CCObj.VoConductor_obj.FechaNacimiento.GetValueOrDefault() : DateTime.Now; //
             this.tb_Empresa.Text = Properties.Settings.Default.Empresa;
             GuardarYCerrar = true;
