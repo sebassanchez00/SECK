@@ -1,4 +1,8 @@
-﻿using System;
+﻿using CapaDatos;
+using CapaNegocio;
+using CapaNegocio.Logica;
+using CapaNegocio.Enums;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,8 +11,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
-using CapaDatos;
-using CapaNegocio;
 
 namespace CapaPresentacion.Forms.CRUD
 {
@@ -46,7 +48,7 @@ namespace CapaPresentacion.Forms.CRUD
                 else { return; }
             }
 
-            LPreguntas = Utilidades.LeerArchivo(FileName, int.Parse(this.cb_Tema.SelectedValue.ToString()), Enums.TipoPreg.AbiertaNumerica);
+            LPreguntas = NUtilidades.LeerArchivo(FileName, int.Parse(this.cb_Tema.SelectedValue.ToString()), TipoPreg.AbiertaNumerica);
 
             if (LPreguntas == null)
                 return;

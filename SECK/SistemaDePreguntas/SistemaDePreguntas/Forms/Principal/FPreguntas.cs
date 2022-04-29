@@ -1,6 +1,9 @@
 ﻿#define TEST
+using CapaDatos;
+using CapaDatos.Vo;
 using CapaPresentacion.Forms.CRUD;
 using CapaNegocio;
+using CapaNegocio.Enums;
 using CapaNegocio.Logica;
 using Fotografia;
 using Impresora;
@@ -21,7 +24,7 @@ namespace CapaPresentacion.Forms.Principal
 {
     public partial class FPreguntas : Form
     {
-        Cedula ccEvaluado;
+        NModeloConductor conductorEvaluado;
         NModeloConfiguracionPrueba Configuracion_obj;
         //int NumPreguntasConfiguradas;
 
@@ -34,7 +37,7 @@ namespace CapaPresentacion.Forms.Principal
         public FPreguntas()
         {
             InitializeComponent();
-            ccEvaluado = new Cedula();
+            conductorEvaluado = new NModeloConductor();
             Configuracion_obj = new NModeloConfiguracionPrueba(Properties.Settings.Default.NumPreguntas);
             //Configuracion_obj.numeroPreguntas = Properties.Settings.Default.NumPreguntas;
             Configuracion_obj.setLicenciaPorDefectoDeseInt(Properties.Settings.Default.LicenciaPorDefecto);
@@ -127,8 +130,8 @@ namespace CapaPresentacion.Forms.Principal
             if (e.KeyChar == 13)
             {
                 string resultado = new string(buffer_char_list.ToArray());
-                ccEvaluado = new Cedula();
-                string msg = ccEvaluado.AsignaCamposDesdeStream(resultado);
+                conductorEvaluado = new NModeloConductor();
+                string msg = conductorEvaluado.AsignaCamposDesdeStream(resultado);
                 if (msg != null)
                 {
                     MessageBox.Show(msg);
@@ -139,7 +142,7 @@ namespace CapaPresentacion.Forms.Principal
                 }
                 else
                 {
-                    tb_CCConductor.Text = ccEvaluado.NumeroCedula.ToString();
+                    tb_CCConductor.Text = conductorEvaluado.VoConductor_obj.Cedula.ToString();
                     BtnBuscarUsuario_Click(null, null);
                 }
                 buffer_char_list.Clear();
@@ -162,7 +165,7 @@ namespace CapaPresentacion.Forms.Principal
                 return;
             }
 
-            int AuxUsuarioExiste = NConductor.ConductorExiste(auxCC.ToString());
+            int AuxUsuarioExiste = CapaNegocio.NConductor.ConductorExiste(auxCC.ToString());
             if (AuxUsuarioExiste == 1)
             {
                 BuscarUsuario(auxCC);
@@ -176,20 +179,15 @@ namespace CapaPresentacion.Forms.Principal
                 MessageBox.Show("Por favor regístrese para continuar.  Diligencie el formulario de registro y retome la prueba.", "No existe regitro para la cédula suministrada");
 
                 F.Mostrar_FConductorCRUDObj(); //Muestra el formulario FConductorCRUD, el cual es un campo del Form FPrincipal
-                F.FConductorCRUDObj.AsignarCampos(ccEvaluado);
+                F.FConductorCRUDObj.AsignarCampos(conductorEvaluado);
             }
         }
 
         private void BuscarUsuario(int Str_Cedula)
         {
-            string[] nuevo = NConductor.MostrarDatos_str(Str_Cedula.ToString());
-            LblNombres.Text = nuevo[1].ToString();
-            LblApellidos.Text = nuevo[2].ToString();
-            //Reconstruye clase cedula con los datos desde la base de datos
-            ccEvaluado.Limpiar();
-            ccEvaluado.NumeroCedula = int.Parse(nuevo[0]);
-            ccEvaluado.Nombres = nuevo[1].ToString();
-            ccEvaluado.Apellidos = nuevo[2].ToString();
+            conductorEvaluado.AsignaCamposDesdeBD(Str_Cedula.ToString());
+            LblNombres.Text = conductorEvaluado.VoConductor_obj.Nombre;
+            LblApellidos.Text = conductorEvaluado.VoConductor_obj.Apellido;
         }
 
         /// <summary>
@@ -202,7 +200,7 @@ namespace CapaPresentacion.Forms.Principal
             {
                 ConsecutivoReportes++;
                 string NumeroReporte = string.Format("{0}{1}", ConsecutivoReportes.ToString(), tb_CCConductor.Text);
-                long dVer = Utilidades.Digito_Verificación(long.Parse(NumeroReporte));
+                long dVer = NUtilidades.Digito_Verificación(long.Parse(NumeroReporte));
                 Lbl_IDReportes.Text = string.Format("{0}-{1}", NumeroReporte, dVer);
             }
         }
@@ -311,7 +309,7 @@ namespace CapaPresentacion.Forms.Principal
         {
             try
             {
-                Cuestionario_obj = new NModeloCuestionario(Configuracion_obj);
+                Cuestionario_obj = new NModeloCuestionario(Configuracion_obj,(TipoLicencia)conductorEvaluado.VoConductor_obj.TipoLicencia);
                 Calificador_obj = new NModeloCalificador();
                 //Al tiempo de crear el cuestionario, crea el calificador con la misma lista
                 Calificador_obj.alimentarDesdeListaVoPregunta(Cuestionario_obj.L_TodasLasPreguntasAleatorias);
@@ -489,7 +487,7 @@ namespace CapaPresentacion.Forms.Principal
         /// <returns></returns>
         private Button CrearBotonAudio(string Texto)
         {
-            Button btnAudio = new Button();
+            Button btnAudio = new Button(); 
             btnAudio.BackgroundImage = Properties.Resources.audio_azul;
             btnAudio.BackgroundImageLayout = ImageLayout.Zoom;
             btnAudio.Size = new Size(50, 50);
@@ -562,9 +560,14 @@ namespace CapaPresentacion.Forms.Principal
             lbl_RespuestasIncorrectas.Text = Calificador_obj.numIncorrectas.ToString();
             lbl_Calificacion.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeGlobal.ToString());
             lbl_campana.Text = Properties.Settings.Default.NombreCampaña;
-            lbl_nombres.Text = ccEvaluado.Nombres;
-            lbl_apellidos.Text = ccEvaluado.Apellidos;
+            lbl_nombres.Text = conductorEvaluado.VoConductor_obj.Nombre;
+            lbl_apellidos.Text = conductorEvaluado.VoConductor_obj.Apellido;
             lbl_codEval.Text = Lbl_IDReportes.Text;
+
+            lbl_AspectosGenerales.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeAspectosGenerales);
+            lbl_RegimenSancionatorio.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeRegimenSancionatorio);
+            lbl_NormasComportamiento.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeComportamientoPeaton);
+            lbl_SenalesTransito.Text = string.Format("{0:00}/10 ", Calificador_obj.PuntajeSenalesTransito);
 
             byte[] Aux_Imagen;
             using (MemoryStream ms = new MemoryStream())
@@ -584,7 +587,7 @@ namespace CapaPresentacion.Forms.Principal
 
             //Guarda la evaluación
             NEvaluacion.Insertar(Lbl_IDReportes.Text,
-                ccEvaluado.NumeroCedula.ToString(),
+                conductorEvaluado.VoConductor_obj.Cedula,
                 DateTime.Now,
                 Aux_Imagen,
                 Properties.Settings.Default.DescripcionEval,
@@ -628,7 +631,7 @@ namespace CapaPresentacion.Forms.Principal
             int nTextHeight = 0;
 
             // Start Document
-            if (BXLAPI.Start_Doc(string.Format("Certificado {0} {1}", ccEvaluado.Nombres.Trim(), ccEvaluado.Apellidos.Trim())))
+            if (BXLAPI.Start_Doc(string.Format("Certificado {0} {1}", conductorEvaluado.VoConductor_obj.Nombre.Trim(), conductorEvaluado.VoConductor_obj.Apellido.Trim())))
             {
                 // Start Page
                 BXLAPI.Start_Page();
@@ -653,13 +656,13 @@ namespace CapaPresentacion.Forms.Principal
                 nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "DATOS DEL EVALUADO", false, 0, true, false);
 
                 nPositionY += nTextHeight;
-                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "Cédula: " + ccEvaluado.NumeroCedula.ToString(), false, 0, true, false);
+                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "Cédula: " + conductorEvaluado.VoConductor_obj.Cedula, false, 0, true, false);
 
                 nPositionY += nTextHeight;
-                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "Nombres: " + ccEvaluado.Nombres.Trim(), false, 0, true, false);
+                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "Nombres: " + conductorEvaluado.VoConductor_obj.Nombre.Trim(), false, 0, true, false);
 
                 nPositionY += nTextHeight;
-                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "Apellidos: " + ccEvaluado.Apellidos.Trim(), false, 0, true, false);
+                nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "Apellidos: " + conductorEvaluado.VoConductor_obj.Apellido.Trim(), false, 0, true, false);
 
                 nPositionY += nTextHeight + nTextHeight / 2;
                 nTextHeight = BXLAPI.PrintTrueFont(nPositionX, nPositionY, "Arial", 10, "Código Evaluación: " + Lbl_IDReportes.Text, false, 0, true, false);
@@ -723,7 +726,7 @@ namespace CapaPresentacion.Forms.Principal
         {
             this.Close();
             F.Mostrar_FReporteEvaluacionesObj();
-            F.FReporteEvaluacionesObj.Actual_Report(ccEvaluado.NumeroCedula.ToString());
+            F.FReporteEvaluacionesObj.Actual_Report(conductorEvaluado.VoConductor_obj.Cedula);
         }
     }
 }

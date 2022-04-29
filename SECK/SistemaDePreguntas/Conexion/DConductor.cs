@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaDatos.Vo;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Data;
@@ -423,6 +424,58 @@ namespace CapaDatos
                 DtResultado = null;
             }
             return DtResultado;
+        }
+
+        /// <summary>
+        /// Retorna un VoConductor que coinciden con la cédula
+        /// </summary>
+        /// <param name="usuarios"></param>
+        /// <returns></returns>
+        public VoConductor MostrarUsuario_VoConductor(string cedula)
+        {
+            VoConductor resultado = null ;
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "SP_MOSTRAR_CONDUCTOR_POR_ID_SIN_FORMATO";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@CEDULA";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 15;
+                ParTextoBuscar.Value = cedula;
+
+                SqlCmd.Parameters.Add(ParTextoBuscar);
+
+                SqlDataReader sdr = SqlCmd.ExecuteReader();
+
+                while (sdr.Read())
+                {
+                    string aux1 = sdr.GetString(0);
+                    string aux2 = sdr.GetString(1);
+                    string aux3 = sdr.GetString(2);
+                    short aux4 = sdr.GetInt16(3);
+                    string aux5 = sdr.GetString(4);
+                    string aux6 = sdr.GetString(5);
+                    short aux7 = sdr.GetInt16(6);
+                    byte[] auxByteHuella = sdr.GetValue(7) is DBNull ? null : (byte[])sdr.GetValue(7);
+                    byte[] auxByteFoto = sdr.GetValue(8) is DBNull ? null : (byte[])sdr.GetValue(8);
+                    DateTime aux8 = sdr.GetDateTime(9);
+
+                    resultado = new VoConductor(aux1 ,aux2 ,aux3 , aux4, aux5 ,aux6 ,aux7 ,auxByteHuella,auxByteFoto,aux8);
+                }
+            }
+            catch (Exception ex)
+            {
+                resultado = null;
+            }
+            return resultado;
         }
     }
 }

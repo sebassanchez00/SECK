@@ -82,7 +82,6 @@
             this.cb_cedula.Name = "cb_cedula";
             this.cb_cedula.Size = new System.Drawing.Size(172, 28);
             this.cb_cedula.TabIndex = 2;
-            this.cb_cedula.SelectedIndexChanged += new System.EventHandler(this.cb_cedula_SelectedIndexChanged);
             this.cb_cedula.SelectedValueChanged += new System.EventHandler(this.cb_cedula_SelectedValueChanged);
             // 
             // label2

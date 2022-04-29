@@ -45,8 +45,7 @@
             this.TSMI_NuevaEval = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_Reporte = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMI_Evaluaciones = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMI_INFORME = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMI_Reportes = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMI_EvaluacionesConTema = new System.Windows.Forms.ToolStripMenuItem();
             this.MenuStrip_Ppl.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,11 +59,10 @@
             this.TSMI_Programacion,
             this.TSMI_Registro,
             this.TSMI_Eval,
-            this.TSMI_Reporte,
-            this.TSMI_INFORME});
+            this.TSMI_Reporte});
             this.MenuStrip_Ppl.Location = new System.Drawing.Point(0, 0);
             this.MenuStrip_Ppl.Name = "MenuStrip_Ppl";
-            this.MenuStrip_Ppl.Size = new System.Drawing.Size(1008, 35);
+            this.MenuStrip_Ppl.Size = new System.Drawing.Size(1083, 35);
             this.MenuStrip_Ppl.TabIndex = 2;
             this.MenuStrip_Ppl.Text = "menuStrip1";
             // 
@@ -175,42 +173,33 @@
             // TSMI_Reporte
             // 
             this.TSMI_Reporte.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMI_Evaluaciones});
+            this.TSMI_Evaluaciones,
+            this.TSMI_EvaluacionesConTema});
             this.TSMI_Reporte.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TSMI_Reporte.Name = "TSMI_Reporte";
-            this.TSMI_Reporte.Size = new System.Drawing.Size(229, 31);
-            this.TSMI_Reporte.Text = "Consultas  y Reportes";
+            this.TSMI_Reporte.Size = new System.Drawing.Size(109, 31);
+            this.TSMI_Reporte.Text = "Reportes";
             // 
             // TSMI_Evaluaciones
             // 
             this.TSMI_Evaluaciones.Name = "TSMI_Evaluaciones";
-            this.TSMI_Evaluaciones.Size = new System.Drawing.Size(205, 32);
+            this.TSMI_Evaluaciones.Size = new System.Drawing.Size(313, 32);
             this.TSMI_Evaluaciones.Text = "Evaluaciones";
             this.TSMI_Evaluaciones.Click += new System.EventHandler(this.TSMI_Evaluaciones_Click);
             // 
-            // TSMI_INFORME
+            // TSMI_EvaluacionesConTema
             // 
-            this.TSMI_INFORME.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMI_Reportes});
-            this.TSMI_INFORME.Font = new System.Drawing.Font("Microsoft YaHei UI", 15F);
-            this.TSMI_INFORME.Name = "TSMI_INFORME";
-            this.TSMI_INFORME.Size = new System.Drawing.Size(100, 31);
-            this.TSMI_INFORME.Text = "Informe";
-            this.TSMI_INFORME.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            // 
-            // TSMI_Reportes
-            // 
-            this.TSMI_Reportes.Name = "TSMI_Reportes";
-            this.TSMI_Reportes.Size = new System.Drawing.Size(169, 32);
-            this.TSMI_Reportes.Text = "Reportes";
-            this.TSMI_Reportes.Click += new System.EventHandler(this.HOY_Click);
+            this.TSMI_EvaluacionesConTema.Name = "TSMI_EvaluacionesConTema";
+            this.TSMI_EvaluacionesConTema.Size = new System.Drawing.Size(313, 32);
+            this.TSMI_EvaluacionesConTema.Text = "Evaluaciones con Temas";
+            this.TSMI_EvaluacionesConTema.Click += new System.EventHandler(this.TSMI_EvaluacionesConTema_Click);
             // 
             // FPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(1008, 730);
+            this.ClientSize = new System.Drawing.Size(1083, 730);
             this.Controls.Add(this.MenuStrip_Ppl);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
@@ -244,7 +233,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSMI_Autenticación;
         private System.Windows.Forms.ToolStripMenuItem TSMI_Programacion;
         private System.Windows.Forms.ToolStripMenuItem TSMI_Registro;
-        private System.Windows.Forms.ToolStripMenuItem TSMI_INFORME;
-        private System.Windows.Forms.ToolStripMenuItem TSMI_Reportes;
+        private System.Windows.Forms.ToolStripMenuItem TSMI_EvaluacionesConTema;
     }
 }

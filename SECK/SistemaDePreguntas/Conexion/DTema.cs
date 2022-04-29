@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaDatos.Vo;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -233,6 +234,44 @@ namespace CapaDatos
                 DtResultado = null;
             }
             return DtResultado;
+        }
+    
+        public VoTema MostrarPorID(short ID)
+        {
+            VoTema resultado = null;
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "SP_MOSTRAR_TEMA_POR_ID";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParID = new SqlParameter();
+                ParID.ParameterName = "@ID";
+                ParID.SqlDbType = SqlDbType.SmallInt;
+                ParID.Value = ID;
+                SqlCmd.Parameters.Add(ParID);
+
+                SqlDataReader sdr = SqlCmd.ExecuteReader();
+
+                while (sdr.Read())
+                {
+                    short aux1 = sdr.GetInt16(0);
+                    short aux2 = sdr.GetInt16(1);
+                    string aux3 = sdr.GetString(2);
+                    bool aux4 = sdr.GetBoolean(3);
+                    resultado = new VoTema(aux1, aux2, aux3, aux4);
+                }
+            }
+            catch (Exception ex)
+            {
+                resultado = null;
+            }
+            return resultado;
         }
     }
 }
