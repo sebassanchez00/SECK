@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CapaDatos.Vo;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -80,7 +81,7 @@ namespace CapaDatos
             }
             return dt;
         }
-    
+
         /// <summary>
         /// Consulta la respuesta como string, de la pregunta que se consulta
         /// </summary>
@@ -118,6 +119,44 @@ namespace CapaDatos
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
             return rpta;
+        }
+
+        public List<VoOpcionRespuesta> MostrarOpcionesPorID(short ID_Pregunta)
+        {
+            List<VoOpcionRespuesta> resultado = null;// new List<VoOpcionRespuesta>();
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "SP_MOSTRAR_OPCIONES_PREGUNTA_POR_ID";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParId = new SqlParameter();
+                ParId.ParameterName = "@ID_PREGUNTA";
+                ParId.SqlDbType = SqlDbType.SmallInt;
+                ParId.Value = ID;
+
+                SqlCmd.Parameters.Add(ParId);
+                SqlDataReader sdr = SqlCmd.ExecuteReader();
+
+                while (sdr.Read())
+                {
+                    short aux1 = sdr.GetInt16(0);
+                    short aux2 = sdr.GetInt16(1);
+                    string aux3 = sdr.GetString(2);
+                    bool aux4 = sdr.GetBoolean(3);
+                    resultado.Add(new VoOpcionRespuesta(aux1, aux2, aux3, aux4));
+                }
+            }
+            catch (Exception)
+            {
+                resultado = null;
+            }
+            return resultado;
         }
     }
 }
