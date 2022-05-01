@@ -2,6 +2,7 @@
 using CapaNegocio;
 using CapaNegocio.Logica;
 using CapaNegocio.Enums;
+using CapaPresentacion.Logica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,23 +33,31 @@ namespace CapaPresentacion.Forms.CRUD
         }
         private void btn_LeerCSV_Click(object sender, EventArgs e)
         {
-            List<DPregunta> LPreguntas = new List<DPregunta>();
             string FileName = string.Empty;
 
-            using (var ofd = new OpenFileDialog())
-            {
-                //Obtiene nombre del archivo a leer
-                ofd.Multiselect = false;
-                ofd.Title = "SELECCION ARCHIVO DE PREGUNTAS";
-                ofd.Filter = "Archivo .csv | *.csv";
-                DialogResult result = ofd.ShowDialog();
+            PCuadroDialogo PCuadroDialogo_obj = new PCuadroDialogo();
+            FileName = PCuadroDialogo_obj.leerNombreArchivo();
+        }
 
-                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(ofd.FileName))
-                { FileName = ofd.FileName; }
-                else { return; }
-            }
+        void EsViejoBorrar() { 
 
-            LPreguntas = NUtilidades.LeerArchivo(FileName, int.Parse(this.cb_Tema.SelectedValue.ToString()), TipoPreg.AbiertaNumerica);
+            List<DPregunta> LPreguntas = new List<DPregunta>();
+            //string FileName = string.Empty;
+
+            //using (var ofd = new OpenFileDialog())
+            //{
+            //    //Obtiene nombre del archivo a leer
+            //    ofd.Multiselect = false;
+            //    ofd.Title = "SELECCION ARCHIVO DE PREGUNTAS";
+            //    ofd.Filter = "Archivo .csv | *.csv";
+            //    DialogResult result = ofd.ShowDialog();
+
+            //    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(ofd.FileName))
+            //    { FileName = ofd.FileName; }
+            //    else { return; }
+            //}
+
+            /*LPreguntas = NUtilidades.LeerArchivo(FileName, int.Parse(this.cb_Tema.SelectedValue.ToString()), TipoPreg.AbiertaNumerica);
 
             if (LPreguntas == null)
                 return;
@@ -61,7 +70,7 @@ namespace CapaPresentacion.Forms.CRUD
             }
 
             if (flag_inserto == true)
-                MessageBox.Show("Se guardaron exitosamente todas las preguntas", "Atención");
+                MessageBox.Show("Se guardaron exitosamente todas las preguntas", "Atención");*/
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)

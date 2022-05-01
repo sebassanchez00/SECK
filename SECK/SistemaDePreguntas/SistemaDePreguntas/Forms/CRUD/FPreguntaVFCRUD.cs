@@ -49,7 +49,7 @@ namespace CapaPresentacion.Forms.CRUD
                 else { return; }
             }
 
-            LPreguntas = NUtilidades.LeerArchivo(FileName, int.Parse(this.cb_Tema.SelectedValue.ToString()), TipoPreg.VerdaderoFalso);
+            //LPreguntas = NUtilidades.LeerArchivo(FileName, int.Parse(this.cb_Tema.SelectedValue.ToString()), TipoPreg.VerdaderoFalso);
 
             if (LPreguntas == null)
                 return;

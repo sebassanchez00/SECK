@@ -212,6 +212,7 @@
     <Compile Include="Forms\Reportes\FReporteEvaluaciones.Designer.cs">
       <DependentUpon>FReporteEvaluaciones.cs</DependentUpon>
     </Compile>
+    <Compile Include="Logica\PCuadroDialogo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
