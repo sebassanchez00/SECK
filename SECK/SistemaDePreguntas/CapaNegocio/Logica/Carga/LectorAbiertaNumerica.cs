@@ -1,4 +1,5 @@
-﻿using CapaDatos.Vo;
+﻿using CapaDatos;
+using CapaDatos.Vo;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,14 +10,26 @@ namespace CapaNegocio.Logica.Carga
 {
     public class LectorAbiertaNumerica : Lector
     {// (*) MessageBox.Show("Valor de columna 'RESPUESTA' debe ser un número entero, sin decimales en la pregunta: " + valores[0], "Archivo con formato incorrecto");
+        DPregunta DPregunta_obj;
 
-        public LectorAbiertaNumerica(string Path) : base(Path: Path,NumeroColumnas: 4,PosicionTpoLicencia: 2,PosicionTema: 3)
+
+        public LectorAbiertaNumerica(string Path) : base(
+            Path: Path,
+            NumeroColumnas: 4,
+            PosicionTpoLicencia: 2,
+            PosicionTema: 3)
         {
+            DPregunta_obj = new DPregunta();
         }
 
         protected override void cargarPreguntasEnBD()
         {
-            throw new NotImplementedException();
+            foreach(var p in base.LPreguntasTupla)
+            {
+                VoPreguntaYOpciones pyo = p.Item1;
+                VoLicenciaAplicablePreguntas lap = p.Item2;
+                DPregunta_obj.Insertar(pyo);
+            }   
         }
 
         protected override void cargarPreguntasEnListaTupla()

@@ -151,7 +151,6 @@ namespace CapaDatos
             SqlConnection SqlCon = new SqlConnection();
             try
             {
-                //Código
                 SqlCon.ConnectionString = Conexion.Cn;
                 SqlCon.Open();
                 //Establecer el Comando
@@ -251,6 +250,118 @@ namespace CapaDatos
             }
             return rpta;
         }
+
+        /// <summary>
+        /// Inserta pregunta en tabla TME_Pregunta. Tiene los parámetros @ID_TEMA @TIPO_PREGUNTA @ENUNCIADO @IMAGEN @ENUNCIADO_OP1 @ES_CORRECTA_OP1 @ENUNCIADO_OP2 @ES_CORRECTA_OP2 @ENUNCIADO_OP3 @ES_CORRECTA_OP3 @ENUNCIADO_OP4 @ES_CORRECTA_OP4. Para pregunta de SELECCIÓN MÚLTIPLE se ignora parámetro @IMAGEN. Para pregunta ABIERTA NUMÉRICA se ignoran @IMAGEN y las opcines con sus respuestas. Se inserta 1 sola opcion correcta. Para pregunta VERDADERO FALSO se ignoran @IMAGE y las opcines con sus respuestas, se insertan dos opciones, el usuario del SP debe poner verdadero y falso en los enunciados. Para pregunta de SELECCIÓN MÚLTIPLE CON IMAGEN se usan todos los parámetros
+        /// </summary>
+        /// <param name="Pregunta"></param>
+        /// <returns></returns>
+        public short Insertar(VoPreguntaYOpciones Pregunta)
+        {
+            short id=0;
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "SP_INSERTAR_PREGUNTAS";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParIdTema = new SqlParameter();
+                ParIdTema.ParameterName = "@ID_TEMA";
+                ParIdTema.SqlDbType = SqlDbType.SmallInt;
+                ParIdTema.Value = Pregunta.Id_Tema;
+                SqlCmd.Parameters.Add(ParIdTema);
+
+                SqlParameter ParIdTipoPregunta = new SqlParameter();
+                ParIdTipoPregunta.ParameterName = "@TIPO_PREGUNTA ";
+                ParIdTipoPregunta.SqlDbType = SqlDbType.SmallInt;
+                ParIdTipoPregunta.Value = Pregunta.Id_TipoPregunta;
+                SqlCmd.Parameters.Add(ParIdTipoPregunta);
+
+                SqlParameter ParEnunciado = new SqlParameter();
+                ParEnunciado.ParameterName = "@ENUNCIADO";
+                ParEnunciado.SqlDbType = SqlDbType.VarChar;
+                ParEnunciado.Size = -1; //MAX
+                ParEnunciado.Value = Pregunta.Enunciado;
+                SqlCmd.Parameters.Add(ParEnunciado);
+
+                SqlParameter ParImagen = new SqlParameter();
+                ParImagen.ParameterName = "@IMAGEN";
+                ParImagen.SqlDbType = SqlDbType.VarBinary;
+                ParImagen.Size = -1; //MAX
+                ParImagen.Value = Pregunta.Imagen;
+                SqlCmd.Parameters.Add(ParImagen);
+
+                SqlParameter ParOpcion1 = new SqlParameter();
+                ParOpcion1.ParameterName = "@ENUNCIADO_OP1";
+                ParOpcion1.SqlDbType = SqlDbType.VarChar;
+                ParOpcion1.Size = -1;
+                ParOpcion1.Value = Pregunta.Opciones[0].Enunciado;
+                SqlCmd.Parameters.Add(ParOpcion1);
+
+                SqlParameter ParEsCorrectaOp1 = new SqlParameter();
+                ParEsCorrectaOp1.ParameterName = "@ES_CORRECTA_OP1";
+                ParEsCorrectaOp1.SqlDbType = SqlDbType.Bit;
+                ParEsCorrectaOp1.Value = Pregunta.Opciones[0].Es_Correcta;
+                SqlCmd.Parameters.Add(ParEsCorrectaOp1);
+
+                SqlParameter ParOpcion2 = new SqlParameter();
+                ParOpcion2.ParameterName = "@ENUNCIADO_OP2";
+                ParOpcion2.SqlDbType = SqlDbType.VarChar;
+                ParOpcion2.Size = -1;
+                ParOpcion2.Value = Pregunta.Opciones[1].Enunciado;
+                SqlCmd.Parameters.Add(ParOpcion2);
+
+                SqlParameter ParEsCorrectaOp2 = new SqlParameter();
+                ParEsCorrectaOp2.ParameterName = "@ES_CORRECTA_OP2";
+                ParEsCorrectaOp2.SqlDbType = SqlDbType.Bit;
+                ParEsCorrectaOp2.Value = Pregunta.Opciones[1].Es_Correcta;
+                SqlCmd.Parameters.Add(ParEsCorrectaOp2);
+
+                SqlParameter ParOpcion3 = new SqlParameter();
+                ParOpcion3.ParameterName = "@ENUNCIADO_OP3";
+                ParOpcion3.SqlDbType = SqlDbType.VarChar;
+                ParOpcion3.Size = -1;
+                ParOpcion3.Value = Pregunta.Opciones[2].Enunciado;
+                SqlCmd.Parameters.Add(ParOpcion3);
+
+                SqlParameter ParEsCorrectaOp3 = new SqlParameter();
+                ParEsCorrectaOp3.ParameterName = "@ES_CORRECTA_OP3";
+                ParEsCorrectaOp3.SqlDbType = SqlDbType.Bit;
+                ParEsCorrectaOp3.Value = Pregunta.Opciones[2].Es_Correcta;
+                SqlCmd.Parameters.Add(ParEsCorrectaOp3);
+
+                SqlParameter ParOpcion4 = new SqlParameter();
+                ParOpcion4.ParameterName = "@ENUNCIADO_OP4";
+                ParOpcion4.SqlDbType = SqlDbType.VarChar;
+                ParOpcion4.Size = -1;
+                ParOpcion4.Value = Pregunta.Opciones[3].Enunciado;
+                SqlCmd.Parameters.Add(ParOpcion4);
+
+                SqlParameter ParEsCorrectaOp4 = new SqlParameter();
+                ParEsCorrectaOp4.ParameterName = "@ES_CORRECTA_OP4";
+                ParEsCorrectaOp4.SqlDbType = SqlDbType.Bit;
+                ParEsCorrectaOp4.Value = Pregunta.Opciones[3].Es_Correcta;
+                SqlCmd.Parameters.Add(ParEsCorrectaOp4);
+
+                //Ejecutamos nuestro comando
+                id =  (short)SqlCmd.ExecuteScalar(); //(*) se debe validar cuando no pueda hacer el unboxing o no hace el insert
+                            }
+            catch (Exception ex)
+            {
+                // (*) Poner la excepción
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return id; //(*) evitar que se retorne 0
+        }
+
 
         public string Editar(DPregunta Pregunta)
         {

@@ -10,7 +10,7 @@ namespace CapaNegocio.Logica.Carga
 {
     public abstract class Lector
     {
-        string path_;
+        string ruta_;
         List<string> lPreguntasSinFormato_;
         List<Tuple<VoPreguntaYOpciones, VoLicenciaAplicablePreguntas>> lPreguntasTupla_; //Agrupa una pregunta con su tipo de licencia aplicable
         int numColumnas_;
@@ -25,8 +25,8 @@ namespace CapaNegocio.Logica.Carga
         #region Accesores
         protected string Path
         {
-            get { return this.path_; }
-            set { this.path_ = value; }
+            get { return this.ruta_; }
+            set { this.ruta_ = value; }
         }
 
         protected List<string> LPreguntasSinFormato
@@ -51,7 +51,7 @@ namespace CapaNegocio.Logica.Carga
 
         protected Lector(string Path, int NumeroColumnas, int PosicionTpoLicencia, int PosicionTema)
         {
-            this.path_ = Path;
+            this.ruta_ = Path;
             this.lPreguntasSinFormato_ = new List<string>();
             this.lPreguntasTupla_ = new List<Tuple<VoPreguntaYOpciones, VoLicenciaAplicablePreguntas>>();
             this.numColumnas_ = NumeroColumnas;
@@ -70,7 +70,7 @@ namespace CapaNegocio.Logica.Carga
 
         protected void cargarPreguntasEnListaString()
         {
-            using (StreamReader SR = new StreamReader(this.path_, System.Text.Encoding.Default))
+            using (StreamReader SR = new StreamReader(this.ruta_, System.Text.Encoding.Default))
             {
                 while (!SR.EndOfStream)
                 {
