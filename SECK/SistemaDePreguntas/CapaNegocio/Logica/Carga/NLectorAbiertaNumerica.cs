@@ -14,7 +14,6 @@ namespace CapaNegocio.Logica.Carga
         DPregunta DPregunta_obj;
         DLicenciaAplicablePreguntas DLicenciaAplicablePreguntas_obj;
         const int POS_RESPUESTA = 1;
-        const int ID_ABIERTA_NUMERICA = 2;
 
         public NLectorAbiertaNumerica(string Path) : base(
             Path: Path,
@@ -30,7 +29,8 @@ namespace CapaNegocio.Logica.Carga
         {
             foreach (var p in base.LPreguntasTupla)
             {
-                DPregunta_obj.Insertar(p.Item1); //Inserta pregunta y opciones
+                short idInsertada = DPregunta_obj.Insertar(p.Item1); //Inserta pregunta y opciones
+                p.Item2.ID_Pregunta = idInsertada;                  
                 DLicenciaAplicablePreguntas_obj.Insertar(p.Item2); //Inserta LicenciaAplicablePpregunta
             }
         }
@@ -47,7 +47,8 @@ namespace CapaNegocio.Logica.Carga
                 pregunta.Enunciado = datosCrudos[0];
                 pregunta.Id_Tema = Convert.ToInt16(datosCrudos[3]);
                 pregunta.Id_TipoPregunta = (int)TipoPreg.AbiertaNumerica;
-                pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = true, Enunciado = datosCrudos[1] }); // Se ignoran
+                pregunta.Imagen = null;
+                pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = true, Enunciado = datosCrudos[1] }); 
                 pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = false, Enunciado = string.Empty });  // Se ignoran
                 pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = false, Enunciado = string.Empty });  // Se ignoran
                 pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = false, Enunciado = string.Empty });  // Se ignoran
@@ -65,8 +66,7 @@ namespace CapaNegocio.Logica.Carga
             {
                 string[] registro = l.Split(base.Delimitador, StringSplitOptions.RemoveEmptyEntries);
 
-                int aux;
-                if (!int.TryParse(registro[POS_RESPUESTA], out aux))
+                if (!int.TryParse(registro[POS_RESPUESTA], out int aux))
                 {
                     String mensaje = $"La respuesta del registro con índice {indicePregunta.ToString()} no es un número entero";
                     throw new Exception(mensaje);

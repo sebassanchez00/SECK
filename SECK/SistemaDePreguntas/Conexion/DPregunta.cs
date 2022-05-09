@@ -349,7 +349,13 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(ParEsCorrectaOp4);
 
                 //Ejecutamos nuestro comando
-                id = (short)SqlCmd.ExecuteScalar(); //(*) se debe validar cuando no pueda hacer el unboxing o no hace el insert
+                object result = SqlCmd.ExecuteScalar(); 
+                if (result != null)
+                    id = (short)result;
+                else
+                {
+                    throw new Exception("Hubo un error al insertar la pregunta");
+                }
             }
             catch (Exception ex)
             {
@@ -362,7 +368,6 @@ namespace CapaDatos
             }
             return id; //(*) evitar que se retorne 0
         }
-
 
         public string Editar(DPregunta Pregunta)
         {

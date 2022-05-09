@@ -22,6 +22,8 @@ namespace CapaNegocio.Logica.Carga
         //Acceso a Datos
         DTema DTema_obj;
         DTipoLicencia DTipoLicencia_obj;
+        DPregunta DPregunta_obj;
+        DLicenciaAplicablePreguntas DLicenciaAplicablePreguntas_obj;
         #endregion
 
         #region Accesores
@@ -63,6 +65,8 @@ namespace CapaNegocio.Logica.Carga
             this.delimitador_ = new char[] { ';' };
             this.DTema_obj = new DTema();
             this.DTipoLicencia_obj = new DTipoLicencia();
+            this.DPregunta_obj = new DPregunta();
+            this.DLicenciaAplicablePreguntas_obj = new DLicenciaAplicablePreguntas();
         }
         #endregion
 
@@ -83,7 +87,15 @@ namespace CapaNegocio.Logica.Carga
 
         protected abstract void cargarPreguntasEnListaTupla();
 
-        protected abstract void cargarPreguntasEnBD();
+        protected void cargarPreguntasEnBD()
+        {
+            foreach (var p in this.LPreguntasTupla)
+            {
+                short idInsertada = DPregunta_obj.Insertar(p.Item1); //Inserta pregunta y opciones
+                p.Item2.ID_Pregunta = idInsertada;
+                DLicenciaAplicablePreguntas_obj.Insertar(p.Item2); //Inserta LicenciaAplicablePpregunta
+            }
+        }
 
         protected void validarColumnasEIDs()
         {
