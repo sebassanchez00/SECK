@@ -1,0 +1,201 @@
+[33mcommit 6ea0c7b3ecb8ddbe4a0d76445d011c938ccb3880[m[33m ([m[1;36mHEAD -> [m[1;32mCOT_21092021_01_EXCEL[m[33m)[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Tue May 3 22:41:41 2022 -0700
+
+    Avance con el almacenamiento de pregunta abierta numerica
+
+[33mcommit 901d503e46a4a7b2a92f6391beb93ec3869be3d7[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun May 1 12:30:37 2022 -0700
+
+    Se desarrolla gran parte de clase Lector y su hija LectorAboerta Numerica que se encargan de leer archivo CSV con preguntas para cargarlas a base de datos
+
+[33mcommit 77eacd4028323662a8ecf258d9b9e16f00a6f431[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Thu Apr 28 22:29:05 2022 -0700
+
+    Se agrega VoOpcionRespuesta y se crea funcion para retornar lista de opciones respuesta
+
+[33mcommit 21df2af226f0a467cfd123475cc8f42c2c4bcc19[m[33m ([m[1;32mmaster[m[33m)[m
+Merge: 949a671 3b0bd89
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Thu Apr 28 20:42:13 2022 -0700
+
+    Fusionand y haciendo pull a rama master
+
+[33mcommit 949a6713f805124294b58ac3a89cad5375ffb882[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Thu Apr 28 20:21:23 2022 -0700
+
+    Nada importante
+
+[33mcommit 7c0d40bdaf029f1478dbc8221a6f2d91b06f4ced[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Thu Apr 28 18:45:16 2022 -0700
+
+    Nada importante
+
+[33mcommit 3b0bd8974c29683ae22e4e52498ea1fb0a6d9be8[m[33m ([m[1;31morigin/master[m[33m)[m
+Merge: bbe811d 32732b5
+Author: Sebastián Sánchez Aristizábal <34349714+sebassanchez00@users.noreply.github.com>
+Date:   Thu Apr 28 11:35:47 2022 -0500
+
+    Merge pull request #4 from sebassanchez00/COT_21092021_FRONT
+    
+    Cot 21092021 front
+
+[33mcommit 32732b551f9f07938c7aa3ecc2accbb58d8970ab[m[33m ([m[1;31morigin/COT_21092021_FRONT[m[33m)[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Wed Apr 27 21:57:50 2022 -0700
+
+    Eliminando clases de la capa de presentacion que no se usan
+
+[33mcommit 2895f4367c12a9efaf246794414461a0d58370a0[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Wed Apr 27 21:48:36 2022 -0700
+
+    Roerganizando la ubicación de las clases
+
+[33mcommit 283a22fda4380cd30de466567862a21f18cf5c77[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Wed Apr 27 20:59:51 2022 -0700
+
+    Se refactoriza el código para llevar enumeraciones a capa de Negocios.Enums
+
+[33mcommit bbe811df7073820e8bb5240383d0838dec369020[m
+Merge: 5644a55 9adbe45
+Author: Sebastián Sánchez Aristizábal <34349714+sebassanchez00@users.noreply.github.com>
+Date:   Fri Apr 22 08:20:28 2022 -0500
+
+    Merge pull request #2 from sebassanchez00/COT_21092021_FRONT
+    
+    Cot 21092021 front
+
+[33mcommit 9adbe45ab5ee697618e5e798ef25ea70c5dec0c7[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Thu Apr 21 10:02:22 2022 -0700
+
+    Se añade funcionalidad que permite guardar los puntajes de las pruebas por cada tema evaluado
+
+[33mcommit e4845753ab49d9e798b522d30f4c704dc1468ee5[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Thu Apr 21 08:07:34 2022 -0700
+
+    Se crea funcionalidad que permite filtrar las evaluaciones deacuerdo al tipo de licencia que tienen una pregunta y a la licencia que tiene el conductor evaluado. La licencia se toma de la basde de datos
+
+[33mcommit 8eb794598a77b941c8d8d26f67a1623ed6f74ae3[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Apr 17 22:55:23 2022 -0700
+
+    Modificación clase cedula para agregar VoConductor
+
+[33mcommit 9621e9eb71ec9f255e42d8517d252c91476aeb22[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Apr 17 19:56:37 2022 -0700
+
+    Se crea Vo de conductor
+
+[33mcommit 0ed09d609810070fa4e894e68710a451225a82ff[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Dec 19 15:05:30 2021 -0800
+
+    Modificando reporte con temas
+
+[33mcommit 257f5db6e00169e7b8b9535ea3c16918b1381b16[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Dec 19 11:25:41 2021 -0800
+
+    Se añade un nuevo reporte aun sin configurar
+
+[33mcommit 355ee6947d23c9113a1fc770d64b4d78a5be6b60[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Dec 19 09:24:15 2021 -0800
+
+    Se restablece #TEST a modo edicion
+
+[33mcommit 5644a55e2efbd1f70c87dfbd75270911949adf1b[m
+Merge: 9440ab2 7a7d02b
+Author: Sebastián Sánchez Aristizábal <34349714+sebassanchez00@users.noreply.github.com>
+Date:   Sun Dec 19 11:18:02 2021 -0500
+
+    Merge pull request #1 from sebassanchez00/COT_21092021_FRONT
+    
+    Cot 21092021 front
+
+[33mcommit 7a7d02b0b63722e11fa2807d857738a5b458a259[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Dec 19 08:07:26 2021 -0800
+
+    Se ajusta al modo producción cambiando el %TEST
+
+[33mcommit f462bb1a8a4559a2e2707fcc2c6fd16832288fbe[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Dec 19 07:25:18 2021 -0800
+
+    Se agrega mejora en el front del tab resultados añadiendo los temas
+
+[33mcommit a6531de36b54a1ede414fad8e4b0eb2bb438b3a8[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sat Dec 18 16:57:42 2021 -0800
+
+    Nada relevante
+
+[33mcommit bfb5f79f16b47831dec4463ff2a582e439cad1a9[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sat Dec 18 16:43:55 2021 -0800
+
+    Se crea la rama front
+
+[33mcommit 9440ab2fc847f08c47a7c978a5d78142ff0127c6[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Thu Dec 16 10:59:32 2021 -0800
+
+    Se corrige la calificacion que estaba quemada
+
+[33mcommit 6b08394ccf09e80cd37fd002a681939e33d25178[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Tue Nov 9 21:09:33 2021 -0800
+
+    Se agrega puntajes por temas en el ticket y se agrega una primera aproximacion de calculo puntaje por temas en clase calificadora. Se desactiva directiva TEST
+
+[33mcommit 07c94a74eed18dfb3a3d63bb9ad18d49c3fc5ab9[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Tue Nov 9 19:42:22 2021 -0800
+
+    Se añaden muchos elementos basura en el repositorio para poder actualizar el repositorio
+
+[33mcommit cce0e9104f910ad66d9e1e1e21307b629c541fc1[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Oct 3 21:11:49 2021 -0700
+
+    Antes de preparar directiva de preprocesador #TEST
+
+[33mcommit b9ee5523801582464c1ab0b2f9d094e1f62f566d[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Oct 3 19:50:13 2021 -0700
+
+    Se agregan calculos de cantidad de preguntas por tema
+
+[33mcommit 9ceeacc0c5868577a3b23b39762930748747bcad[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Oct 3 17:35:18 2021 -0700
+
+    Se agrega combobox de guardar licencia por defecto en configuracion de prueba
+
+[33mcommit ec0144df7071cbbe1e697a86160074423181286a[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Oct 3 11:54:26 2021 -0700
+
+    Se incluye funcionalidad de armar el cuestionario por temas. Se modifica la capa de datos agregando carpeta Vo para incluir value objects. Se agregan algunas clases vo según necesidad. Se modifican DOpcionesRespuesta, DPregunta y DTipo de pregunta para ajustar el uso de vo en algunas funciones. Se agregan nuevas fucniones para el acceos a datos.
+
+[33mcommit cac688fb2801121452c1d51921b2b5d582ed11fb[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Sun Sep 26 22:54:16 2021 -0700
+
+    On master: Se crea la clase NModelo cuestionario la cual modela un cuestionario. Está compuesta por pregunras seleccionadas aleatoriamente y filtradas por 4 temas. Se agrea un carpeta Vo Value object en capa datos, la idea es separar los value objects pues acutualmente están revueltos con los data acces objects. Se agrega un nuevo méotdo en Dpreguntas para retornar todas lsa preguntas en listas. Se añade archivo gitignore
+
+[33mcommit 1bb057bf763814d397ed61049abde4310048f60c[m
+Author: SebastianSanchezAristizabal <sebassanchez00@gmail.com>
+Date:   Fri Sep 24 09:23:08 2021 -0700
+
+    Se agrega el proyecto al github, se eliminan archivos gitignore anterior carpeta de git y vs y demas archivos de git anteriores

@@ -79,9 +79,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\Enums.cs" />
-    <Compile Include="Logica\Carga\Lector.cs" />
-    <Compile Include="Logica\Carga\LectorAbiertaNumerica.cs" />
-    <Compile Include="Logica\Carga\NManejadorCargaPreguntas.cs" />
+    <Compile Include="Logica\Carga\NLector.cs" />
+    <Compile Include="Logica\Carga\NLectorAbiertaNumerica.cs" />
     <Compile Include="Logica\NModeloConductor.cs" />
     <Compile Include="Logica\NModeloConfiguracionPrueba.cs" />
     <Compile Include="Logica\NModeloCuestionario.cs" />

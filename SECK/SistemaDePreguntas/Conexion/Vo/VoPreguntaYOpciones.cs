@@ -15,7 +15,10 @@ namespace CapaDatos.Vo
         public byte[] Imagen { get; set; }
         public List<VoOpcionRespuesta> Opciones { get; set; }
 
-        public VoPreguntaYOpciones() { }
+        public VoPreguntaYOpciones() 
+        {
+            this.Opciones = new List<VoOpcionRespuesta>();
+        }
 
         public VoPreguntaYOpciones(short id, short id_Tema, short id_TipoPregunta, string enunciado, byte[] imagen, List<VoOpcionRespuesta> opciones)
         {

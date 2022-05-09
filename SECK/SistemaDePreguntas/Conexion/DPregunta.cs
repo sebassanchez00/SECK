@@ -254,11 +254,11 @@ namespace CapaDatos
         /// <summary>
         /// Inserta pregunta en tabla TME_Pregunta. Tiene los parámetros @ID_TEMA @TIPO_PREGUNTA @ENUNCIADO @IMAGEN @ENUNCIADO_OP1 @ES_CORRECTA_OP1 @ENUNCIADO_OP2 @ES_CORRECTA_OP2 @ENUNCIADO_OP3 @ES_CORRECTA_OP3 @ENUNCIADO_OP4 @ES_CORRECTA_OP4. Para pregunta de SELECCIÓN MÚLTIPLE se ignora parámetro @IMAGEN. Para pregunta ABIERTA NUMÉRICA se ignoran @IMAGEN y las opcines con sus respuestas. Se inserta 1 sola opcion correcta. Para pregunta VERDADERO FALSO se ignoran @IMAGE y las opcines con sus respuestas, se insertan dos opciones, el usuario del SP debe poner verdadero y falso en los enunciados. Para pregunta de SELECCIÓN MÚLTIPLE CON IMAGEN se usan todos los parámetros
         /// </summary>
-        /// <param name="Pregunta"></param>
+        /// <param name="Pregunta">VoPreguntaYOpciones con al menos 4 opciones. Si no se necesitan se ignoran</param>
         /// <returns></returns>
         public short Insertar(VoPreguntaYOpciones Pregunta)
         {
-            short id=0;
+            short id = 0;
             SqlConnection SqlCon = new SqlConnection();
             try
             {
@@ -349,10 +349,11 @@ namespace CapaDatos
                 SqlCmd.Parameters.Add(ParEsCorrectaOp4);
 
                 //Ejecutamos nuestro comando
-                id =  (short)SqlCmd.ExecuteScalar(); //(*) se debe validar cuando no pueda hacer el unboxing o no hace el insert
-                            }
+                id = (short)SqlCmd.ExecuteScalar(); //(*) se debe validar cuando no pueda hacer el unboxing o no hace el insert
+            }
             catch (Exception ex)
             {
+                string rpta = ex.Message;
                 // (*) Poner la excepción
             }
             finally

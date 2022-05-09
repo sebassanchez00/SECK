@@ -1,6 +1,6 @@
 ﻿using CapaDatos;
 using CapaNegocio;
-using CapaNegocio.Logica;
+using CapaNegocio.Logica.Carga;
 using CapaNegocio.Enums;
 using CapaPresentacion.Logica;
 using System;
@@ -31,46 +31,18 @@ namespace CapaPresentacion.Forms.CRUD
             cb_Tema.DisplayMember = "Enunciado";
             cb_Tema.ValueMember = "ID";
         }
+        
         private void btn_LeerCSV_Click(object sender, EventArgs e)
         {
-            string FileName = string.Empty;
+            string FilePath = string.Empty;
 
             PCuadroDialogo PCuadroDialogo_obj = new PCuadroDialogo();
-            FileName = PCuadroDialogo_obj.leerNombreArchivo();
-        }
+            FilePath = PCuadroDialogo_obj.leerNombreArchivo();
 
-        void EsViejoBorrar() { 
+            NLectorAbiertaNumerica lector_obj = new NLectorAbiertaNumerica(FilePath);
+            lector_obj.Leer();
 
-            List<DPregunta> LPreguntas = new List<DPregunta>();
-            //string FileName = string.Empty;
-
-            //using (var ofd = new OpenFileDialog())
-            //{
-            //    //Obtiene nombre del archivo a leer
-            //    ofd.Multiselect = false;
-            //    ofd.Title = "SELECCION ARCHIVO DE PREGUNTAS";
-            //    ofd.Filter = "Archivo .csv | *.csv";
-            //    DialogResult result = ofd.ShowDialog();
-
-            //    if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(ofd.FileName))
-            //    { FileName = ofd.FileName; }
-            //    else { return; }
-            //}
-
-            /*LPreguntas = NUtilidades.LeerArchivo(FileName, int.Parse(this.cb_Tema.SelectedValue.ToString()), TipoPreg.AbiertaNumerica);
-
-            if (LPreguntas == null)
-                return;
-
-            bool flag_inserto = false;
-            foreach (DPregunta preg in LPreguntas)
-            {
-                NPregunta.Insertar(preg.Tema, preg.Id_TipoPregunta, preg.Enunciado, preg.Imagen, preg.Opcion1, preg.EsCorrectaOp1, preg.Opcion2, preg.EsCorrectaOp2, preg.Opcion3, preg.EsCorrectaOp3, preg.Opcion4, preg.EsCorrectaOp4);
-                flag_inserto = true;
-            }
-
-            if (flag_inserto == true)
-                MessageBox.Show("Se guardaron exitosamente todas las preguntas", "Atención");*/
+            MessageBox.Show("Se ingresaron correctamente las preguntas");
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
