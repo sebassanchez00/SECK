@@ -80,6 +80,9 @@
   <ItemGroup>
     <Compile Include="Enums\Enums.cs" />
     <Compile Include="Logica\Carga\NLector.cs" />
+    <Compile Include="Logica\Carga\NLectorSeleccionMultiple.cs" />
+    <Compile Include="Logica\Carga\NLectorSeleccionMultipleImagen.cs" />
+    <Compile Include="Logica\Carga\NLectorVF.cs" />
     <Compile Include="Logica\Carga\NLectorAbiertaNumerica.cs" />
     <Compile Include="Logica\NModeloConductor.cs" />
     <Compile Include="Logica\NModeloConfiguracionPrueba.cs" />

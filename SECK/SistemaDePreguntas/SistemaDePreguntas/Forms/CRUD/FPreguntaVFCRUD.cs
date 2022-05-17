@@ -1,15 +1,9 @@
-﻿using CapaDatos;
-using CapaNegocio;
-using CapaNegocio.Enums;
-using CapaNegocio.Logica;
+﻿using CapaNegocio;
+using CapaNegocio.Logica.Carga;
+using CapaPresentacion.Logica;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.IO;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
 using System.Windows.Forms;
 
 namespace CapaPresentacion.Forms.CRUD
@@ -19,55 +13,34 @@ namespace CapaPresentacion.Forms.CRUD
         public FPreguntaVFCRUD()
         {
             InitializeComponent();
-            LlenarCombos();
             if (File.Exists(Properties.Settings.Default.RutaLogo))
                 pb_logo.Image = Image.FromFile(Properties.Settings.Default.RutaLogo);
         }
 
-        void LlenarCombos()
-        {
-            cb_Tema.DataSource = NTema.Mostrar();
-            cb_Tema.DisplayMember = "Enunciado";
-            cb_Tema.ValueMember = "ID";
-        }
-
         private void btn_LeerCSV_Click(object sender, EventArgs e)
         {
-            List<DPregunta> LPreguntas = new List<DPregunta>();
-            string FileName = string.Empty;
+            string FilePath = string.Empty;
 
-            using (var ofd = new OpenFileDialog())
+            PCuadroDialogo PCuadroDialogo_obj = new PCuadroDialogo();
+            FilePath = PCuadroDialogo_obj.leerNombreArchivo();
+
+            NLectorVF lector_obj = new NLectorVF(FilePath);
+
+            try
             {
-                //Obtiene nombre del archivo a leer
-                ofd.Multiselect = false;
-                ofd.Title = "SELECCION ARCHIVO DE PREGUNTAS";
-                ofd.Filter = "Archivo .csv | *.csv";
-                DialogResult result = ofd.ShowDialog();
-
-                if (result == DialogResult.OK && !string.IsNullOrWhiteSpace(ofd.FileName))
-                { FileName = ofd.FileName; }
-                else { return; }
+                lector_obj.Leer();
+                MessageBox.Show("Se ingresaron correctamente las preguntas");
             }
-
-            //LPreguntas = NUtilidades.LeerArchivo(FileName, int.Parse(this.cb_Tema.SelectedValue.ToString()), TipoPreg.VerdaderoFalso);
-
-            if (LPreguntas == null)
-                return;
-
-            bool flag_inserto = false;
-            foreach (DPregunta preg in LPreguntas)
+            catch (Exception ex)
             {
-                NPregunta.Insertar(preg.Tema, preg.Id_TipoPregunta, preg.Enunciado, preg.Imagen, preg.Opcion1, preg.EsCorrectaOp1, preg.Opcion2, preg.EsCorrectaOp2, preg.Opcion3, preg.EsCorrectaOp3, preg.Opcion4, preg.EsCorrectaOp4);
-                flag_inserto = true;
+                MessageBox.Show(ex.Message,"No se ingresaron las preguntas");
             }
-
-            if (flag_inserto == true)
-                MessageBox.Show("Se guardaron exitosamente todas las preguntas", "Atención");
         }
 
         private void btn_eliminar_Click(object sender, EventArgs e)
         {
             NPregunta.EliminarVF();
+            MessageBox.Show("Todas las preguntas de tipo verdadero falso fueron eliminadas");
         }
     }
 }

@@ -27,7 +27,7 @@ namespace CapaNegocio.Logica.Carga
         #endregion
 
         #region Accesores
-        protected string Path
+        protected string Ruta
         {
             get { return this.ruta_; }
             set { this.ruta_ = value; }
@@ -49,6 +49,16 @@ namespace CapaNegocio.Logica.Carga
         {
             get { return this.delimitador_; }
             set { this.delimitador_ = value; }
+        }
+
+        protected int PosicionTipoLicencia
+        {
+            get { return this.posTipoLicencia_; }
+        }
+
+        protected int PosicionTema
+        {
+            get { return this.posTema_; }
         }
 
         #endregion
@@ -99,7 +109,7 @@ namespace CapaNegocio.Logica.Carga
 
         protected void validarColumnasEIDs()
         {
-            int i = 0;
+            int i = 2;
             foreach (string item in this.lPreguntasSinFormato_)
             {
                 string[] registro = item.Split(this.delimitador_, StringSplitOptions.RemoveEmptyEntries);
@@ -164,7 +174,7 @@ namespace CapaNegocio.Logica.Carga
 
                 if (contadorOpcionesCorrectas != 1)
                 {
-                    String mensaje = $"El registro con índice {indicePregunta.ToString()} tiene 0 o más respuestas correctas";
+                    String mensaje = $"El registro con índice {indicePregunta.ToString()} tiene 0 o más de una respuesta correcta";
                     throw new Exception(mensaje);
                 }
 

@@ -11,6 +11,7 @@ namespace CapaNegocio.Logica.Carga
 {
     public class NLectorVF : NLector
     {
+        const int POS_ENU_PREGUNTA = 0;
         const int POS_RESPUESTA_VERDADERO_ES_CORRECTO = 1;
         const int POS_RESPUESTA_FALSO_ES_CORRECTO = 2;
 
@@ -29,10 +30,10 @@ namespace CapaNegocio.Logica.Carga
                 VoLicenciaAplicablePreguntas lap = new VoLicenciaAplicablePreguntas();
 
                 string[] datosCrudos = item.Split(base.Delimitador, StringSplitOptions.RemoveEmptyEntries);
-                bool auxVerdaderaCorrecta = Convert.ToBoolean(datosCrudos[POS_RESPUESTA_VERDADERO_ES_CORRECTO]);
-                bool auxFalsoCorrecta = Convert.ToBoolean(datosCrudos[POS_RESPUESTA_FALSO_ES_CORRECTO]);
+                bool auxVerdaderaCorrecta = datosCrudos[POS_RESPUESTA_VERDADERO_ES_CORRECTO] == "1";
+                bool auxFalsoCorrecta = datosCrudos[POS_RESPUESTA_FALSO_ES_CORRECTO] == "1";
 
-                pregunta.Enunciado = datosCrudos[0];
+                pregunta.Enunciado = datosCrudos[POS_ENU_PREGUNTA];
                 pregunta.Id_Tema = Convert.ToInt16(datosCrudos[base.PosicionTema]);
                 pregunta.Id_TipoPregunta = (int)TipoPreg.VerdaderoFalso;
                 pregunta.Imagen = null;
@@ -49,26 +50,29 @@ namespace CapaNegocio.Logica.Carga
 
         protected override void validarOpciones()
         {
-            int indicePregunta = 0;
+            int indicePregunta = 2;
             foreach (var l in base.LPreguntasSinFormato) //Recorre cada pregunta
             {
                 string[] registro = l.Split(base.Delimitador, StringSplitOptions.RemoveEmptyEntries);
+                int contador = 0;
 
-                if (!bool.TryParse(registro[POS_RESPUESTA_VERDADERO_ES_CORRECTO], out bool aux1))
+                if (!(registro[POS_RESPUESTA_VERDADERO_ES_CORRECTO] == "1" || registro[POS_RESPUESTA_VERDADERO_ES_CORRECTO] == "0"))
                 {
                     String mensaje = $"El valor de columna VERDADERO_ES_CORRECTO del registro con índice {indicePregunta.ToString()} no es un booleano";
                     throw new Exception(mensaje);
                 }
+                contador = registro[POS_RESPUESTA_VERDADERO_ES_CORRECTO] == "1" ? ++contador : contador;
 
-                if (!bool.TryParse(registro[POS_RESPUESTA_FALSO_ES_CORRECTO], out bool aux2))
+                if (!(registro[POS_RESPUESTA_FALSO_ES_CORRECTO] == "1" || registro[POS_RESPUESTA_FALSO_ES_CORRECTO] == "0"))
                 {
                     String mensaje = $"El valor de columna FALSO_ES_CORRECTO del registro con índice {indicePregunta.ToString()} no es un booleano";
                     throw new Exception(mensaje);
                 }
+                contador = registro[POS_RESPUESTA_FALSO_ES_CORRECTO] == "1" ? ++contador : contador;
 
-                if (!(aux1 ^ aux2))
+                if (contador == 0 || contador >= 2)
                 {
-                    String mensaje = $"La pregunta con registro {indicePregunta.ToString()} tiene dos o ninguna opción correcta";
+                    String mensaje = $"La pregunta con índice {indicePregunta.ToString()} no tiene o tiene más de una respuesta correcta";
                     throw new Exception(mensaje);
                 }
 

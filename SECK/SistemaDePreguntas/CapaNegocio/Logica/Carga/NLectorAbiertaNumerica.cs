@@ -11,8 +11,7 @@ namespace CapaNegocio.Logica.Carga
 {
     public class NLectorAbiertaNumerica : NLector
     {
-        DPregunta DPregunta_obj;
-        DLicenciaAplicablePreguntas DLicenciaAplicablePreguntas_obj;
+        const int POS_ENU_PREGUNTA = 0;
         const int POS_RESPUESTA = 1;
 
         public NLectorAbiertaNumerica(string Path) : base(
@@ -20,20 +19,7 @@ namespace CapaNegocio.Logica.Carga
             NumeroColumnas: 4,
             PosicionTpoLicencia: 2,
             PosicionTema: 3)
-        {
-            DPregunta_obj = new DPregunta();
-            DLicenciaAplicablePreguntas_obj = new DLicenciaAplicablePreguntas();
-        }
-
-        protected override void cargarPreguntasEnBD()
-        {
-            foreach (var p in base.LPreguntasTupla)
-            {
-                short idInsertada = DPregunta_obj.Insertar(p.Item1); //Inserta pregunta y opciones
-                p.Item2.ID_Pregunta = idInsertada;                  
-                DLicenciaAplicablePreguntas_obj.Insertar(p.Item2); //Inserta LicenciaAplicablePpregunta
-            }
-        }
+        { }
 
         protected override void cargarPreguntasEnListaTupla()
         {
@@ -44,15 +30,15 @@ namespace CapaNegocio.Logica.Carga
 
                 string[] datosCrudos = item.Split(base.Delimitador, StringSplitOptions.RemoveEmptyEntries);
 
-                pregunta.Enunciado = datosCrudos[0];
-                pregunta.Id_Tema = Convert.ToInt16(datosCrudos[3]);
+                pregunta.Enunciado = datosCrudos[POS_ENU_PREGUNTA];
+                pregunta.Id_Tema = Convert.ToInt16(datosCrudos[base.PosicionTema]);
                 pregunta.Id_TipoPregunta = (int)TipoPreg.AbiertaNumerica;
                 pregunta.Imagen = null;
-                pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = true, Enunciado = datosCrudos[1] }); 
+                pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = true, Enunciado = datosCrudos[POS_RESPUESTA] });
                 pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = false, Enunciado = string.Empty });  // Se ignoran
                 pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = false, Enunciado = string.Empty });  // Se ignoran
                 pregunta.Opciones.Add(new VoOpcionRespuesta { Es_Correcta = false, Enunciado = string.Empty });  // Se ignoran
-                lap.ID_Tipo_Licencia = Convert.ToInt16(datosCrudos[2]);
+                lap.ID_Tipo_Licencia = Convert.ToInt16(datosCrudos[base.PosicionTipoLicencia]);
 
                 var TuplaParaAgregar = new Tuple<VoPreguntaYOpciones, VoLicenciaAplicablePreguntas>(pregunta, lap);
                 base.LPreguntasTupla.Add(TuplaParaAgregar);
@@ -61,7 +47,7 @@ namespace CapaNegocio.Logica.Carga
 
         protected override void validarOpciones()
         {
-            int indicePregunta = 0;
+            int indicePregunta = 2;
             foreach (var l in base.LPreguntasSinFormato) //Recorre cada pregunta
             {
                 string[] registro = l.Split(base.Delimitador, StringSplitOptions.RemoveEmptyEntries);
