@@ -28,37 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_Tema = new System.Windows.Forms.Label();
-            this.cb_Tema = new System.Windows.Forms.ComboBox();
             this.btn_LeerCSV = new System.Windows.Forms.Button();
             this.pb_logo = new System.Windows.Forms.PictureBox();
             this.btn_eliminar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lbl_Tema
-            // 
-            this.lbl_Tema.AutoSize = true;
-            this.lbl_Tema.BackColor = System.Drawing.Color.Transparent;
-            this.lbl_Tema.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
-            this.lbl_Tema.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.lbl_Tema.Location = new System.Drawing.Point(182, 192);
-            this.lbl_Tema.Name = "lbl_Tema";
-            this.lbl_Tema.Size = new System.Drawing.Size(52, 19);
-            this.lbl_Tema.TabIndex = 8;
-            this.lbl_Tema.Text = "TEMA";
-            // 
-            // cb_Tema
-            // 
-            this.cb_Tema.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cb_Tema.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cb_Tema.Font = new System.Drawing.Font("Microsoft YaHei UI", 11.25F);
-            this.cb_Tema.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.cb_Tema.FormattingEnabled = true;
-            this.cb_Tema.Location = new System.Drawing.Point(244, 188);
-            this.cb_Tema.Name = "cb_Tema";
-            this.cb_Tema.Size = new System.Drawing.Size(748, 27);
-            this.cb_Tema.TabIndex = 7;
             // 
             // btn_LeerCSV
             // 
@@ -108,11 +82,9 @@
             this.ClientSize = new System.Drawing.Size(1008, 730);
             this.Controls.Add(this.btn_eliminar);
             this.Controls.Add(this.pb_logo);
-            this.Controls.Add(this.lbl_Tema);
-            this.Controls.Add(this.cb_Tema);
             this.Controls.Add(this.btn_LeerCSV);
             this.Name = "FPreguntaAbiertaNumCRUD";
-            this.Text = "FPreguntaAbiertaNumCRUD";
+            this.Text = "Cargue Preguntas Abierta Numérica";
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -120,9 +92,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbl_Tema;
-        private System.Windows.Forms.ComboBox cb_Tema;
         private System.Windows.Forms.Button btn_LeerCSV;
         private System.Windows.Forms.PictureBox pb_logo;
         private System.Windows.Forms.Button btn_eliminar;

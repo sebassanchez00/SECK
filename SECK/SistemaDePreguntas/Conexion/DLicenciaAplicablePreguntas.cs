@@ -14,6 +14,47 @@ namespace CapaDatos
         { }
 
         /// <summary>
+        /// Inserta un elemento VoLicenciaAplicablePreguntas en la tabla TME_LICENCIA_APLICABLE_PREGUNTAS
+        /// </summary>
+        /// <param name="Par">Elemento VoLicenciaAplicablePreguntas a insertar</param>
+        public void Insertar(VoLicenciaAplicablePreguntas Par)
+        {
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion.Cn;
+                SqlCon.Open();
+
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "SP_INSERTAR_LICENCIA_APLICABLE_PREGUNTA";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParIDEval = new SqlParameter();
+                ParIDEval.ParameterName = "@ID_PREGUNTA";
+                ParIDEval.SqlDbType = SqlDbType.SmallInt;
+                ParIDEval.Value = Par.ID_Pregunta;
+                SqlCmd.Parameters.Add(ParIDEval);
+
+                SqlParameter ParIDTema = new SqlParameter();
+                ParIDTema.ParameterName = "@ID_LICENCIA";
+                ParIDTema.SqlDbType = SqlDbType.SmallInt;
+                ParIDTema.Value = Par.ID_Tipo_Licencia;
+                SqlCmd.Parameters.Add(ParIDTema);
+
+                string rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "NO se Ingreso el Registro";
+            }
+            catch (Exception ex)
+            {
+
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+        }
+
+        /// <summary>
         /// Retorna lista de VoLicenciaAplicablePreguntas que coinciden con ID_Licencia
         /// </summary>
         /// <param name="IDPregunta">Id del tipo licencia que se consulta</param>

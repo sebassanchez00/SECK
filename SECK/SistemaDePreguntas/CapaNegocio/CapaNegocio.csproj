@@ -79,6 +79,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Enums\Enums.cs" />
+    <Compile Include="Logica\Carga\NLector.cs" />
+    <Compile Include="Logica\Carga\NLectorSeleccionMultiple.cs" />
+    <Compile Include="Logica\Carga\NLectorSeleccionMultipleImagen.cs" />
+    <Compile Include="Logica\Carga\NLectorVF.cs" />
+    <Compile Include="Logica\Carga\NLectorAbiertaNumerica.cs" />
     <Compile Include="Logica\NModeloConductor.cs" />
     <Compile Include="Logica\NModeloConfiguracionPrueba.cs" />
     <Compile Include="Logica\NModeloCuestionario.cs" />
@@ -125,6 +130,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

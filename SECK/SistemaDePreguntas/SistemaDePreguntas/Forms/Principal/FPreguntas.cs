@@ -1,4 +1,4 @@
-﻿#define TEST
+﻿//#define TEST
 using CapaDatos;
 using CapaDatos.Vo;
 using CapaPresentacion.Forms.CRUD;
